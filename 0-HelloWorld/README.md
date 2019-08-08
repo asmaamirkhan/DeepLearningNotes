@@ -1,6 +1,9 @@
 # Hello World of Deep Learning with Neural Networks
 Like every first app we should start with something super simple that gives us an idea about the whole methodology. 
 
+## What is Keras?
+Keras is a high-level **neural networks API**, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.
+
 ## Important Terms
 | Term            | Description   |
 | --------------- |---------------|
@@ -45,9 +48,10 @@ print(model.predict([10.0]))
 ```
 
 ## Traditional Programming vs Machine Learning
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/TraditionalProgvsML.JPG" width="300"  />
+<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/TraditionalProgvsML.JPG" width="350"  />
 
 ## References
+* [Official Documentation of Keras](https://keras.io/)
 * [More About Sequential model](https://keras.io/getting-started/sequential-model-guide/)
 * [More About Optimizers in Keras](https://keras.io/optimizers/)
 * [More About Loss Functions in Keras](https://keras.io/losses/)
