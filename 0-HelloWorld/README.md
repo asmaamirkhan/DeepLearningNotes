@@ -45,7 +45,7 @@ print(model.predict([10.0]))
 ```
 
 ## Traditional Programming vs Machine Learning
-
+<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/TraditionalProgvsML.JPG" width="300"  />
 
 ## References
 * [More About Sequential model](https://keras.io/getting-started/sequential-model-guide/)
