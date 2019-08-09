@@ -18,9 +18,10 @@ Improving Neural Networks used in Computer Vision problems
 > Result: vertical lines pop out
 
 ## Notes on performance :dizzy:
-* Training speed of a CNN is too slower than plain NN because of its comptational complexity :turtle:
+* Training speed of a CNN is too slower than plain NN because of its computational complexity :turtle:
 
 ## Better CNN Understanding
+
 We can get info about our CNN by 
 ```python
 model.summary()
@@ -64,6 +65,9 @@ For code in the notebook:
 * 7th layer: Since we have 10 categories it consists of 10 neurons
 
 > :dizzy_face: :dizzy_face:
+
+## Visualization
+The visualization of the output of each layer is available [here](https://github.com/asmaamirkhan/DeepLearningNotes/bloNote:b/master/2-Intro2CNN/1-CNNVisualization.ipynb) :mag:
 
 ## References
 * [More on Convolutional Neural Networks](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF)
