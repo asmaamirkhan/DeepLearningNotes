@@ -2,8 +2,8 @@
 This folder will be filled by codes and notes gradually
 
 ## Table of Contents
-* [Human vs Horse Classifier with CNN](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/3CNNWorks/HorseHumanClassifier.ipynb) 
-
+* [Human vs Horse Classifier with CNN](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/3-CNNWorks/0-HorseHumanClassifier.ipynb) 
+* [Dog vs Cat Classifier with CNN](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/3-CNNWorks/1-DogCatClassifier.ipynb) 
 
 ## References
 * [Binary Cross-Entropy](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
