@@ -50,19 +50,19 @@ dense_15 (Dense)             (None, 10)                1290
 For code in the notebook:
 > [Here](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/2-Intro2CNN/0-CNN.ipynb) :feet:
 
-* The orginal dimensions of the images were 28x28 px
+* The original dimensions of the images were 28x28 px
 * 1st layer: The filter can not be applied on the pixels on the edges 
-  * The output from first layer has 26x26 px
+  * The output of first layer has 26x26 px
 * 2nd layer: After applying `2x2 max pooling` the dimensions will be divided by 2
-  * The output from this layer has 13x13 px
+  * The output of this layer has 13x13 px
 * 3rd layer: The filter can not be applied on the pixels on the edges 
-  * The output from first layer has 11x11 px
+  * The output of first layer has 11x11 px
 * 4th layer: After applying `2x2 max pooling` the dimensions will be divided by 2
-  * The output from this layer has 5x5 px
+  * The output of this layer has 5x5 px
 * 5th layer: The output of the previous layer will be flattened
-  * The output from this layer has `5x5x64=1600` neurons
-* 6th layer: We set it to contain 128 neurons
-* 7th layer: Since we have 10 categories it consists of 10 neurons
+  * This layer has `5x5x64=1600` units
+* 6th layer: We set it to contain 128 units
+* 7th layer: Since we have 10 categories it consists of 10 units
 
 > :dizzy_face: :dizzy_face:
 
