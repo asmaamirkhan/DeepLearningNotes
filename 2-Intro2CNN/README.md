@@ -67,7 +67,7 @@ For code in the notebook:
 > :dizzy_face: :dizzy_face:
 
 ## Visualization
-The visualization of the output of each layer is available [here](https://github.com/asmaamirkhan/DeepLearningNotes/bloNote:b/master/2-Intro2CNN/1-CNNVisualization.ipynb) :mag:
+The visualization of the output of each layer is available [here](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/2-Intro2CNN/1-CNNVisualization.ipynb) :mag:
 
 ## References
 * [More on Convolutional Neural Networks](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF)
