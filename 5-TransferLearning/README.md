@@ -18,15 +18,15 @@ We can drop out some neurons that has similar weights with neighbors, so that ov
 
 ### Comparison
 <p float="left">
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/NNWithoutDropout.JPG" width="200"  />
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/NNWithDropout.JPG" width="200"  />
+    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/NNWithoutDropout.JPG" width="300"  />
+    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/NNWithDropout.JPG" width="300"  />
 </p>
 
 > An NN before and after dropout
 
 <p float="left">
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/AccuracyWithoutDropOut.JPG" width="200"  />
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/AccuracyWithDropOut.JPG" width="200"  />
+    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/AccuracyWithoutDropOut.JPG" width="300"  />
+    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/AccuracyWithDropOut.JPG" width="300"  />
 </p>
 
 > Accuracy before and after dropout
