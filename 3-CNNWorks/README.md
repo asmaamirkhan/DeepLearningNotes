@@ -5,9 +5,16 @@ This folder will be filled by codes and notes gradually
 * [Human vs Horse Classifier with CNN](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/3-CNNWorks/0-HorseHumanClassifier.ipynb) 
 * [Dog vs Cat Classifier with CNN](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/3-CNNWorks/1-DogCatClassifier.ipynb) 
 
+## RPS Dataset
+Rock Paper Scissors is an available dataset containing 2,892 images of diverse hands in Rock/Paper/Scissors poses.
+Rock Paper Scissors contains images from a variety of different hands, from different races, ages and genders, posed into Rock / Paper or Scissors and labelled as such.
+
+> All of this data is posed against a white background. Each image is 300×300 pixels in 24-bit color
+
 ## References
 * [Binary Cross-Entropy](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
 * [RMSProp Explained](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
 * [RMSProp in Tensorflow](https://www.tensorflow.org/api_docs/python/tf/train/RMSPropOptimizer)
 * [Binary Classification](https://www.youtube.com/watch?v=eqEc66RFY0I&t=6s)
 * [TensorFlow: an ML platform for solving impactful and challenging problems](https://www.youtube.com/watch?v=NlpS-DhayQA)
+* [Rock Paper Scissors Dataset](http://www.laurencemoroney.com/rock-paper-scissors-dataset/)
