@@ -1,11 +1,14 @@
 # The Problem in General 
 Given a dataset like:
 
-{(x<sup>(1)</sup>, y<sup>(1)</sup>), (x<sup>(2)</sup>, y<sup>(2)</sup>), (x<sup>(m)</sup>, y<sup>(m)</sup>)}
+<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/Dataset.png" height="25"  />
+
+
 
 We want:
 
-ŷ<sup>(i)</sup> ≈ y
+<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GoodOutput.png" height="25"  />
+
 
 ## Basic Concepts and Notations
 
@@ -24,10 +27,10 @@ We want:
 
 ## Gradient Descent
 General Formula:
-<p float="left">
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GradientDescentW.png" width="400"  />
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GradientDescentB.png" width="400"  />
-</p>
+
+<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GradientDescentW.png" height="40"  />
+<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GradientDescentB.png" height="40"  />
+
 
 > `α` _(alpha)_ is the **Learning Rate** which is a positive scalar determining the size of the step of each iteration of gradient descent due to the corresponded estimated error each time the model weights are updated, so, it controls how quickly or slowly a neural network model learns a problem
 
