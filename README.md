@@ -11,7 +11,8 @@ My notes (and codes) on deep learnig :dizzy:
 1. [Theoric Concepts of Neural Networks](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/6-NNConcepts)
 
 ## Extensions
-1. [PDFs that I found and recommend](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/Z-UsefulPDFs)
+1. [PDFs that I found and recommend](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/Z-UsefulPDFs) 👩‍🏫
+1. [Visual materials for quick info](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/Z-QuickVisualInfo) :runner:
 
 ## For Contact and Support
 Find me on [LinkedIn](https://www.linkedin.com/in/asmaa-mirkhan/) and feel free to mail me, [Asmaa](mailto:asmaamirkhan.am@gmail.com) :star:
