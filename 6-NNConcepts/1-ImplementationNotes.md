@@ -6,12 +6,13 @@
 | Term            | Description   |
 | --------------- |---------------|
 | Vectorization   |  A way to speed up the Python code **without using loop** |
+| Broadcasting    |  Another technique to make Python code run faster         |
 
 
 ## Vectorization
 Vectorization is used to speed up the Python _(or Matlab)_ code without using loop. Using such a function can help in minimizing the running time of code efficiently. Various operations are being performed over vector such as _dot product_ of vectors, _outer products_ of vectors and _element wise multiplication_.
 
-## Advantages
+### Advantages
 * Faster execution (allows parallel operations) 👨‍🔧
 * Simpler and more readable code :sparkles:
 
@@ -98,5 +99,49 @@ sigmoid = 1 / (1 + np.exp(-array))
   * `np.max(x)`, `np.min(x)`
 * Getting **index** of maximum or minimum value of an array
   * `np.argmax(x)`, `np.argmin(x)`
+</details>
 
+
+
+## Broadcasting
+The term broadcasting describes how _numpy_ treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is **“broadcast”** across the larger array so that they have compatible shapes.
+
+**Practically:**
+
+If you have a matrix **A** that is `(m,n)` and you want to add / subtract / multiply / divide with **B** matrix `(1,n)` matrix then **B** matrix will be copied `m` times into an `(m,n)` matrix and then wanted operation will be applied
+
+Similarly: If you have a matrix **A** that is `(m,n)` and you want to add / subtract / multiply / divide with **B** matrix `(m,1)` matrix then **B** matrix will be copied `n` times into an `(m,n)` matrix and then wanted operation will be applied
+ 
+
+> Long story short: Arrays (or matrices) with different sizes cannot be added, subtracted, or generally be used in arithmetic.
+
+
+### Simple Visualization
+<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/Broadcasting.jpg" width="400"  />
+
+
+### Code Examples:
+Adding a (1,n) row vector to a (2,n) matrix
+
+```python
+a = np.array([[0, 1, 2], 
+              [5, 6, 7]] )
+b = np.array([1, 2, 3])
+print(a + b)
+
+# Output: [[ 1  3  5]
+#          [ 6  8 10]]
+``` 
+
+<details>
+<summary>Subtracting <i><b>a</b></i> scalar from a matrix</summary>
+
+```python
+a = np.array( [[0, 1, 2], 
+               [5, 6, 7]] )
+c = 2
+print(a - c)
+# Output: [[-2 -1  0]
+#          [ 3  4  5]]
+```
 </details>
