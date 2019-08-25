@@ -3,11 +3,14 @@
 
 ## Common Terms
 
-| Term            | Description   |
-| --------------- |---------------|
-| Vectorization   |  A way to speed up the Python code **without using loop** |
-| Broadcasting    |  Another technique to make Python code run faster         |
+| Term             | Description   |
+| ---------------  |---------------|
+| Vectorization    |  A way to speed up the Python code **without using loop** |
+| Broadcasting     |  Another technique to make Python code run faster by stretching arrays |
+| Rank of an Array |  The number of dimensions it has         |
+| Rank 1 Array     |  An array that has only one dimension         |
 
+> A scalar is considered to have rank zero
 
 ## Vectorization
 Vectorization is used to speed up the Python _(or Matlab)_ code without using loop. Using such a function can help in minimizing the running time of code efficiently. Various operations are being performed over vector such as _dot product_ of vectors, _outer products_ of vectors and _element wise multiplication_.
@@ -113,7 +116,7 @@ If you have a matrix **A** that is `(m,n)` and you want to add / subtract / mult
 Similarly: If you have a matrix **A** that is `(m,n)` and you want to add / subtract / multiply / divide with **B** matrix `(m,1)` matrix then **B** matrix will be copied `n` times into an `(m,n)` matrix and then wanted operation will be applied
  
 
-> Long story short: Arrays (or matrices) with different sizes cannot be added, subtracted, or generally be used in arithmetic.
+> Long story short: Arrays (or matrices) with different sizes can not be added, subtracted, or generally be used in arithmetic. So it is a way to make it possible by stretching shapes so they have compatible shapes :sparkles:
 
 
 ### Simple Visualization
@@ -145,3 +148,63 @@ print(a - c)
 #          [ 3  4  5]]
 ```
 </details>
+
+## Rank 1 Array
+
+### Code Example
+
+```python
+x = np.random.rand(5)
+print('shape:', x.shape, 'rank:', x.ndim)
+
+# Output: shape: (5,) rank: 1
+
+y = np.random.rand(5, 1)
+print('shape:', y.shape, 'rank:', y.ndim)
+
+# Output: shape: (5, 1) rank: 2
+
+z = np.random.rand(5, 2, 2)
+print('shape:', z.shape, 'rank:', z.ndim)
+
+# Output: shape: (5, 2, 2) rank: 3
+```
+
+> It is recommended not to use rank 1 arrays
+
+### Why it is recommended not to use 1 rank arrays?
+Rank 1 arrays may cause bugs that are difficult to find and fix, for example:
+
+
+Dot operation on rank 1 arrays:
+```python
+a = np.random.rand(4)
+b = np.random.rand(4)
+print(a)
+print(a.T)
+print(np.dot(a,b))
+
+# Output
+# [0.40464616 0.46423665 0.26137661 0.07694073]
+# [0.40464616 0.46423665 0.26137661 0.07694073]
+# 0.354194202098512
+```
+
+Dot operation on rank 2 arrays:
+
+```python
+a = np.random.rand(4,1)
+b = np.random.rand(4,1)
+print(a)
+print(np.dot(a,b))
+
+# Output
+# [[0.68418713]
+# [0.53098868]
+# [0.16929882]
+# [0.62586001]]
+# [[0.68418713 0.53098868 0.16929882 0.62586001]]
+# ERROR: shapes (4,1) and (4,1) not aligned: 1 (dim 1) != 4 (dim 0)
+```
+
+> Conclusion: We have to avoid using rank 1 arrays in order to make our codes more bug-free and easy to debug :bug:
