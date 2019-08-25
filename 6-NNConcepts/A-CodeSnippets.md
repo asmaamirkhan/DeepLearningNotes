@@ -6,7 +6,7 @@
 
 **Formula:**
 
-<img src="../res/Sigmoid.png" height="30"  />
+<img src="../res/Sigmoid.png" height="45"  />
 
 ```python
 def sigmoid(x):
@@ -86,7 +86,7 @@ def sigmoid(x):
 **Formula:**
 
 
-<img src="../res/Normalization.png" height="30"  />
+<img src="../res/Normalization.png" height="40"  />
 
 
 ```python
@@ -120,7 +120,7 @@ def normalizeRows(x):
 **Formula:**
 
 
-<img src="../res/Softmax.png" height="30"  />
+<img src="../res/Softmax.png" height="45"  />
 
 
 ```python
@@ -158,7 +158,7 @@ def normalizeRows(x):
 **Formula:**
 
 
-<img src="../res/L1Function.png" height="30"  />
+<img src="../res/L1Function.png" height="50"  />
 
 
 ```python
@@ -189,7 +189,7 @@ def L1(yhat, y):
 **Formula:**
 
 
-<img src="../res/L2Function.png" height="30"  />
+<img src="../res/L2Function.png" height="50"  />
 
 
 ```python
@@ -218,8 +218,9 @@ def L2(yhat, y):
 
 **Formula:**
 
-$$ \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T$$
-$$ \frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^m (a^{(i)}-y^{(i)})$$
+<img src="../res/GradW.png" height="50"  />
+<br/>
+<img src="../res/GradB.png" height="50"  />
 
 
 ```python
@@ -268,13 +269,14 @@ def propagate(w, b, X, Y):
 <details>
 <summary>Gradient Descent (Optimization)</summary>
 
-**Description:**  The goal is to learn $w$ and $b$ by minimizing the cost function $J$. For a parameter $\theta$
+**Description:**  The goal is to learn _ω_ and _b_ by minimizing the cost function _J_. For a parameter _ω_
 
 **Formula:**
 
-$$ \omega  = \omega  - \alpha \text{ } d\omega $$
+<img src="../res/OptimizationFunction.png" height="30"  />
 
-Where $\alpha$ is the learning rate
+
+Where *α* is the learning rate
 
 ```python
 def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
