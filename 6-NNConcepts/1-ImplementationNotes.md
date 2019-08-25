@@ -10,7 +10,7 @@
 | Rank of an Array |  The number of dimensions it has         |
 | Rank 1 Array     |  An array that has only one dimension         |
 
-> A scalar is considered to have rank zero
+> A scalar is considered to have rank zero ❗❕
 
 ## Vectorization
 Vectorization is used to speed up the Python _(or Matlab)_ code without using loop. Using such a function can help in minimizing the running time of code efficiently. Various operations are being performed over vector such as _dot product_ of vectors, _outer products_ of vectors and _element wise multiplication_.
@@ -208,3 +208,6 @@ print(np.dot(a,b))
 ```
 
 > Conclusion: We have to avoid using rank 1 arrays in order to make our codes more bug-free and easy to debug :bug:
+
+## References
+* [Official Documentation of Broadcasting in NumPy](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html)
