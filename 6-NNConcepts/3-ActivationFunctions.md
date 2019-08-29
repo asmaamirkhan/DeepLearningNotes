@@ -54,7 +54,7 @@ So the derivative is 1 when z is positive and 0 when z is negative
 
 
 
-## Leaky Relu
+### Leaky Relu
 
 *Formula:*
 
@@ -76,12 +76,12 @@ So the derivative is 1 when z is positive and 0 when z is negative
 * NN will learn much faster than when using tanh or sigmoid    
 
 
-## Why NNs need non-linear Activation Functions
+## Why NNs Need non-linear Activation Functions
 Well, if we use linear function then the nn is just outputting a linear function of the input, so no matter how many layers out NN has 🙄, all it is doing is just computing a linear function 😕
 
 > Remember that the composition of two linear functions is itself a linear function
 
-## Rules for choosing activation function:
+## Rules For Choosing Activation Function:
 * If the output is 0 or 1 (binary classification) ➡ *sigmoid* is good for output layer
 * for all other units ➡ *Relu* :sparkles:
   
@@ -90,3 +90,8 @@ Well, if we use linear function then the nn is just outputting a linear function
 Note:
 
 > If you are not sure which one of these functions work best 😵, try them all 🤕 and evaluate on different validation set and see which one works better and go with that  🤓😇
+
+## Read More
+* [Which Activation Function Should I Use? (Siraj Raval :sparkles:)](https://www.youtube.com/watch?v=-7scQpJT7uo)
+* [Activation Functions in Neural Networks](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
+* [Understanding Activation Functions in Neural Networks](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0)
