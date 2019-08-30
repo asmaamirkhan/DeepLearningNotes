@@ -32,3 +32,16 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 <img src="../res/ForwarProp.png" height="70"  />
 
+## Parameters Dimension Control
+
+| Parameter        | Dimension     |
+| ---------------  |---------------|
+| w<sup>[<i>l</i>]</sup>   |  (n<sup>[<i>l</i>]</sup>,n<sup>[<i>l-1</i>]</sup>) |
+| b<sup>[<i>l</i>]</sup>   |  (n<sup>[<i>l</i>]</sup>,1) |
+| dw<sup>[<i>l</i>]</sup>  |  (n<sup>[<i>l</i>]</sup>,n<sup>[<i>l-1</i>]</sup>) |
+| db<sup>[<i>l</i>]</sup>  |  (n<sup>[<i>l</i>]</sup>,1) |
+
+
+> Making sure tat these dimension are true help us to write better and bug-free :bug: codes
+
+
