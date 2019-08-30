@@ -1,13 +1,13 @@
 # The Problem in General 
 Given a dataset like:
 
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/Dataset.png" height="25"  />
+<img src="../res/Dataset.png" height="25"  />
 
 
 
 We want:
 
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GoodOutput.png" height="25"  />
+<img src="../res/GoodOutput.png" height="25"  />
 
 
 ## Basic Concepts and Notations
@@ -28,11 +28,23 @@ We want:
 ## Gradient Descent
 General Formula:
 
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GradientDescentW.png" height="40"  />
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/GradientDescentB.png" height="40"  />
+<img src="../res/GradientDescentW.png" height="40"  />
+<img src="../res/GradientDescentB.png" height="40"  />
 
 
-> `α` _(alpha)_ is the **Learning Rate** which is a positive scalar determining the size of the step of each iteration of gradient descent due to the corresponded estimated error each time the model weights are updated, so, it controls how quickly or slowly a neural network model learns a problem
+> `α` _(alpha)_ is the **Learning Rate** 
+
+## Learning Rate
+It is a positive scalar determining the size of the step of each iteration of gradient descent due to the corresponded estimated error each time the model weights are updated, so, it controls how quickly or slowly a neural network model learns a problem.
+
+**Good Learning Rate:**
+
+<img src="../res/GoodSGD.gif" width="300"  />
+
+**Bad Learning Rate:**
+
+<img src="../res/BadSGD.gif" width="300"  />
+
 
 ## References
 * [Introduction to Artificial Neural Networks (ANN)](https://searchenterpriseai.techtarget.com/definition/neural-network)
