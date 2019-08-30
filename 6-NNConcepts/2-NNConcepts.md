@@ -45,3 +45,24 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 > Making sure tat these dimension are true help us to write better and bug-free :bug: codes
 
 
+## Parameters vs Hyperparameters
+
+**Parameters:**
+* W<sup>[<i>1</i>]</sup> 
+* b<sup>[<i>1</i>]</sup>
+* W<sup>[<i>2</i>]</sup>
+* b<sup>[<i>2</i>]</sup>
+* W<sup>[<i>3</i>]</sup>
+* ......
+
+
+**Hyperparameters:**
+
+* Learning rate
+* Number of iterations
+* Number of hidden layers
+* Number of hidden units
+* Choice of activation function
+* ......
+
+> We can say that hyperparameters control parameters 🤔
