@@ -3,14 +3,36 @@ The main purpose of Activation Functions is to convert an input signal of a node
 
 ## Types of Activaiton Functions
 
+| Function                   | Description                                              |
+| -------------------------- | -------------------------------------------------------- |
+| Linear Activation Function |  Inefficient, used in regression                         |
+| Sigmoid Function           |  Good for output layer in binary classification problems |
+| Tanh Function              |  Better than sigmoid                                     |
+| Relu Function :sparkles:   |  Default choice for hidden layers                        |
+| Leaky Relu Function        |  Little bit better than Relu, Relu is more popular       |
+
+
+### Linear Activation Function (Identity Function)
+
+**Formula:**
+
+<img src="../res/LinearActivation.png" height="30"  />
+
+
+**Graph:**
+
+<img src="../res/LinearActivationGraph.png" width="300"  />
+
+> It can be used in regression problem in the output layer 
+
 ### Sigmoid Function
 
-*Formula:*
+**Formula:**
 
 <img src="../res/Sigmoid.png" height="40"  />
 
 
-*Graph:*
+**Graph:**
 
 <img src="../res/SigmoidGraph.png" width="300"  />
 
@@ -19,19 +41,19 @@ The main purpose of Activation Functions is to convert an input signal of a node
 
 Almost always strictly superior than sigmoid function
 
-*Formula:*
+**Formula:**
 
 <img src="../res/Tanh.png" height="40"  />
 
 > Shifted version of the Sigmoid function 🤔
 
-*Graph:*
+**Graph:**
 
 <img src="../res/TanhGraph.PNG" width="300"  />
 
 
 
-> Activation functions can be differtent for different layers, for example, we may use _tanh_ for a hidden layer and _sigmoid_ for the output layer 
+> Activation functions can be different for different layers, for example, we may use _tanh_ for a hidden layer and _sigmoid_ for the output layer 
 
 ### Downsides on Tanh and Sigmoid
 If z is very large or very small then the derivative _(or the slope)_ of these function becomes very small (ends up  being close to 0), and so this can slow down gradient descent 🐢
@@ -39,12 +61,12 @@ If z is very large or very small then the derivative _(or the slope)_ of these f
 ### Rectified Linear Activation Unit (Relu :sparkles:) 
 Another and very popular choice
 
-*Formula:*
+**Formula:**
 
 <img src="../res/Relu.png" height="50"  />
 
 
-*Graph:*
+**Graph:**
 
 <img src="../res/ReluGraph.png" width="300"  />
 
@@ -56,17 +78,17 @@ So the derivative is 1 when z is positive and 0 when z is negative
 
 ### Leaky Relu
 
-*Formula:*
+**Formula:**
 
 <img src="../res/LeakyRelu.png" height="50"  />
 
 
-*Graph:*
+**Graph:**
 
 <img src="../res/LeakyReluGraph.png" width="300"  />
 
 
-*Or:* 😛
+**Or:** 😛
 
 <img src="../res/LeakyReluGraphMeme.png" width="150"  />
 
