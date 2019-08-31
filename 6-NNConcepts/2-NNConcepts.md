@@ -30,7 +30,7 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 ## Generalized Formula of Forward Propagation 
 
-<img src="../res/ForwarProp.png" height="70"  />
+<img src="../res/ForwardProp.png" height="70"  />
 
 ## Parameters Dimension Control
 
@@ -42,17 +42,53 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 | db<sup>[<i>l</i>]</sup>  |  (n<sup>[<i>l</i>]</sup>,1) |
 
 
-> Making sure tat these dimension are true help us to write better and bug-free :bug: codes
+> Making sure that these dimensions are true help us to write better and bug-free :bug: codes
 
+
+
+
+## Summary of Forward Propagation Process
+
+|                  |                 |
+| ---------------- | --------------- |
+| **Input:**       |  a<sup>[<i>l</i>-1]</sup> |
+| **Output:**      |  a<sup>[<i>l</i>]</sup>, chache (z<sup>[<i>l</i>]</sup>) |
+
+**Vectorized Equations:**
+
+<img src="../res/ForwardProp.png" height="80"  />
+
+## Summary of Back Propagation Process
+
+|                  |                 |
+| ---------------- | --------------- |
+| **Input:**       |  da<sup>[<i>l</i>]</sup> |
+| **Output:**      | da<sup>[<i>l</i>-1]</sup>, dW<sup>[<i>l</i>]</sup>, db<sup>[<i>l</i>]</sup> |
+
+**Vectorized Equations:**
+
+<img src="../res/BackProp1.png" height="30"  />
+<br>
+<br>
+<img src="../res/BackProp2.png" height="50"  />
+<br>
+<br>
+<img src="../res/BackProp3.png" height="50"  />
+<br>
+<br>
+<img src="../res/BackProp4.png" height="30"  />
+
+## To Put Forward Prop. and Back Prop. Together
+
+<img src="../res/ForBackSummary.png" width="500"  />
+
+> 😵🤕
 
 ## Parameters vs Hyperparameters
 
 **Parameters:**
-* W<sup>[<i>1</i>]</sup> 
-* b<sup>[<i>1</i>]</sup>
-* W<sup>[<i>2</i>]</sup>
-* b<sup>[<i>2</i>]</sup>
-* W<sup>[<i>3</i>]</sup>
+* W<sup>[<i>1</i>]</sup>, W<sup>[<i>2</i>]</sup>, W<sup>[<i>3</i>]</sup>
+* b<sup>[<i>1</i>]</sup>, b<sup>[<i>2</i>]</sup>
 * ......
 
 
