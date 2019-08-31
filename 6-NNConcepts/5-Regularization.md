@@ -41,3 +41,6 @@ The simplest way to reduce overfitting is to increase the size of the training d
 
 ### Early Stopping
 It is a kind of cross-validation strategy where we keep one part of the training set as the validation set. When we see that the performance on the validation set is getting worse, we immediately stop the training on the model. This is known as early stopping.
+
+## Read More
+* Long Story Short 😅: [Overfitting and Regularization in Neural Networks](https://medium.com/@rameshkjes/overfitting-and-regularization-in-neural-networks-d3d996e33c3)
