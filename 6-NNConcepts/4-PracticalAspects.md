@@ -63,7 +63,7 @@ If we aren't able to get wanted performance we should ask these questions to imp
    * Try bigger network
    * Train longer
    * Try another NN architecture 
-1. Do we have high variance? If yes, it is a dev set problem
+1. Do we have high variance? If yes, it is a dev set performance problem
    * Get more data
    * Do regularization
 3. No high variance and no high bias? TADAAA it is done 🤗🎉🎊
