@@ -59,14 +59,22 @@ If we aren't able to get wanted performance we should ask these questions to imp
 
 > We check the performance of the following solutions on dev set 
 
-1. Do we have high bias? If yes, it is a trainig data problem, you may:
+1. Do we have high bias? If yes, it is a trainig problem, you may:
    * Try bigger network
    * Train longer
-   * Try another NN architecture 
-1. Do we have high variance? If yes, it is a dev set performance problem
+   * Try another NN architecture
+  
+> We can say that it is a structural problem 🤔
+
+2. Do we have high variance? If yes, it is a dev set performance problem, you may:
    * Get more data
    * Do regularization
-3. No high variance and no high bias? TADAAA it is done 🤗🎉🎊
+  
+> We can say that maybe it is data or algorithmic problem 🤔
+
+1. No high variance and no high bias?
+
+> TADAAA it is done 🤗🎉🎊
 
 ## References
 * [About Train, Validation and Test Sets in Machine Learning](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7)
