@@ -1,5 +1,16 @@
 # Practical Aspects of NN Impelemenation
 
+## Data Normalization
+It is a part of _data preparation_
+
+If we have a feature that is all positive or all negative, this will make learning harder for the nodes in the layer that follows. They will have to _zigzag_ like the ones following a sigmoid activation function. If we transform our data so it has a mean close to zero, we will thereby make sure that there are both positive values and negative ones.
+
+**Formula:**
+
+<img src="../res/NormalizedData.png" height="30"  />
+
+> Benifit: It makes cost function _J_ easier and faster to optimize 😋
+
 ## Things to think well before implementing NN
 Number of layers, number of hidden units, learning rates, activation functions... 
 
