@@ -72,7 +72,7 @@ If we aren't able to get wanted performance we should ask these questions to imp
   
 > We can say that maybe it is data or algorithmic problem 🤔
 
-1. No high variance and no high bias?
+3. No high variance and no high bias?
 
 > TADAAA it is done 🤗🎉🎊
 
