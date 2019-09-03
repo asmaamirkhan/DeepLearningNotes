@@ -29,7 +29,7 @@ Batch size can vary depending on the dataset.
 * Not batch-size too large/small
   * We can do vectorization
   * Good speed per iteration
-  * The fastest (better) learning 🤗✨   
+  * The fastest (best) learning 🤗✨   
 
 ### Guidlines for Choosing Batch-Size
 * For a small (m ≤ 2000) dataset ➡ use batch gradient descent
@@ -54,7 +54,17 @@ The RMSprop optimizer is similar to the gradient descent algorithm with momentum
 
 The difference between RMSprop and gradient descent is on how the gradients are calculated
 
+
+
+## Adam Optimizer :sparkles:
+
+Adam stands for: **ADA**ptive **M**oment estimation
+
+Adam can be looked at as a combination of RMSprop and Stochastic Gradient Descent with momentum. It uses the squared gradients to scale the learning rate like RMSprop and it takes advantage of momentum by using moving average of the gradient instead of gradient itself like SGD with momentum. 
+
 > TODO: Add formulas 🚩🚩🚩🚩👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧
+
+
 
 ## References
 * [Machine learning Gradient Descent](https://medium.com/datadriveninvestor/gradient-descent-5a13f385d403)
