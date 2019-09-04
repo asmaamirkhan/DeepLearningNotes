@@ -48,6 +48,18 @@ The following image describes better: 🧐
 
 <img src="../res/GDvsGDM.png" width="400"  />
 
+**Formula:**
+
+<img src="../res/GDwithMomentum.png" height="100"  />
+
+
+For better understanding:
+
+In gradient descent with momentum, while we are trying to speed up gradient descent we can say that:
+* derivatives are the acclerator
+* v's are the velocity
+* beta is the friction
+
 ## RMSprop Optimizer
 
 The RMSprop optimizer is similar to the gradient descent algorithm with momentum. The RMSprop optimizer restricts the oscillations in the vertical direction. Therefore, we can increase our learning rate and our algorithm could take larger steps in the horizontal direction converging faster. 
