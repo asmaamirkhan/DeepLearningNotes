@@ -64,9 +64,9 @@ In gradient descent with momentum, while we are trying to speed up gradient desc
 
 The RMSprop optimizer is similar to the gradient descent algorithm with momentum. The RMSprop optimizer restricts the oscillations in the vertical direction. Therefore, we can increase our learning rate and our algorithm could take larger steps in the horizontal direction converging faster. 
 
-The difference between RMSprop and gradient descent is on how the gradients are calculated
+The difference between RMSprop and gradient descent is on how the gradients are calculated, RMSProp gradients are calculated by the following formula:
 
-
+<img src="../res/RMSProp.png" height="180"  />
 
 ## Adam Optimizer :sparkles:
 
@@ -74,8 +74,11 @@ Adam stands for: **ADA**ptive **M**oment estimation
 
 Adam can be looked at as a combination of RMSprop and Stochastic Gradient Descent with momentum. It uses the squared gradients to scale the learning rate like RMSprop and it takes advantage of momentum by using moving average of the gradient instead of gradient itself like SGD with momentum. 
 
-> TODO: Add formulas 🚩🚩🚩🚩👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧
+> To summarize: Adam = RMSProp + GD with momentum + bias correction
 
+<img src="../res/AdamFormula.png" height="200"  />
+
+> 😵😵😵
 
 
 ## References
