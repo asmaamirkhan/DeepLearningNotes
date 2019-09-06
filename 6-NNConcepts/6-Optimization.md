@@ -56,9 +56,9 @@ The following image describes better: 🧐
 For better understanding:
 
 In gradient descent with momentum, while we are trying to speed up gradient descent we can say that:
-* derivatives are the acclerator
+* Derivatives are the acclerator
 * v's are the velocity
-* beta is the friction
+* _β_ is the friction
 
 ## RMSprop Optimizer
 
@@ -72,7 +72,7 @@ The difference between RMSprop and gradient descent is on how the gradients are 
 
 Adam stands for: **ADA**ptive **M**oment estimation
 
-Adam can be looked at as a combination of RMSprop and Stochastic Gradient Descent with momentum. It uses the squared gradients to scale the learning rate like RMSprop and it takes advantage of momentum by using moving average of the gradient instead of gradient itself like SGD with momentum. 
+Commonly used algorithm nowadays, Adam can be looked at as a combination of RMSprop and Stochastic Gradient Descent with momentum. It uses the squared gradients to scale the learning rate like RMSprop and it takes advantage of momentum by using moving average of the gradient instead of gradient itself like SGD with momentum. 
 
 > To summarize: Adam = RMSProp + GD with momentum + bias correction
 
@@ -80,6 +80,11 @@ Adam can be looked at as a combination of RMSprop and Stochastic Gradient Descen
 
 > 😵😵😵
 
+## Hyperparameters choice (recommended values)
+* _α_: needs to be tuned
+* _β1_: 0.9
+* _β2_: 0.999
+* _ε_: 10<sup>-8</sup>
 
 ## References
 * [Machine learning Gradient Descent](https://medium.com/datadriveninvestor/gradient-descent-5a13f385d403)
