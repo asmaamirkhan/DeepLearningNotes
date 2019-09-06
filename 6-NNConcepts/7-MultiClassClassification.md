@@ -17,7 +17,7 @@ So,  ŷ<sub>_j_</sub>  is a (C, 1) dimensional vector.
 ### Softmax Layer
 Softmax is implemented through a neural network layer just before the output layer. The Softmax layer must have the same number of nodes as the output layer.
 
-<img src="../res/SoftmaxLayer.PNG" width="300"  />
+<img src="../res/SoftmaxLayer.png" width="300"  />
 
 ### Softmax Activation Function
 
