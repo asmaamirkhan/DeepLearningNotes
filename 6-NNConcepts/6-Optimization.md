@@ -50,7 +50,7 @@ The following image describes better: 🧐
 
 **Formula:**
 
-<img src="../res/GDwithMomentum.png" height="100"  />
+<img src="../res/formulas/GDwithMomentum.png" height="100"  />
 
 
 For better understanding:
@@ -66,7 +66,7 @@ The RMSprop optimizer is similar to the gradient descent algorithm with momentum
 
 The difference between RMSprop and gradient descent is on how the gradients are calculated, RMSProp gradients are calculated by the following formula:
 
-<img src="../res/RMSProp.png" height="180"  />
+<img src="../res/formulas/RMSProp.png" height="180"  />
 
 ## Adam Optimizer :sparkles:
 
@@ -76,7 +76,7 @@ Commonly used algorithm nowadays, Adam can be looked at as a combination of RMSp
 
 > To summarize: Adam = RMSProp + GD with momentum + bias correction
 
-<img src="../res/AdamFormula.png" height="200"  />
+<img src="../res/formulas/AdamFormula.png" height="200"  />
 
 > 😵😵😵
 

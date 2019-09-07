@@ -20,7 +20,7 @@ Vectorization is used to speed up the Python _(or Matlab)_ code without using lo
 * Simpler and more readable code :sparkles:
 
 ### Simple Visualization
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/Vectorization.png" width="400"  />
+<img src="../res/Vectorization.png" width="400"  />
 
 
 ### Code Examples:
@@ -120,7 +120,7 @@ Similarly: If you have a matrix **A** that is `(m,n)` and you want to add / subt
 
 
 ### Simple Visualization
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/Broadcasting.jpg" width="400"  />
+<img src="../res/Broadcasting.jpg" width="400"  />
 
 
 ### Code Examples:

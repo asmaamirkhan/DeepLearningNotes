@@ -16,7 +16,7 @@ The main purpose of Activation Functions is to convert an input signal of a node
 
 **Formula:**
 
-<img src="../res/LinearActivation.png" height="30"  />
+<img src="../res/formulas/LinearActivation.png" height="30"  />
 
 
 **Graph:**
@@ -29,7 +29,7 @@ The main purpose of Activation Functions is to convert an input signal of a node
 
 **Formula:**
 
-<img src="../res/Sigmoid.png" height="40"  />
+<img src="../res/formulas/Sigmoid.png" height="40"  />
 
 
 **Graph:**
@@ -43,7 +43,7 @@ Almost always strictly superior than sigmoid function
 
 **Formula:**
 
-<img src="../res/Tanh.png" height="40"  />
+<img src="../res/formulas/Tanh.png" height="40"  />
 
 > Shifted version of the Sigmoid function 🤔
 
@@ -63,7 +63,7 @@ Another and very popular choice
 
 **Formula:**
 
-<img src="../res/Relu.png" height="50"  />
+<img src="../res/formulas/Relu.png" height="50"  />
 
 
 **Graph:**
@@ -80,7 +80,7 @@ So the derivative is 1 when z is positive and 0 when z is negative
 
 **Formula:**
 
-<img src="../res/LeakyRelu.png" height="50"  />
+<img src="../res/formulas/LeakyRelu.png" height="50"  />
 
 
 **Graph:**

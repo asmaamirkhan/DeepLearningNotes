@@ -7,7 +7,7 @@ If we have a feature that is all positive or all negative, this will make learni
 
 **Formula:**
 
-<img src="../res/NormalizedData.png" height="30"  />
+<img src="../res/formulas/NormalizedData.png" height="30"  />
 
 > Benifit: It makes cost function _J_ easier and faster to optimize 😋
 
@@ -18,7 +18,7 @@ It is too difficult to choose them all true at the first time so it is an iterat
 
 Idea ➡ Code ➡ Experiment ➡ Idea 🔁
 
-> So the point here is how to go efficiently go around this cycle 🤔
+> So the point here is how to go efficiently around this cycle 🤔
 
 ## Train / Dev / Test Splitting
 For good evaluation it is good to split dataset like the following:

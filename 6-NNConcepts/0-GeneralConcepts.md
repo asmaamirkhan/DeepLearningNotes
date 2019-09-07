@@ -1,13 +1,13 @@
 # The Problem in General 
 Given a dataset like:
 
-<img src="../res/Dataset.png" height="25"  />
+<img src="../res/formulas/Dataset.png" height="25"  />
 
 
 
 We want:
 
-<img src="../res/GoodOutput.png" height="25"  />
+<img src="../res/formulas/GoodOutput.png" height="25"  />
 
 
 ## Basic Concepts and Notations
@@ -28,8 +28,8 @@ We want:
 ## Gradient Descent
 General Formula:
 
-<img src="../res/GradientDescentW.png" height="40"  />
-<img src="../res/GradientDescentB.png" height="40"  />
+<img src="../res/formulas/GradientDescentW.png" height="40"  />
+<img src="../res/formulas/GradientDescentB.png" height="40"  />
 
 
 > `α` _(alpha)_ is the **Learning Rate** 

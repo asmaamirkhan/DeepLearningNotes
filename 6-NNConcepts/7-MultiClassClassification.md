@@ -21,7 +21,7 @@ Softmax is implemented through a neural network layer just before the output lay
 
 ### Softmax Activation Function
 
-<img src="../res/Softmax.png" height="50"  />
+<img src="../res/formulas/Softmax.png" height="50"  />
 
 
 ### Hard max function 
@@ -38,7 +38,7 @@ And so on 🐾
 
 ### Loss Function
 
-<img src="../res/SoftmaxLoss.png" height="50"  />
+<img src="../res/formulas/SoftmaxLoss.png" height="50"  />
 
 > Y and  ŷ are (C,m) dimensional matrices 👩‍🔧
 

@@ -28,9 +28,7 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 > My detailed notes on activaiton functions are [here](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/6-NNConcepts/3-ActivationFunctions.md) 👩‍🏫
 
 
-## Generalized Formula of Forward Propagation 
 
-<img src="../res/ForwardProp.png" height="70"  />
 
 ## Parameters Dimension Control
 
@@ -56,7 +54,7 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 **Vectorized Equations:**
 
-<img src="../res/ForwardProp.png" height="80"  />
+<img src="../res/formulas/ForwardProp.png" height="80"  />
 
 ## Summary of Back Propagation Process
 
@@ -67,16 +65,13 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 **Vectorized Equations:**
 
-<img src="../res/BackProp1.png" height="30"  />
+<img src="../res/formulas/BackProp1.png" height="30"  />
 <br>
+<img src="../res/formulas/BackProp2.png" height="50"  />
 <br>
-<img src="../res/BackProp2.png" height="50"  />
+<img src="../res/formulas/BackProp3.png" height="50"  />
 <br>
-<br>
-<img src="../res/BackProp3.png" height="50"  />
-<br>
-<br>
-<img src="../res/BackProp4.png" height="30"  />
+<img src="../res/formulas/BackProp4.png" height="30"  />
 
 ## To Put Forward Prop. and Back Prop. Together
 
