@@ -10,7 +10,10 @@
 * To summarize: we can construct our own metrics due to our models and values to be able to get the best choice 👩‍🏫
 
 ## Types of Metrics
+
 For better evalution we have to classify our metrics as the following:
+
+
 | Metric Type        | Description                                    |
 | ------------------ | ---------------------------------------------- |
 | Optimizing Metric  |  A metric that has to be in its **best** value |
