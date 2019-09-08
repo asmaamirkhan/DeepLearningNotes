@@ -70,16 +70,18 @@ If we aren't able to get wanted performance we should ask these questions to imp
 
 > We check the performance of the following solutions on dev set 
 
-1. Do we have high bias? If yes, it is a trainig problem, you may:
+1. Do we have high bias? If yes, it is a trainig problem, we may:
    * Try bigger network
    * Train longer
+   * Try better optimization algorithm
    * Try another NN architecture
   
 > We can say that it is a structural problem 🤔
 
-2. Do we have high variance? If yes, it is a dev set performance problem, you may:
+2. Do we have high variance? If yes, it is a dev set performance problem, we may:
    * Get more data
    * Do regularization
+     * L2, dropout, data augmentation
   
 > We can say that maybe it is data or algorithmic problem 🤔
 
