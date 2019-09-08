@@ -28,3 +28,4 @@ Perform well in **real world** ✨
 
 ## Table of Contents
 0. [Notes on Evalution](0-Evaluation.md)
+0. [Guidelins About Impelementation](1-Guidelines.md)
