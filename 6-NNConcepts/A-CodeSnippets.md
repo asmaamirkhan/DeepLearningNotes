@@ -11,7 +11,7 @@
 
 **Formula:**
 
-<img src="../res/Sigmoid.png" height="45"  />
+<img src="../res/formulas/Sigmoid.png" height="45"  />
 
 ```python
 def sigmoid(x):
@@ -38,7 +38,7 @@ def sigmoid(x):
 
 **Formula:**
 
-<img src="../res/SigmoidGradient.png" height="30"  />
+<img src="../res/formulas/SigmoidGradient.png" height="30"  />
 
 ```python
     def sigmoid_derivative(x):
@@ -91,7 +91,7 @@ def sigmoid(x):
 **Formula:**
 
 
-<img src="../res/Normalization.png" height="40"  />
+<img src="../res/formulas/Normalization.png" height="40"  />
 
 
 ```python
@@ -125,7 +125,7 @@ def normalizeRows(x):
 **Formula:**
 
 
-<img src="../res/Softmax.png" height="45"  />
+<img src="../res/formulas/Softmax.png" height="45"  />
 
 
 ```python
@@ -163,7 +163,7 @@ def normalizeRows(x):
 **Formula:**
 
 
-<img src="../res/L1Function.png" height="50"  />
+<img src="../res/formulas/L1Function.png" height="50"  />
 
 
 ```python
@@ -194,7 +194,7 @@ def L1(yhat, y):
 **Formula:**
 
 
-<img src="../res/L2Function.png" height="50"  />
+<img src="../res/formulas/L2Function.png" height="50"  />
 
 
 ```python
@@ -223,9 +223,9 @@ def L2(yhat, y):
 
 **Formula:**
 
-<img src="../res/GradW.png" height="50"  />
+<img src="../res/formulas/GradW.png" height="50"  />
 <br/>
-<img src="../res/GradB.png" height="50"  />
+<img src="../res/formulas/GradB.png" height="50"  />
 
 
 ```python
@@ -278,7 +278,7 @@ def propagate(w, b, X, Y):
 
 **Formula:**
 
-<img src="../res/OptimizationFunction.png" height="30"  />
+<img src="../res/formulas/OptimizationFunction.png" height="30"  />
 
 
 Where *α* is the learning rate
@@ -436,7 +436,7 @@ def forward_propagation(X, parameters):
 
 **Formula:**
 
-<img src="../res/CostNN.png" height="40"  />
+<img src="../res/formulas/CostNN.png" height="40"  />
 
 ```python
 def compute_cost(A2, Y):
@@ -529,7 +529,7 @@ def backward_propagation(parameters, cache, X, Y):
 
 **Formula:**
 
-<img src="../res/UpdatingNN.png" height="40"  />
+<img src="../res/formulas/UpdatingNN.png" height="40"  />
 
 ```python
 def update_parameters(parameters, grads, learning_rate = 1.2):
