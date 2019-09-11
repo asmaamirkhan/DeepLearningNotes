@@ -1,5 +1,5 @@
 # Transfer Learning
-Concepts of transfer learning
+In short: Learning form one task and applying knowledge to seperate tasks 🛰🚙
 
 ## What is Transfer Learning?
 Transfer learning is a machine learning technique where a model trained on one task is re-purposed on a second related task. In addition, it is an optimization method that allows rapid progress or improved performance when modeling the second task. Transfer learning only works in deep learning if the model features learned from the first task are general.
@@ -8,7 +8,7 @@ Transfer learning is a machine learning technique where a model trained on one t
 
 ## Traditional ML vs Transfer Learning
 
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/MLvsTL.png" width="450"  />
+<img src="../res/MLvsTL.png" width="450"  />
 
 
 ## Problem
@@ -18,18 +18,30 @@ We can drop out some neurons that has similar weights with neighbors, so that ov
 
 ### Comparison
 <p float="left">
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/NNWithoutDropout.JPG" width="300"  />
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/NNWithDropout.JPG" width="300"  />
+    <img src="../res/NNWithoutDropout.JPG" width="300"  />
+    <img src="../res/NNWithDropout.JPG" width="300"  />
 </p>
 
 > An NN before and after dropout
 
 <p float="left">
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/AccuracyWithoutDropOut.JPG" width="300"  />
-    <img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/AccuracyWithDropOut.JPG" width="300"  />
+    <img src="../res/AccuracyWithoutDropOut.JPG" width="300"  />
+    <img src="../res/AccuracyWithDropOut.JPG" width="300"  />
 </p>
 
 > Accuracy before and after dropout
+
+## When is it practical?
+It is practical when we have a lot of data for problem that we are transferring from and usually relativly less data for the problem we are transferring to 🕵️‍
+
+**More accurately:**
+
+For `task A` to `task B`, it is sesnible to do transfer learning **from A to B** when:
+
+* Task A and task B have the same output x 🚩
+* We have a lot more data for task A than task B ⭐
+* Low level features from task A could be helpful for learning task B 🔍
+
 
 ## References
 * [More about transfer learning in Tensorflow](https://www.tensorflow.org/tutorials/images/transfer_learning)
