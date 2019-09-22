@@ -8,15 +8,8 @@ Improving Neural Networks used in Computer Vision problems
 | Convolutoin     | Applying some filter on an image so certain features in the image get emphasized |
 | Pooling         | A way of compressing an image  |
 | 2*2 max pooling | For every 4 neighbor pixels the biggest one will survive |
+| Padding         | Adding additional border(s) to the image before convolution  |
 
-## Convolution Examples
-<img src="../res/ConvolutionExH.JPG" width="450"  />
-
-> Result: horizontal lines pop out
-
-<img src="../res/ConvolutionExV.JPG" width="450"  />
-
-> Result: vertical lines pop out
 
 ## Notes on performance :dizzy:
 * Training speed of a CNN is too slower than plain NN because of its computational complexity :turtle:
