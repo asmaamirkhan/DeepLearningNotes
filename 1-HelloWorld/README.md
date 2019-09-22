@@ -8,11 +8,11 @@ Keras is a high-level **neural networks API**, written in Python and capable of 
 | Term            | Description   |
 | --------------- |---------------|
 | Dense           | A layer of neurons in a neural network      |
-| Loass Function  | A mathematical way of measuring how wrong your predictions are |
+| Loss Function  | A mathematical way of measuring how wrong your predictions are |
 | Optimizer       | An algorithm to find parameter values which correspond to minimum value of loss function |
 
 ## The Simplest Neural Network
-It contains one hidden layer with one neuron.
+It contains one layer with one neuron.
 
 Code example:
 ```python
@@ -48,7 +48,7 @@ print(model.predict([10.0]))
 ```
 
 ## Traditional Programming vs Machine Learning
-<img src="https://github.com/asmaamirkhan/TensorflowGuide/blob/master/res/TraditionalProgvsML.JPG" width="350"  />
+<img src="../res/TraditionalProgvsML.JPG" width="350"  />
 
 ## References
 * [Official Documentation of Keras](https://keras.io/)
