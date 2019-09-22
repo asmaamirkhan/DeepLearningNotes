@@ -5,7 +5,7 @@ My notes (and codes) on deep learnig :dizzy:
 0. [Theoric Concepts of Neural Networks](./0-NNConcepts)
 0. [Hello World of Deep Learning With Neural Networks](./1-HelloWorld)
 0. [Introduction to Computer Vision](./2-Intro2ComputerVision)
-0. [Theoric Concepts of Neural Networks](./3-CNNConcepts)
+0. [Theoric Concepts of Convolutional Neural Networks](./3-CNNConcepts)
 0. [Works on Convolutional Neural Networks](./4-CNNWorks)
 0. [Transfer Learning](./5-TransferLearning)
 0. [Image Augmentation](./6-ImageAugmentation)
