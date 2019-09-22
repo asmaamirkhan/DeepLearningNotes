@@ -2,13 +2,13 @@
 My notes (and codes) on deep learnig :dizzy:
 
 ## Table of Contents
-0. [Hello World of Deep Learning with Neural Networks](./0-HelloWorld)
-0. [Introduction to Computer Vision](./1-Intro2ComputerVision)
-0. [Introduction to Convolutional Neural Networks](./2-Intro2CNN)
-0. [Works on Convolutional Neural Networks](./3-CNNWorks)
-0. [Image Augmentation](./4-ImageAugmentation)
+0. [Theoric Concepts of Neural Networks](./0-NNConcepts)
+0. [Hello World of Deep Learning With Neural Networks](./1-HelloWorld)
+0. [Introduction to Computer Vision](./2-Intro2ComputerVision)
+0. [Theoric Concepts of Neural Networks](./3-CNNConcepts)
+0. [Works on Convolutional Neural Networks](./4-CNNWorks)
 0. [Transfer Learning](./5-TransferLearning)
-0. [Theoric Concepts of Neural Networks](./6-NNConcepts)
+0. [Image Augmentation](./6-ImageAugmentation)
 0. [Applied Machine Learning](./7-AppliedML)
 
 ## Extensions
