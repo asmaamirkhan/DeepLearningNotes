@@ -3,7 +3,7 @@
 ## Important Terms
 | Term            | Description   |
 | --------------- |---------------|
-| Convolutoin     | Applying some filter on an image so certain features in the image get emphasized |
+| Convolution     | Applying some filter on an image so certain features in the image get emphasized |
 | Padding         | Adding additional border(s) to the image before convolution  |
 
 
@@ -22,7 +22,8 @@ We did element wise product then we get the sum of the result matrix; so:
 =
 -7
 ```
-And so on for other elemnts 🙃
+And so on for other elements 🙃
+
 
 ## Edge Detection
 An application of convolution operation
@@ -107,6 +108,9 @@ Hence:
 
 > For convention f is chosen to be odd 👩‍🚀
 
+
+## Visualization 👀
+<img src="../res/Conv.gif" width="250"  />
 
 ## References
 * [More on Convolutional Neural Networks](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF)
