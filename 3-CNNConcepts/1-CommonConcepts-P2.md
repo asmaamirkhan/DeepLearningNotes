@@ -3,7 +3,8 @@
 ## Important Terms
 | Term                | Description   |
 | ------------------- |---------------|
-| Strided Convolutoin | Convolving by `s` steps |
+| Strided Convolution | Convolving by `s` steps |
+| Convolutions Over Volume | Applying convs on n-dimensional input (such as an RGB image) |
 
 
 ## Strided Convolution
@@ -19,4 +20,21 @@ For an `n*n` image and `f*f` filter, with `p` padding and stride `s`; the output
 
 <img src="../res/ConvResult.PNG" width="300"  />
 
+## Convolutions Over Volume
+To apply convoltion operation on an RGB image; for example on 10x10 px RGB image, technically the image's dimension is 10x10x3 so we can apply for example a 3x3x3 filter _or fxfx3_ 🤳
 
+
+> Filters can be applied on a special color channel 🎨
+
+### Visualization
+
+<img src="../res/ConvVolume.png" width="400"  />
+
+## Multiple Filters
+
+<img src="../res/ConvMulti.png" width="400"  />
+
+
+
+## References
+- [Convolutional Neural Networks (CNN) Introduction (😍✨✨✨)](https://indoml.com/2018/03/07/student-notes-convolutional-neural-networks-cnn-introduction/)
