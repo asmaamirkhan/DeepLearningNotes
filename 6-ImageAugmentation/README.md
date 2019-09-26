@@ -43,7 +43,7 @@ train_datagenerator = ImageDataGenerator(
 |  `fill_mode` | A strategy used for filling in newly created pixels, which can appear after a rotation or a width/height shift. |
 
 
-> Full code example is [here](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/4-ImageAugmentation/0-ImageAugmentation.ipynb) 👈
+> Full code example is [here](./0-ImageAugmentation.ipynb) 👈
 
 ## References
 * [More About Image Augmentation](https://github.com/keras-team/keras-preprocessing)

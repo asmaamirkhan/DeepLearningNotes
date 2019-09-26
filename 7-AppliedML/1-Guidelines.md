@@ -54,7 +54,7 @@ Even though training and dev errors are same we will apply different tactics for
 * .....
 
 ## My Detailed Notes on Bias / Variance and Related Procedures
-* [Here 🐾](../6-NNConcepts/4-PracticalAspects.md)
+* [Here 🐾](../0-NNConcepts/4-PracticalAspects.md)
 
 ## It is recommended to 👀
 When we have a new project it is recommended to produce an initial model and then iterate over it until you get the best model, this is more practical than spending time building model theoretical and thinking about the best hyperparameter *-which is almost impossible 🙄-*
