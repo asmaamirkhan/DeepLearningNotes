@@ -35,6 +35,23 @@ To apply convoltion operation on an RGB image; for example on 10x10 px RGB image
 <img src="../res/ConvMulti.png" width="400"  />
 
 
+## Types of Layer In A Convolutional Network
+
+| Layer                | Description   |
+| -------------------- |---------------|
+| Convolution `CONV`   | Filters to estract features |
+| Pooling `POOL`       | A technique to reduce size of representation and to speed up the computations |
+| Fully Connected `FC` | standard single neural network layer (one dimensional) |
+
+
+
+> Usually when people report number of layers in an NN they just report the number off layers that have weights and params 
+
+> Convention: `CONV1` + `POOL1` = `LAYER1`
+
+## Why Convolotions?
+- Better performance since they decrease the parameters that will be tuned 💫
+
 
 ## References
 - [Convolutional Neural Networks (CNN) Introduction (😍✨✨✨)](https://indoml.com/2018/03/07/student-notes-convolutional-neural-networks-cnn-introduction/)
