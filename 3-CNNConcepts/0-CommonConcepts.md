@@ -23,6 +23,10 @@ We did element wise product then we get the sum of the result matrix; so:
 ```
 And so on for other elements 🙃
 
+### Visualization of Calculation 👼
+
+<img src="../res/ConvCal.gif" width="350"  />
+
 
 ## Edge Detection
 An application of convolution operation
@@ -78,7 +82,6 @@ If we have an `n*n` image and we convolove it by `f*f` filter the the output ima
 
 ### Solution
 We can _pad_ the image 💪 
-
 
 
 ## References
