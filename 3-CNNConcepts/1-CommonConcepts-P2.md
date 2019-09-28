@@ -3,8 +3,41 @@
 ## Important Terms
 | Term                | Description   |
 | ------------------- |---------------|
+| Padding             | Adding additional border(s) to the image before convolution  |
 | Strided Convolution | Convolving by `s` steps |
 | Convolutions Over Volume | Applying convs on n-dimensional input (such as an RGB image) |
+
+## Padding
+Adding an additional one border _or more_ to the image so the image is n+2*n+2 and after convolution we end up with n * n image which is the origianl size of the image
+
+`p` = number of added borders
+
+> For convention: it is filled by 0
+
+## How much to pad?
+For better understanding let's say that we have two concepts:
+
+### Valid Convolutions
+It means no padding so:
+
+`n x n`  *  `f x f`  ➡  `n-f+1 x n-f+1`
+
+### Same Convolutions
+Pad so that output size is the **same** as the input size.
+
+So we want that 🧐: 
+
+`n+2p-f+1` = `n`
+
+Hence:
+
+`p` = `(f-1)/2`
+
+> For convention f is chosen to be odd 👩‍🚀
+
+
+### Visualization 👀
+<img src="../res/Conv.gif" width="250"  />
 
 
 ## Strided Convolution
