@@ -1,6 +1,4 @@
-# Popular Convolutional Neural Networks
-
-## Classic Convolutional Neural Networks
+# Classic Convolutional Neural Networks
 | Network    | First Usage   |
 | ---------- |---------------|
 | LeNet-5    | Hand written digit classification |
@@ -8,7 +6,7 @@
 | VGG-16     | ImageNet Dataset |
 
 
-## LeNet-5
+## 🔢 LeNet-5
 LeNet-5 is a very simple network - By modern standards -. It only has 7 layers;
 -  among which there are 3 convolutional layers _(C1, C3 and C5)_
 -  2 sub-sampling (pooling) layers _(S2 and S4)_
@@ -22,7 +20,7 @@ LeNet-5 is a very simple network - By modern standards -. It only has 7 layers;
 ### Summary of the network 🙌
 <img src="../res/LeNetSummay.jpg" width="450"  />
 
-## AlexNet
+## 🛸 AlexNet
 
 - Too similar to LeNet-5
 - It has more filters per layer
@@ -39,7 +37,7 @@ LeNet-5 is a very simple network - By modern standards -. It only has 7 layers;
 ### Summary of the network 🙌
 <img src="../res/AlexNetSummary.jpg" width="450"  />
 
-## VGG-16
+## 🌱 VGG-16
 
 ### Visualization of the network
 <img src="../res/VGGArch.jpg" width="500"  />
@@ -52,8 +50,6 @@ LeNet-5 is a very simple network - By modern standards -. It only has 7 layers;
 
 ### Drawbacks 😪
 - It is painfully slow to train (It has 138 million parameters 🙄)
-
-
 
 ## Implementation
 - [Implementation of AlexNet](https://github.com/pytorch/vision/blob/master/torchvision/models/alexnet.py   )
