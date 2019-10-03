@@ -14,6 +14,27 @@ Augmentation simply amends our images on-the-fly while training using **transfor
 > Note: Doing image augmentation in runtime is prefered rather than to do it on memory to keep original data as it is :thinking:
 
 
+## Image Augmentation Techniques
+### Mirroring 
+Flipping the image horizontally
+
+#### Example
+<img src="../res/Mirroring.jpg" width="400"  />
+
+
+### Random Cropping 
+Picking an image and taking random crops
+
+#### Example
+<img src="../res/Cropping.jpg" width="400"  />
+
+### Color Shifting 
+Adding and subtracting some values from color channels
+
+#### Example
+<img src="../res/ColorShifting.jpg" width="400"  />
+
+
 ## Code Example
 
 The following code is used to do image augmentation
@@ -48,3 +69,4 @@ train_datagenerator = ImageDataGenerator(
 ## References
 * [More About Image Augmentation](https://github.com/keras-team/keras-preprocessing)
 * [More About Image Pre-processing](https://keras.io/preprocessing/image/)
+* [Detailed Image Augmentation Techniques](http://datahacker.rs/020-cnn-data-augmentations/)
