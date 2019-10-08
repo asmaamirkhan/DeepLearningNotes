@@ -2,7 +2,7 @@
 | Approach   | Description   |
 | ---------- |---------------|
 | Residual Networks | An approach to avoid **vanishing gradient** issue in deep NNs |
-| One By One Convolution | TODO |
+| One By One Convolution | Applying filters on **color channels** |
 
 ## Residual Networks
 ### Problem 🙄
@@ -25,6 +25,21 @@ The core idea of ResNet is introducing a so-called **identity shortcut connectio
 - Easy for one of the blocks to learn an **identity** function
 - Can go deeper without hurting the performance 
   -  In the Plain NNs, because of the vanishing and exploding gradients problems the performance of the network suffers as it goes deeper. 
+
+## One By One Convolutions
+### Propblem (Or motivation 🤔)
+We can reduce the size of inputs by applying pooling and various convolution, these filteres can reduce the height and the width of the input image, what about color channels 🌈, in other words; what about the **depth**?
+
+### Solution
+We know that the depth of the output of a CNN is equal to the number of filters that we applied on the input;
+
+<img src="../res/ConvMulti.png" width="400"  />
+
+In the example above, we applied **2** filters, so the output depth is **2**
+
+How can we use this info to improve our CNNs? 🙄
+
+Let's say that we have a `28x28x192` dimensional input, if we apply `32` filters at `1x1x192` dimension and [SAME](./1-CommonConcepts-P2.md#same-convolutions) padding our output will become `28x28x32` ✨
 
 ## Read More
 - [Detailed ResNets](https://engmrk.com/residual-networks-resnets/)
