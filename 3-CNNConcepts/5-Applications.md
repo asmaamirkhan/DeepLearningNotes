@@ -10,10 +10,10 @@
 ## 🧒👧 Face Verification
 ### Comparison
 
-| Term              | Description                              | Input           | Output       | Problem Class |
+| Term              | Question                                 | Input           | Output       | Problem Class |
 | ----------------- | ---------------------------------------- | --------------- | ------------ | ------------- |
-| Face Verification | Cheking that this is the wanted person   | Face image / ID | True / False | 1:1           |
-| Face Recognition  | Assigning ID to the input face image     | Face image      | ID of `K` faces in DB | 1:K  |
+| Face Verification | Is this the claimed person? 🕵️‍♂️          | Face image / ID | True / False | 1:1           |
+| Face Recognition  | Who is this person? 🧐                   | Face image      | ID of `K` faces in DB | 1:K  |
 
 ## Solving Approach
 
