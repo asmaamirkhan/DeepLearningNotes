@@ -4,6 +4,7 @@
 | ----------------- | ------------- |
 | Face Verification | Recognizing if that the given image and ID are belonging to the same person |
 | Face Recognition  | Assigning ID to the input face image |
+| Neural Style Transfer  | Converting an image to another by learning the style from a specific image  |
 
 
 ## 🧒👧 Face Verification
@@ -41,11 +42,11 @@ A CNN which is used in face verification context, it recievs two images as input
 
 > In other words: it encodes the given images
 
-Visualization
+Visualization:
 
 <img src="../res/SiameseConcept.png" width="400"  />
 
-Architecture
+Architecture:
 
 <img src="../res/SiameseArch.png" width="400"  />
 
@@ -67,3 +68,37 @@ Therefore, by using this loss function we:
 For training the network, we:
 - Take an anchor image and randomly sample positive and negative images and compute its loss function
 - Update its gradients
+
+## 🌠 Neural Style Transfer
+Generating an image **G** by giving a _content image_ **C** and a _style image_ **S**
+
+Visualization
+
+<img src="../res/NStyleTransfer.png" width="400"  />
+
+So to generate **G**, our NN has to learn features from **S** and applying suitable filters on **C**
+
+### 👩‍🎓 Methodology
+Usually we optimize the parameters -*weights and biases*- of the NN to get the wanted performance, here in Neural Style Transfer we start from a blank image composed of random pixel values, and we optimize a cost function by changing the pixel values of the image 🧐
+
+In other words, we:
+- Start with a blank image consists of **random** pixels
+- Define some cost function _J_
+- Iteratively modify each pixel so as to minimize our cost function
+
+> Long story short: While training NNs we update our weights and biases, but in style transfer, we keep the weights and biases constant, and instead update our image itself 🙌
+
+#### ⌚ Cost Function
+We can define _J_ as 
+
+<img src="../res/NSTCost.png" height="30"  />
+
+Which:
+- J<sub>Content</sub> denotes the similarity between G and C
+- J<sub>Style</sub> denotes the similarity between G and S,
+- _α_ and _β_ hyperparameters
+  
+
+
+
+
