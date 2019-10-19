@@ -10,7 +10,7 @@ My notes (and codes) on deep learnig :dizzy:
 0. [Transfer Learning](./5-TransferLearning)
 0. [Image Augmentation](./6-ImageAugmentation)
 0. [Applied Machine Learning](./7-AppliedML)
-0. [Applied Machine Learning](./8-ObjectDetection)
+0. [Object Detection](./8-ObjectDetection)
 
 ## Extensions
 1. [PDFs that I found and recommend](./Z-UsefulPDFs) 👩‍🏫
