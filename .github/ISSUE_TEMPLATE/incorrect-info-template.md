@@ -1,5 +1,5 @@
 ---
-name: Incorrect Info Template
+name: ⚠ Incorrect Info Template
 about: Create a report to help me fix incorrect contents
 title: "⚠ Incorrect Info"
 labels: "⚠ incorrect info"
