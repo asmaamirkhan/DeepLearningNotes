@@ -8,12 +8,12 @@ assignees: ''
 ---
 
 **📜 Describe the incorrect info**
-A clear and concise description of what the incorrect info is.
+<!-- A clear and concise description of what the incorrect info is -->
 
 **🔗 Link of the file that contains incorrect info**
 
 **✅ The correct info**
-Give me the correct info or provide a link that I can follow to learn the correct one.
+<!-- Give me the correct info or provide a link that I can follow to learn the correct one -->
 
 **🚩 Additional context**
-Add any other context about the problem here.
+<!-- Add any other context about the problem here -->
