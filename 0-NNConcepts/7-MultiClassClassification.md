@@ -1,4 +1,4 @@
-## Softmax Regression
+# Softmax Regression
 **We can learn it by likening it to logistic regression:** 😋
 
 Recall that logistic regression produces a decimal between 0 and 1.0. For example, a logistic regression output of 0.8 from an email classifier suggests an 80% chance of an email being spam and a 20% chance of it being not spam. Clearly, the sum of the probabilities of an email being either spam or not spam is 1.0.
