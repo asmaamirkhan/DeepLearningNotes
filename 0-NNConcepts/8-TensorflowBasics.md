@@ -1,6 +1,6 @@
-# Brief Introduction to Tensorflow
+# 👓 Brief Introduction to Tensorflow
 
-## Main flow of programs in Tensorflow:
+## 🚩 Main flow of programs in Tensorflow:
 1. Create Tensors (variables) that are not yet executed/evaluated.
 1. Write operations between those Tensors.
 1. Initialize your Tensors.
@@ -9,7 +9,7 @@
 
 > To summarize, remember to initialize your variables, create a session and run the operations inside the session. 👩‍🏫
 
-## Code Example
+## 👩‍💻 Code Example
 To calculate the following formula:
 
 _loss = L(ŷ, y) = (ŷ<sup>(i)</sup>-y<sup>(i)</sup>)<sup>2</sup>_:
@@ -34,7 +34,7 @@ with tf.Session() as session:
 
 > when we created a variable for the loss, we simply defined the loss as a function of other quantities, but did not evaluate its value. To evaluate it, we had to the initializer.
 
-## Note on variable initalization
+## ❗ Note on variable initalization
 
 Fow the following code:
 
@@ -56,7 +56,7 @@ As expected, we will not see 20! We got a tensor saying that the result is a ten
 
 </details>
 
-## Placeholders in TF
+## 📦 Placeholders in TF
 A placeholder is an object whose value you can specify **only later**. To specify values for a placeholder, we can pass in values by using a `feed dictionary`. Below, a placeholder has been created for x. This allows us to pass in a number later when we run the session.
 
 ```python
@@ -65,7 +65,7 @@ print(sess.run(2 * x, feed_dict = {x: 3}))
 sess.close()
 ```
 
-## More examples
+## 🎀 More examples
 <details>
 <summary>Computing sigmoid function with TF</summary>
 

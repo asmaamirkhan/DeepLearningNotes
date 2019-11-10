@@ -1,7 +1,7 @@
-# Notes on Implementation of Neural Networks
+# 👷‍♀️ Notes on Implementation of Neural Networks
 
 
-## Common Terms
+## 📚 Common Terms
 
 | Term             | Description   |
 | ---------------  |---------------|
@@ -12,18 +12,18 @@
 
 > A scalar is considered to have rank zero ❗❕
 
-## Vectorization
+## 🔩 Vectorization
 Vectorization is used to speed up the Python _(or Matlab)_ code without using loop. Using such a function can help in minimizing the running time of code efficiently. Various operations are being performed over vector such as _dot product_ of vectors, _outer products_ of vectors and _element wise multiplication_.
 
-### Advantages
+### ➕ Advantages
 * Faster execution (allows parallel operations) 👨‍🔧
 * Simpler and more readable code :sparkles:
 
-### Simple Visualization
+### 👀 Simple Visualization
 <img src="../res/Vectorization.png" width="400"  />
 
 
-### Code Examples:
+### 👩‍💻 Code Examples:
 Finding the _dot product_ of two arrays:
 
 ```python
@@ -60,7 +60,7 @@ sigmoid = 1 / (1 + np.exp(-array))
 ```
 </details>
 
-### Common Supported Operations in Numpy
+### 👩‍💻 Common Supported Operations in Numpy
 <details>
 <summary>Common single array functions</summary>
 
@@ -106,7 +106,7 @@ sigmoid = 1 / (1 + np.exp(-array))
 
 
 
-## Broadcasting
+## 💉 Broadcasting
 The term broadcasting describes how _numpy_ treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is **“broadcast”** across the larger array so that they have compatible shapes.
 
 **Practically:**
@@ -119,11 +119,11 @@ Similarly: If you have a matrix **A** that is `(m,n)` and you want to add / subt
 > Long story short: Arrays (or matrices) with different sizes can not be added, subtracted, or generally be used in arithmetic. So it is a way to make it possible by stretching shapes so they have compatible shapes :sparkles:
 
 
-### Simple Visualization
+### 👀 Simple Visualization
 <img src="../res/Broadcasting.jpg" width="400"  />
 
 
-### Code Examples:
+### 👩‍💻 Code Examples:
 Adding a (1,n) row vector to a (2,n) matrix
 
 ```python
@@ -149,9 +149,9 @@ print(a - c)
 ```
 </details>
 
-## Rank 1 Array
+## 1️⃣ Rank 1 Array
 
-### Code Example
+### 👩‍💻 Code Example
 
 ```python
 x = np.random.rand(5)
@@ -172,7 +172,7 @@ print('shape:', z.shape, 'rank:', z.ndim)
 
 > It is recommended not to use rank 1 arrays
 
-### Why it is recommended not to use 1 rank arrays?
+### 🤔 Why it is recommended not to use 1 rank arrays?
 Rank 1 arrays may cause bugs that are difficult to find and fix, for example:
 
 
@@ -209,5 +209,5 @@ print(np.dot(a,b))
 
 > Conclusion: We have to avoid using rank 1 arrays in order to make our codes more bug-free and easy to debug :bug:
 
-## References
+## 🧐 References
 * [Official Documentation of Broadcasting in NumPy](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html)

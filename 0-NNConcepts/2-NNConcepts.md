@@ -1,15 +1,14 @@
-# Concepts of Artificial Neural Networks
+# 📚 Concepts of Artificial Neural Networks
 
 Basic Concepts of ANN
 
-## Basic Neural Network
+## 🍭 Basic Neural Network
 
 <img src="../res/BasicANN.png" width="300"  />
 
 > **Convention:** The NN in the image called to be a 2-layers NN since input layer is not being counted 📢❗
 
-## Common Terms
-
+## 📚 Common Terms
 
 | Term             | Description   |
 | ---------------  |---------------|
@@ -23,14 +22,14 @@ Basic Concepts of ANN
 | n<sup>[l]</sup>  |  Number of units in _l_ layer |
 
 
-## What does an artificial neuron do?
+## 🧠 What does an artificial neuron do?
 It calculates a _weighted sum_ of its input, adds a bias and then decides whether it should be _fired_ or not due to an activaiton function
 > My detailed notes on activaiton functions are [here](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/6-NNConcepts/3-ActivationFunctions.md) 👩‍🏫
 
 
 
 
-## Parameters Dimension Control
+## 👩‍🔧 Parameters Dimension Control
 
 | Parameter        | Dimension     |
 | ---------------  |---------------|
@@ -42,10 +41,7 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 > Making sure that these dimensions are true help us to write better and bug-free :bug: codes
 
-
-
-
-## Summary of Forward Propagation Process
+## 🎈 Summary of Forward Propagation Process
 
 |                  |                 |
 | ---------------- | --------------- |
@@ -56,7 +52,7 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 <img src="../res/formulas/ForwardProp.png" height="80"  />
 
-## Summary of Back Propagation Process
+## 🎈 Summary of Back Propagation Process
 
 |                  |                 |
 | ---------------- | --------------- |
@@ -73,13 +69,13 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 <br>
 <img src="../res/formulas/BackProp4.png" height="30"  />
 
-## To Put Forward Prop. and Back Prop. Together
+## ➰➰ To Put Forward Prop. and Back Prop. Together
 
 <img src="../res/ForBackSummary.png" width="500"  />
 
 > 😵🤕
 
-## Parameters vs Hyperparameters
+## ✨ Parameters vs Hyperparameters
 
 **Parameters:**
 * W<sup>[<i>1</i>]</sup>, W<sup>[<i>2</i>]</sup>, W<sup>[<i>3</i>]</sup>

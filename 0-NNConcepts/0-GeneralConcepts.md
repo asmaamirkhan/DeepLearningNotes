@@ -1,16 +1,14 @@
-# The Problem in General 
+# 🔎 The Problem in General 
 Given a dataset like:
 
 <img src="../res/formulas/Dataset.png" height="25"  />
-
-
 
 We want:
 
 <img src="../res/formulas/GoodOutput.png" height="25"  />
 
 
-## Basic Concepts and Notations
+## 📚 Basic Concepts and Notations
 
 | Concept         | Description   |
 | --------------- |---------------|
@@ -25,7 +23,7 @@ We want:
 
 > In other words: The `Cost Function` measures how well our parameters `w` and `b` are doing on the training set, so the best `w` and `b` are the values that minimize `𝙹(w, b)` as possible
 
-## Gradient Descent
+## 📉 Gradient Descent
 General Formula:
 
 <img src="../res/formulas/GradientDescentW.png" height="40"  />
@@ -34,7 +32,7 @@ General Formula:
 
 > `α` _(alpha)_ is the **Learning Rate** 
 
-## Learning Rate
+## 🥽 Learning Rate
 It is a positive scalar determining the size of the step of each iteration of gradient descent due to the corresponded estimated error each time the model weights are updated, so, it controls how quickly or slowly a neural network model learns a problem.
 
 **Good Learning Rate:**
@@ -46,6 +44,6 @@ It is a positive scalar determining the size of the step of each iteration of gr
 <img src="../res/BadSGD.gif" width="300"  />
 
 
-## References
+## 🧐 References
 * [Introduction to Artificial Neural Networks (ANN)](https://searchenterpriseai.techtarget.com/definition/neural-network)
 * [More on Learning Rate](https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/)

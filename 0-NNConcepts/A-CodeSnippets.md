@@ -1,10 +1,10 @@
-# Pyhton Code Snippets on The Basics of Neural Networks
+# 👩‍💻 Pyhton Code Snippets on The Basics of Neural Networks
 
 [//]: ------------------------------------------------------------------------------
 <!-- ------------------------ General Functions --------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-## General Code Snippets in ML
+## 📚 General Code Snippets in ML
 
 <details>
 <summary>Sigmoid Function</summary>
@@ -343,7 +343,7 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
 <!-- ------------------------ Basic NN Functions ------------------------------- -->
 [//]: ------------------------------------------------------------------------------
 
-## Basic Code Snippets for Simple NN
+## 🕸 Basic Code Snippets for Simple NN
 
 Functions of 2-layer NN
 > Input layer, 1 hidden layer and output layer
