@@ -54,3 +54,45 @@ Region proposals still bottlenecks in Fast R-CNN algorithm and they affect its p
 
 ## ➰ Faster R-CNN _(Fast Region Based Convoltional Neural Networks)_
 Faster R-CNN fixes the problem of selective search by replacing it with Region Proposal Network (RPN) 🤗
+
+So, it depends on:
+- We feed the **whole** image to the CNN
+- The CNN generates a feature map
+- We apply Region proposal network is applied on feature map 
+- The RPN returns the object proposals along with their _objectness_ score
+  - Problem of selective search is solved 🎉
+- Then, we resize the regions into a fixed size (using ROI pooling layer)
+- Finally, we feed regions to fully connected layer (to classify)
+
+### 👀 Visualization
+
+<img src="../res/FasterRCNN.png" width="400"  />
+
+
+### 👩‍🏫 How does RPN works? 
+1. RPN takes a feature map from CNN
+2. Uses 3*3 window over the map
+3. Generates _k_ anchor boxes
+   - Boxes are in different shapes and sizes
+
+Anchor boxes are fixed sized boundary boxes that are placed throughout the image and have different shapes and sizes. For each anchor, RPN predicts two things:
+
+1. The probability that an anchor is an object
+   - (it does not consider which class the object belongs to)
+2. The bounding box regressor for adjusting the anchors to better fit the object
+
+#### 👀 Visualization
+
+<img src="../res/RPN.png" width="400"  />
+
+## 😵 To put them all together
+
+| Algorithm       | Summary                                                            | Limitations           |
+| --------------- | ------------------------------------------------------------------ | --------------------- |
+| 🔷 R-CNN        |  Extracts around 2000 regions from images using _selective search_ | High computation time |
+| 💫 Fast R-CNN   |  Image is passed once to CNN to extract feature maps, regions are extracted by selective search then | Selective search is slow |
+| ➰ Faster R-CNN |  Replaces the selective search method with RPN          | slow (?)  |
+
+## 🔎 Read More
+- [A Step-by-Step Introduction to the Basic Object Detection Algorithms](https://www.analyticsvidhya.com/blog/2018/10/a-step-by-step-introduction-to-the-basic-object-detection-algorithms-part-1/)
+- [Deep Learning for Object Detection: A Comprehensive Review](https://towardsdatascience.com/deep-learning-for-object-detection-a-comprehensive-review-73930816d8d9)
