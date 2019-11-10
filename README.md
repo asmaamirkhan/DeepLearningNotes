@@ -1,5 +1,5 @@
 # 💫 Deep Learning Notes
-My notes (and codes) on deep learnig :dizzy:
+My notes (and codes) on deep learnig
 
 ## 📑 Table of Contents
 0. [👩‍🏫 Theoric Concepts of Neural Networks](./0-NNConcepts)
@@ -13,8 +13,8 @@ My notes (and codes) on deep learnig :dizzy:
 0. [🕵️‍♀️ Object Detection](./8-ObjectDetection)
 
 ## 💉 Extensions
-1. [📚 PDFs that I found and recommend](./Z-UsefulPDFs) 👩‍🏫
-1. [👀 Visual materials for quick info](./Z-QuickVisualInfo) :runner:
+1. [📚 PDFs that I found and recommend](./Z-UsefulPDFs) 
+2. [👀 Visual materials for quick info](./Z-QuickVisualInfo) 
 
 
 ## 🙌 Quote
