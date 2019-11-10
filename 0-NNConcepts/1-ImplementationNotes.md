@@ -78,7 +78,7 @@ sigmoid = 1 / (1 + np.exp(-array))
 </details>
 
 <details>
-<summary>Common nultiple array functions</summary>
+<summary>Common multiple array functions</summary>
 
 * Applying **arithmetic** operations on corresponded elements in the arrays
   * `np.add(x, y)`, `np.subtract(x, y)`, `np.divide(x, y)`, `np.multiply(x, y)`

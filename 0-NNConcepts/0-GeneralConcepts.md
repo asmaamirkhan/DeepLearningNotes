@@ -16,7 +16,7 @@ We want:
 | x<sup>(i)</sup> | `i`th example in the dataset  |
 | `ŷ`             | Predicted output |
 | Loss Function `𝓛(ŷ, y)` | A function to compute the error for a **single** training example |
-| Cost Gunction `𝙹(w, b)` | The average of the loss functions of the **entire** training set  |
+| Cost Function `𝙹(w, b)` | The average of the loss functions of the **entire** training set  |
 | Convex Function | A function that has one local value |
 | Non-Convex Function | A function that has lots of different local values |
 | Gradient Descent | An iterative optimization method that we use to converge to the global optimum of `Cost Function` |
