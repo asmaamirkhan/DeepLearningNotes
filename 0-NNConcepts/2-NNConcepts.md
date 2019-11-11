@@ -12,7 +12,7 @@ Basic Concepts of ANN
 
 | Term             | Description   |
 | ---------------  |---------------|
-| Input Layer      |  A layer that conatains the inputs to the NN |
+| Input Layer      |  A layer that contains the inputs to the NN |
 | Hidden Layer     |  The layer(s) where computational operations are being done |
 | Output Layer     |  The final layer of the NN and it is responsible for generating the predicted value ŷ |
 | Neuron           |  A placeholder for a mathematical function, it applies a function on inputs and provides an output |
@@ -24,7 +24,7 @@ Basic Concepts of ANN
 
 ## 🧠 What does an artificial neuron do?
 It calculates a _weighted sum_ of its input, adds a bias and then decides whether it should be _fired_ or not due to an activaiton function
-> My detailed notes on activaiton functions are [here](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/6-NNConcepts/3-ActivationFunctions.md) 👩‍🏫
+> My detailed notes on activation functions are [here](https://github.com/asmaamirkhan/DeepLearningNotes/tree/master/6-NNConcepts/3-ActivationFunctions.md) 👩‍🏫
 
 
 
