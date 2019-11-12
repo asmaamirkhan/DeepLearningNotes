@@ -207,7 +207,7 @@ print(np.dot(a,b))
 # ERROR: shapes (4,1) and (4,1) not aligned: 1 (dim 1) != 4 (dim 0)
 ```
 
-> Conclusion: We have to avoid using rank 1 arrays in order to make our codes more bug-free and easy to debug :bug:
+> Conclusion: We have to avoid using rank 1 arrays in order to make our codes more bug-free and easy to debug 🐛
 
 ## 🧐 References
 * [Official Documentation of Broadcasting in NumPy](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html)
