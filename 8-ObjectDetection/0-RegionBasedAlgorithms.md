@@ -4,7 +4,7 @@
 It depends on:
 1. Selecting huge number of regions
 2. And then decrease them to 2000 by _selective search_
-  - Each region is called a _region proposal_
+   * Each region is called a _region proposal_
 3. Extracting convolutional features from each region
 4. Finally checking if any object exists
 
@@ -36,8 +36,8 @@ So, it depends on:
 1. We feed the **whole** image to the CNN
 2. The CNN generates a feature map
 3. Using the generated feature map we extract ROI (Region of interests)
-  - Problem of 2000 regions is solved 🎉
-  - We are still using selective search 🙄
+   - Problem of 2000 regions is solved 🎉
+   - We are still using selective search 🙄
 4. Then, we resize the regions into a fixed size (using ROI pooling layer)
 5. Finally, we feed regions to fully connected layer (to classify)
 
@@ -60,7 +60,7 @@ So, it depends on:
 2. The CNN generates a feature map
 3. We apply Region proposal network is applied on feature map 
 4. The RPN returns the object proposals along with their _objectness_ score
-  - Problem of selective search is solved 🎉
+   - Problem of selective search is solved 🎉
 5. Then, we resize the regions into a fixed size (using ROI pooling layer)
 6. Finally, we feed regions to fully connected layer (to classify)
 
