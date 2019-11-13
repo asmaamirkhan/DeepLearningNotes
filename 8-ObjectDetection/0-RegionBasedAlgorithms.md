@@ -8,6 +8,12 @@ It depends on:
 3. Extracting convolutional features from each region
 4. Finally checking if any object exists
 
+
+### 🤔 What is _Selective Search_?
+An algorithm to to identify different regions, There are basically four regions that form an object: varying scales, colors, textures, and enclosure. Selective search identifies these patterns in the image and based on that, **proposes various regions**
+
+> 🙄 In other words: It is an algorithm that depends on computing hierarchical grouping of similar regions and proposes various regions
+
 ### 👀 Visualization
 
 <img src="../res/RCNN2.png" width="400"  />
