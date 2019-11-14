@@ -99,6 +99,16 @@ Anchor boxes are fixed sized boundary boxes that are placed throughout the image
 | 💫 Fast R-CNN   |  Image is passed once to CNN to extract feature maps, regions are extracted by selective search then | Selective search is slow |
 | ➰ Faster R-CNN |  Replaces the selective search method with RPN          | slow (?)  |
 
+
+## ⚖ Benchmarks
+
+<img src="../res/RCNNComparison.png" width="400"  />
+
+<br/>
+
+<img src="../res/RCNNChart.png" width="400"  />
+
+
 ## 🔎 Read More
 - [A Step-by-Step Introduction to the Basic Object Detection Algorithms](https://www.analyticsvidhya.com/blog/2018/10/a-step-by-step-introduction-to-the-basic-object-detection-algorithms-part-1/)
 - [Deep Learning for Object Detection: A Comprehensive Review](https://towardsdatascience.com/deep-learning-for-object-detection-a-comprehensive-review-73930816d8d9)
