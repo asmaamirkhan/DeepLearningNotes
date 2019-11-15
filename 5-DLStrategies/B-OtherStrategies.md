@@ -24,12 +24,12 @@ Briefly, there have beeen some data processing systems or kearning systems that 
 Long Story Short: breaking the big task int sub smaller tasks with the same NN ✂
 
 ### ➕ ➖ Pros and Cons
-**Pros:**
+**➕ Pros:**
 
 * Shows the power of the data
 * Less hand designing of components needed
 
-**Cons:**
+**➖ Cons:**
 
 * May need large anount of data
 * Excludes potentially useful hand designed components
