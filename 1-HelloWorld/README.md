@@ -1,17 +1,17 @@
-# Hello World of Deep Learning with Neural Networks
+# 🙋‍♀️ Hello World of Deep Learning with Neural Networks
 Like every first app we should start with something super simple that gives us an idea about the whole methodology. 
 
-## What is Keras?
+## ✨ What is Keras?
 Keras is a high-level **neural networks API**, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.
 
-## Important Terms
+## 📚 Important Terms
 | Term            | Description   |
 | --------------- |---------------|
 | Dense           | A layer of neurons in a neural network      |
 | Loss Function  | A mathematical way of measuring how wrong your predictions are |
 | Optimizer       | An algorithm to find parameter values which correspond to minimum value of loss function |
 
-## The Simplest Neural Network
+## 👩‍🔬 The Simplest Neural Network
 It contains one layer with one neuron.
 
 Code example:
@@ -47,10 +47,13 @@ Code example:
 print(model.predict([10.0]))
 ```
 
-## Traditional Programming vs Machine Learning
+## 👩‍💻 My Code
+- Full source code is [here](./HelloWorldWithTF.ipynb)
+
+## 🔃 Traditional Programming vs Machine Learning
 <img src="../res/TraditionalProgvsML.JPG" width="350"  />
 
-## References
+## 🧐 References
 * [Official Documentation of Keras](https://keras.io/)
 * [More About Sequential model](https://keras.io/getting-started/sequential-model-guide/)
 * [More About Optimizers in Keras](https://keras.io/optimizers/)

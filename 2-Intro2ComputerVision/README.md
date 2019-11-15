@@ -1,7 +1,7 @@
-# Introduction to Computer Vision
+# 🚪 Introduction to Computer Vision
 Beginning to solve problems of computer vision with Tensorflow and Keras
 
-## What is MNIST?
+## 👗 What is MNIST?
 The MNIST database: **(Modified National Institute of Standards and Technology database)**
 
 * Fashion-MNIST is consisting of a training set of 60,000 examples and a test set of 10,000 examples
@@ -14,7 +14,7 @@ The MNIST database: **(Modified National Institute of Standards and Technology d
   * 10 different categories
   * [Repo](https://github.com/zalandoresearch/fashion-mnist)
 
-## Important Terms
+## 📚 Important Terms
 | Term            | Description   |
 | --------------- |---------------|
 | Sequential      | That defines a SEQUENCE of layers in the neural network |
@@ -26,7 +26,7 @@ The MNIST database: **(Modified National Institute of Standards and Technology d
 
 > The main purpose of activation function is to convert a input signal of a node in a NN to an output signal. That output signal now is used as a input in the next layer in the stack.
 
-## Notes on performance :dizzy:
+## 💫 Notes on performance
 * Values in -MNIST are between 0-255 but neural networks work better with normalized data, so we can divide every value by 255 so the values are between 0,1.
 * There are multiple criterias to stop trainig process, we can specify number of epochs or a threshold or both
   * Epochs: number of iterations
@@ -35,6 +35,10 @@ The MNIST database: **(Modified National Institute of Standards and Technology d
 
 > We can check the accuracy at the end of each epoch by Callbacks :boom:
 
-## References
+## 👩‍💻 My Codes
+- [👗 Fashion MNIST](./0-Fashion-MNIST.ipynb)
+- [1️⃣ Digit MNIST](./1-DIGIT-MNIST.ipynb)
+
+## 🧐 References
 * [Official Documentation of Keras](https://keras.io/)
 * [More About Activation Functions](https://keras.io/activations/)

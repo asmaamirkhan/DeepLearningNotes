@@ -1,20 +1,20 @@
-# Works and Notes on CNN
+# 👩‍💻 Works and Notes on CNN
 This folder will be filled by codes and notes gradually
 
-## Table of Contents
+## 🧐 Table of Contents
 0. [Basic CNNs](./0-CNN.ipynb)
 1. [CNN Visualization](./1-CNNVisualization.ipynb)
 2. [Human vs Horse Classifier with CNN](./2-HorseHumanClassifier.ipynb)
 3. [Dog vs Cat Classifier with CNN](./3-DogCatClassifier.ipynb) 
 4. [Multi-Class Classification](./4-MultiClassRPS.ipynb) 
 
-## RPS Dataset
+## ✋ RPS Dataset
 Rock Paper Scissors is an available dataset containing 2,892 images of diverse hands in Rock/Paper/Scissors poses.
 Rock Paper Scissors contains images from a variety of different hands, from different races, ages and genders, posed into Rock / Paper or Scissors and labelled as such.
 
 > All of this data is posed against a white background. Each image is 300×300 pixels in 24-bit color
 
-## CNN Debugging 🐛
+## 🐛 CNN Debugging
 
 We can get info about our CNN by 
 ```python
@@ -41,7 +41,7 @@ dense_15 (Dense)             (None, 10)                1290
 =================================================================
 ``` 
 
-For code in the notebook:
+👩‍💻 For code in the notebook:
 > [Here](./0-CNN.ipynb) :feet:
 
 * The original dimensions of the images were 28x28 px
@@ -58,13 +58,13 @@ For code in the notebook:
 * 6th layer: We set it to contain 128 units
 * 7th layer: Since we have 10 categories it consists of 10 units
 
-> :dizzy_face: :dizzy_face:
+> 😵 😵
 
-## Visualization
-The visualization of the output of each layer is available [here](./1-CNNVisualization.ipynb) :mag:
+## 👀 Visualization
+The visualization of the output of each layer is available [here](./1-CNNVisualization.ipynb) 🔎
 
 
-## References
+## 🧐 References
 * [Binary Cross-Entropy](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
 * [RMSProp Explained](http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
 * [RMSProp in Tensorflow](https://www.tensorflow.org/api_docs/python/tf/train/RMSPropOptimizer)
