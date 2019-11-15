@@ -81,7 +81,7 @@ If we have an `n*n` image and we convolove it by `f*f` filter the the output ima
 2. Pixels at corners aren't being touched enough, so we are throwing away a lot of information from the edges of the image .
 
 ### Solution
-We can _pad_ the image 💪 
+We can [_pad_](./1-CommonConcepts-P2.md#padding) the image 💪 
 
 
 ## References
