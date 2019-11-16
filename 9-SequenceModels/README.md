@@ -1,4 +1,4 @@
-# 🚩 Sequence Models In Deep Learning
+# ➰ Sequence Models In Deep Learning
 
 ## ⛓ Sequence Models In General
 - Sequences are data structures where each example could be seen as a **series** of data points, for example 🧐:
@@ -6,8 +6,8 @@
 |  Task                         | Input **X**        | Output **Y**          | Type                   |
 | ----------------------------- | ------------------ | --------------------- | ---------------------- |
 | 💬 Speech Recognition         | Wave sequence      | Text sequence         | Sequence-to-Sequence   |
-| 🎶 Music generation           |  Nothing / Integer | Wave Sequence         | One-to_Sequence        |
-| 💌 Sentiment classification   | Text Sequence      | Integer Rating (1➡5) | Sequence-to-One        |
+| 🎶 Music Generation           |  Nothing / Integer | Wave Sequence         | One-to_Sequence        |
+| 💌 Sentiment Classification   | Text Sequence      | Integer Rating (1➡5) | Sequence-to-One        |
 | 🔠 Machine Translation        | Text Sequence      | Text Sequence         | Sequence-to-Sequence   |
 | 📹 Video Activity Recognition | Video Frames       | Label                 | Sequence-to-One        |
 
