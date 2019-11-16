@@ -11,6 +11,7 @@ My notes (and codes) on deep learnig
 0. [🤡 Image Augmentation](./6-ImageAugmentation)
 0. [👷‍♀️ Applied Machine Learning](./7-AppliedML)
 0. [🕵️‍♀️ Object Detection](./8-ObjectDetection)
+1. [➰ Sequence Models](./9-SequenceModels)
 
 ## 💉 Extensions
 1. [📚 PDFs that I found and recommend](./Z-UsefulPDFs) 
