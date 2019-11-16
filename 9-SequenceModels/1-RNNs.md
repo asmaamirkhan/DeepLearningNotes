@@ -18,6 +18,8 @@ A class of neural networks that allow previous outputs to be used as inputs to t
 <img src="../res/RNNForwardY.png" height="25"  />
 
 ## ⏪ Back Propagation
+**Loss Function is defined like the following**
+
 <img src="../res/RNNOneLoss.png" height="25"  />
 
 </br>
