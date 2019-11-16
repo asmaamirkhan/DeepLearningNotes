@@ -103,7 +103,7 @@ Well, if we use linear function then the nn is just outputting a linear function
 
 > Remember that the composition of two linear functions is itself a linear function
 
-## 👩‍🏫 Rules For Choosing Activation Function:
+## 👩‍🏫 Rules For Choosing Activation Function
 * If the output is 0 or 1 (binary classification) ➡ *sigmoid* is good for output layer
 * for all other units ➡ *Relu* :sparkles:
   
