@@ -9,20 +9,20 @@ A class of neural networks that allow previous outputs to be used as inputs to t
 <img src="../res/RNNStructure.png" width="600"  />
 
 ## ⏩ Forward Propagation
-To find a<sup><<i>t</i>></sup>:
+**To find a<sup><<i>t</i>></sup>:**
 
-<img src="../res/RNNForwardA.png" height="30"  />
+<img src="../res/RNNForwardA.png" height="25"  />
 
-To find ŷ<sup><<i>t</i>></sup>:
+**To find ŷ<sup><<i>t</i>></sup>:**
 
-<img src="../res/RNNForwardY.png" height="30"  />
+<img src="../res/RNNForwardY.png" height="25"  />
 
 ## ⏪ Back Propagation
-<img src="../res/RNNOneLoss.png" height="30"  />
+<img src="../res/RNNOneLoss.png" height="25"  />
 
 </br>
 
-<img src="../res/RNNLoss.png" height="50"  />
+<img src="../res/RNNLoss.png" height="60"  />
 
 ## 🎨 Types of RNNs
 - **One-to-One** (Traditional ANN)
