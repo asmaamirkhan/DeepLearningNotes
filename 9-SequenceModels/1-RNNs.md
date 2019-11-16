@@ -6,19 +6,19 @@ A class of neural networks that allow previous outputs to be used as inputs to t
 
 ## 🧱 Structure
 
-<img src="../res/RNNStructure.png" width="500"  />
+<img src="../res/RNNStructure.png" width="600"  />
 
 ## ⏩ Forward Propagation
 To find a<sup><<i>t</i>></sup>:
 
-<img src="../res/RNNForwardA.png" height="50"  />
+<img src="../res/RNNForwardA.png" height="30"  />
 
 To find ŷ<sup><<i>t</i>></sup>:
 
-<img src="../res/RNNForwardY.png" height="50"  />
+<img src="../res/RNNForwardY.png" height="30"  />
 
 ## ⏪ Back Propagation
-<img src="../res/RNNOneLoss.png" height="50"  />
+<img src="../res/RNNOneLoss.png" height="30"  />
 
 </br>
 
@@ -31,5 +31,5 @@ To find ŷ<sup><<i>t</i>></sup>:
 - **Many-to-Many** T<sub>x</sub> = T<sub>y</sub> (Speech Recognition)
 - **Many-to-Many** T<sub>x</sub> != T<sub>y</sub> (Machine Translation)
 
-<img src="../res/RNNTypes.png" width="400"  />
+<img src="../res/RNNTypes.png" width="600"  />
 
