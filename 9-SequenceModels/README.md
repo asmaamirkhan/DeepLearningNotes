@@ -1,4 +1,4 @@
-# ➰ Sequence Models In Deep Learning
+# 〽 Sequence Models In Deep Learning
 
 ## ⛓ Sequence Models In General
 - Sequences are data structures where each example could be seen as a **series** of data points, for example 🧐:
