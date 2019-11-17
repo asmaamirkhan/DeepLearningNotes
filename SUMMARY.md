@@ -1,7 +1,7 @@
 <!--Index-->
 
 - [💫 Deep Learning Notes](./README.md)
-  - [Concepts of Neural Networks](./0-NNConcepts/README.md)
+  - [🕵️‍♀️ Concepts of Neural Networks](./0-NNConcepts/README.md)
     - [🔎 The Problem in General](./0-NNConcepts/0-GeneralConcepts.md)
     - [👷‍♀️ Notes on Implementation of Neural Networks](./0-NNConcepts/1-ImplementationNotes.md)
     - [📚 Concepts of Artificial Neural Networks](./0-NNConcepts/2-NNConcepts.md)
@@ -12,8 +12,8 @@
     - [🎨 Softmax Regression](./0-NNConcepts/7-MultiClassClassification.md)
     - [👓 Brief Introduction to Tensorflow](./0-NNConcepts/8-TensorflowBasics.md)
     - [👩‍💻 Pyhton Code Snippets on The Basics of Neural Networks](./0-NNConcepts/A-CodeSnippets.md)
-  - [Hello World of Deep Learning with Neural Networks](./1-HelloWorld/README.md)
-  - [Introduction to Computer Vision](./2-Intro2ComputerVision/README.md)
+  - [🙋‍♀️ Hello World of Deep Learning with Neural Networks](./1-HelloWorld/README.md)
+  - [🚪 Introduction to Computer Vision](./2-Intro2ComputerVision/README.md)
   - [Introduction to Convolutional Neural Networks](./3-CNNConcepts/README.md)
     - [Common Concepts About Convolutional Neural Networks](./3-CNNConcepts/0-CommonConcepts.md)
     - [Common Concepts About Convolutional Neural Networks](./3-CNNConcepts/1-CommonConcepts-P2.md)
@@ -21,16 +21,19 @@
     - [Classic Convolutional Neural Networks](./3-CNNConcepts/3-ClassicCNNs.md)
     - [Other Approaches for Building CNNs](./3-CNNConcepts/4-OtherApproaches.md)
     - [🕸 Common Applications of CNNs](./3-CNNConcepts/5-Applications.md)
-  - [Works and Notes on CNN](./4-CNNWorks/README.md)
-  - [🚙 Transfer Learning](./5-DLStrategies/README.md)
-    - [📚 Other Strategies of Deep Learning](./5-DLStrategies/A-OtherStrategies.md)
+  - [👩‍💻 Works and Notes on CNN](./4-CNNWorks/README.md)
+  - [💄 Popular Strategies of Deep Learning](./5-DLStrategies/README.md)
+    - [🚙 Transfer Learning](./5-DLStrategies/A-TransferLearning.md)
+    - [📚 Other Strategies of Deep Learning](./5-DLStrategies/B-OtherStrategies.md)
   - [Image Augmentation](./6-ImageAugmentation/README.md)
   - [Notes on Applied Machine Learning](./7-AppliedML/README.md)
     - [Notes on Structuring Machine Learning Projects](./7-AppliedML/0-Evaluation.md)
     - [Guidelines On Implementation](./7-AppliedML/1-Guidelines.md)
   - [🚩 Concepts of Object Detection](./8-ObjectDetection/README.md)
     - [🚩 Region-Based CNNs](./8-ObjectDetection/0-RegionBasedAlgorithms.md)
+  - [〽 Sequence Models In Deep Learning](./9-SequenceModels/README.md)
+    - [📚 General Concepts of Sequence Models](./9-SequenceModels/0-GeneralConcepts.md)
+    - [➰ Recurrent Neural Networks](./9-SequenceModels/1-RNNs.md)
   - [Quick Visual Info](./Z-QuickVisualInfo/README.md)
-
 
 <!--Index-->
