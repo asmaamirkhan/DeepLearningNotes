@@ -40,8 +40,9 @@ A class of neural networks that allow previous outputs to be used as inputs to t
 - Same in Deep Neural Networks, deeper networks are getting into the vanishing gradient problem. 
 - That also happens with RNNs with a long sequence size 🐛
 
-### 🧙‍♀️ Solution
-Adding _Gated Recurrent Unit_ 
+### 🧙‍♀️ Solutions
+- **GRU**_Gated Recurrent Unit_ 
+- **LSTM**_Long Short-Term Memory_ 
 
 ### 🚪 Gated Recurrent Unit (GRU)
 GRUs are improved version of standard recurrent neural network ✨, GRU uses _update gate and reset gate_ . 
@@ -75,8 +76,12 @@ A vector which holds information for the current unit and it will pass it furthe
 ### 🎉 GRU Conclusion
 A solution to eliminate the vanishing gradient problem since the model is not washing out the new input every single time but keeps the relevant information and passes it down to the next time steps of the network
 
+### 🤸‍♀️ Long Short-Term Memory
+> TODO
 
 ## 🧐 Read More
 - [Recurrent Neural Networks Cheatsheet ✨](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks#)
 - [What are RNNs and GRUs](https://towardsdatascience.com/what-is-a-recurrent-nns-and-gated-recurrent-unit-grus-ea71d2a05a69)
 - [Understanding GRU Networks](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be)
+- [Detailed LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+- [All About RNNs 🚀](https://medium.com/@jianqiangma/all-about-recurrent-neural-networks-9e5ae2936f6e)
