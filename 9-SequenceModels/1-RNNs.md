@@ -49,8 +49,6 @@ GRUs are improved version of standard recurrent neural network ✨, GRU uses _up
 - The special thing about them is that they can be trained to keep information from long ago
   - Without washing it through time or remove information which is irrelevant to the prediction.
 
-The update gate .
-
 | Gate           | Description                                 |
 | -------------- |---------------------------------------------|
 | 🔁 Update Gate | Helps the model to determine how much of the past information (from previous time steps) needs to be passed along to the future |
@@ -73,7 +71,6 @@ A vector which holds information for the current unit and it will pass it furthe
 #### 👀 Visualization 
 
 <img src="../res/GRU.png" width="600"  />
-
 
 ### 🎉 GRU Conclusion
 A solution to eliminate the vanishing gradient problem since the model is not washing out the new input every single time but keeps the relevant information and passes it down to the next time steps of the network
