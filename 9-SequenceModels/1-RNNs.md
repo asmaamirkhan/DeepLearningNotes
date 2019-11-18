@@ -4,9 +4,18 @@
 A class of neural networks that allow previous outputs to be used as inputs to the next layers
 > They remember things they learnt during training ✨
 
-## 🧱 Structure
+## 🧱 Architecture
+
+### 🔶 The Whole RNN Architecture
+<img src="../res/RNNStructure2.png" width="600"  />
 
 <img src="../res/RNNStructure.png" width="600"  />
+
+### 🧩 An RNN Cell
+
+<img src="../res/RNNCell.png" width="600"  />
+
+Basic RNN cell. Takes as input x⟨t⟩ (current input) and a<sup>⟨t−1⟩</sup> (previous hidden state containing information from the past), and outputs a<sup>⟨t⟩</sup> which is given to the next RNN cell and also used to predict y<sup>⟨t⟩</sup>
 
 ## ⏩ Forward Propagation
 **To find a<sup><<i>t</i>></sup>:**
@@ -16,6 +25,10 @@ A class of neural networks that allow previous outputs to be used as inputs to t
 **To find ŷ<sup><<i>t</i>></sup>:**
 
 <img src="../res/RNNForwardY.png" height="25"  />
+
+### 👀 Visualization
+
+<img src="../res/RNNForwardVis.png" width="600"  />
 
 ## ⏪ Back Propagation
 **Loss Function is defined like the following**
@@ -77,7 +90,42 @@ A vector which holds information for the current unit and it will pass it furthe
 A solution to eliminate the vanishing gradient problem since the model is not washing out the new input every single time but keeps the relevant information and passes it down to the next time steps of the network
 
 ### 🤸‍♀️ Long Short-Term Memory
+
+#### 0️⃣ Forget Gate
+For the sake of this illustration, let's assume we are reading words in a piece of text, and want use an LSTM to keep track of grammatical structures, such as whether the subject is singular or plural. If the subject changes from a singular word to a plural word, we need to find a way to get rid of our previously stored memory value of the singular/plural state. In an LSTM, the forget gate let's us do this:
+
+<img src="../res/ForgetGate.png" width="600"  />
+
+Here,  W<sub>f</sub>  are weights that govern the forget gate's behavior. We concatenate  [a<sup>⟨t−1⟩</sup>,x<sup>⟨t⟩</sup>]  and multiply by  WfWf . The equation above results in a vector  Γ<sub><i>f</i></sub><sup>⟨t⟩</sup>  with values between 0 and 1. This forget gate vector will be multiplied element-wise by the previous cell state c<sup>⟨t−1⟩</sup> . So if one of the values of Γ<sub><i>f</i></sub><sup>⟨t⟩</sup> is 0 (or close to 0) then it means that the LSTM should remove that piece of information (e.g. the singular subject) in the corresponding component of  c<sup>⟨t−1⟩</sup> . If one of the values is 1, then it will keep the information.
+
+#### 🔄 Update Gate
+Once we forget that the subject being discussed is singular, we need to find a way to update it to reflect that the new subject is now plural. Here is the formula for the update gate:
+
+<img src="../res/UpdateGate.png" width="600"  />
+
+Similar to the forget gate, here  Γ<sub><i>u</i></sub><sup>⟨t⟩</sup>  is again a vector of values between 0 and 1. This will be multiplied element-wise with  c̃<sup>⟨t⟩</sup>, in order to compute c<sup>⟨t⟩</sup>.
+
+#### 👩‍🔧 Updating the Cell
+To update the new subject we need to create a new vector of numbers that we can add to our previous cell state. The equation we use is:
+
+<img src="../res/StateUpdate.png" width="600"  />
+
+Finally, the new cell state is:
+
+<img src="../res/NextState.png" width="600"  />
+
+#### 🚪 Output Gate
+To decide which outputs we will use, we will use the following two formulas:
+
+<img src="../res/OutputGate1.png" width="600"  />
+
+<img src="../res/OutputGate2.png" width="600"  />
+
+Where in equation 5 you decide what to output using a sigmoid function and in equation 6 you multiply that by the _tanh_ of the previous state.
+
 > TODO
+
+<img src="../res/RNNLSTM.png" width="600"  />
 
 ## 🧐 Read More
 - [Recurrent Neural Networks Cheatsheet ✨](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks#)
