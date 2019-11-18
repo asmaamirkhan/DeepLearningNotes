@@ -54,8 +54,8 @@ Basic RNN cell. Takes as input x⟨t⟩ (current input) and a<sup>⟨t−1⟩</s
 - That also happens with RNNs with a long sequence size 🐛
 
 ### 🧙‍♀️ Solutions
-- **GRU**_Gated Recurrent Unit_ 
-- **LSTM**_Long Short-Term Memory_ 
+- **GRU** _Gated Recurrent Unit_ 
+- **LSTM** _Long Short-Term Memory_ 
 
 ### 🚪 Gated Recurrent Unit (GRU)
 GRUs are improved version of standard recurrent neural network ✨, GRU uses _update gate and reset gate_ . 
@@ -87,7 +87,7 @@ A vector which holds information for the current unit and it will pass it furthe
 <img src="../res/GRU.png" width="600"  />
 
 ### 🎉 GRU Conclusion
-A solution to eliminate the vanishing gradient problem since the model is not washing out the new input every single time but keeps the relevant information and passes it down to the next time steps of the network
+A solution to eliminate the vanishing gradient problem since the model is not washing out the new input every single time but keeps the relevant information and passes it down to the next time steps of the network.
 
 ### 🤸‍♀️ Long Short-Term Memory
 
