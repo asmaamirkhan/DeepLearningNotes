@@ -1,5 +1,5 @@
 # 💥 Activation Functions in Neural Networks
-The main purpose of Activation Functions is to convert an input signal of a node in a A-NN to an output signal by applying a transformation. That output signal now is used as a input in the next layer in the stack.
+The main purpose of Activation Functions is to convert an input signal of a node in an ANN to an output signal by applying a transformation. That output signal now is used as a input in the next layer in the stack.
 
 ## 📃 Types of Activaiton Functions
 
@@ -8,7 +8,7 @@ The main purpose of Activation Functions is to convert an input signal of a node
 | Linear Activation Function |  Inefficient, used in regression                         |
 | Sigmoid Function           |  Good for output layer in binary classification problems |
 | Tanh Function              |  Better than sigmoid                                     |
-| Relu Function :sparkles:   |  Default choice for hidden layers                        |
+| Relu Function ✨           |  Default choice for hidden layers                        |
 | Leaky Relu Function        |  Little bit better than Relu, Relu is more popular       |
 
 
@@ -51,14 +51,12 @@ Almost always strictly superior than sigmoid function
 
 <img src="../res/TanhGraph.PNG" width="300"  />
 
-
-
 > Activation functions can be different for different layers, for example, we may use _tanh_ for a hidden layer and _sigmoid_ for the output layer 
 
 ### 🙄 Downsides on Tanh and Sigmoid
-If z is very large or very small then the derivative _(or the slope)_ of these function becomes very small (ends up  being close to 0), and so this can slow down gradient descent 🐢
+If z is very large or very small then the derivative _(or the slope)_ of these function becomes very small (ends up being close to 0), and so this can slow down gradient descent 🐢
 
-### 🎩 Rectified Linear Activation Unit (Relu :sparkles:) 
+### 🎩 Rectified Linear Activation Unit (Relu ✨) 
 Another and very popular choice
 
 **Formula:**
@@ -72,9 +70,7 @@ Another and very popular choice
 
 
 So the derivative is 1 when z is positive and 0 when z is negative
-> *Disadvantage:* derivative=0 wen z is negative 😐
-
-
+> *Disadvantage:* derivative=0 when z is negative 😐
 
 ### 🎩 Leaky Relu
 
@@ -99,19 +95,19 @@ So the derivative is 1 when z is positive and 0 when z is negative
 
 
 ## 🤔 Why NNs Need non-linear Activation Functions
-Well, if we use linear function then the nn is just outputting a linear function of the input, so no matter how many layers out NN has 🙄, all it is doing is just computing a linear function 😕
+Well, if we use linear function then the NN is just outputting a linear function of the input, so no matter how many layers out NN has 🙄, all it is doing is just computing a linear function 😕
 
-> Remember that the composition of two linear functions is itself a linear function
+> ❗ Remember that the composition of two linear functions is itself a linear function
 
 ## 👩‍🏫 Rules For Choosing Activation Function
 * If the output is 0 or 1 (binary classification) ➡ *sigmoid* is good for output layer
-* for all other units ➡ *Relu* :sparkles:
+* For all other units ➡ *Relu* ✨
   
 > We can say that relu is the default choice for activation function
 
 Note:
 
-> If you are not sure which one of these functions work best 😵, try them all 🤕 and evaluate on different validation set and see which one works better and go with that  🤓😇
+> If you are not sure which one of these functions work best 😵, try them all 🤕 and evaluate on different validation set and see which one works better and go with that 🤓😇
 
 ## 🧐 Read More
 * [Which Activation Function Should I Use? (Siraj Raval :sparkles:)](https://www.youtube.com/watch?v=-7scQpJT7uo)
