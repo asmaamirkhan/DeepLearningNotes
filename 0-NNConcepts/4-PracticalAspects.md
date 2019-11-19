@@ -3,7 +3,8 @@
 ## 📈 Data Normalization
 It is a part of _data preparation_
 
-If we have a feature that is all positive or all negative, this will make learning harder for the nodes in the layer that follows. They will have to _zigzag_ like the ones following a sigmoid activation function. If we transform our data so it has a mean close to zero, we will thereby make sure that there are both positive values and negative ones.
+- If we have a feature that is all positive or all negative, this will make learning harder for the nodes in the layer that follows. They will have to _zigzag_ like the ones following a sigmoid activation function. 
+- If we transform our data so it has a mean close to zero, we will thereby make sure that there are both positive values and negative ones.
 
 **Formula:**
 
@@ -40,7 +41,7 @@ The sample of data used to provide an unbiased evaluation of a model fit on the 
 > The model **sees** this data, but **never learns** from this 👨‍🚀
 
 ### 🧐 Test Set
-The sample of data used to provide an unbiased evaluation of a final model fit on the training dataset. It provides the gold standard used to evaluate the model.
+The sample of data used to provide an unbiased evaluation of a final model fit on the training dataset. It provides the gold standard used to evaluate the model 🌟.
 
 **Implementation Note:** Test set should contain carefully sampled data that spans the various classes that the model would face, when used in the real world 🚩🚩🚩❗❗❗
 
@@ -55,8 +56,8 @@ The sample of data used to provide an unbiased evaluation of a final model fit o
 > Having high-bias implies that the model is too simple and does not capture the complexity of data thus **underfitting** the data 🤕
 
 ### 🕹 Variance
-Variance is the variability of model prediction for a given data point or a value which tells us spread of our data
-Model with high variance fails to generalize on the data which it hasn’t seen before.
+- Variance is the variability of model prediction for a given data point or a value which tells us spread of our data.
+- Model with high variance fails to generalize on the data which it hasn’t seen before.
 
 > Having high-variance implies that algorithm models random noise present in the training data and it **overfits** the data 🤓
 
