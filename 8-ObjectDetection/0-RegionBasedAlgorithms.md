@@ -75,7 +75,7 @@ So, it depends on:
 <img src="../res/FasterRCNN.png" width="400"  />
 
 
-### 👩‍🏫 How does RPN works? 
+### 👩‍🏫 How does RPN work?
 1. RPN takes a feature map from CNN
 2. Uses 3*3 window over the map
 3. Generates _k_ anchor boxes

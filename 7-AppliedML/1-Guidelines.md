@@ -1,4 +1,4 @@
-# Guidelines On Implementation
+# Implementation Guidelines 
 
 ## Common Terms
 
