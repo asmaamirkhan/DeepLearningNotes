@@ -2,21 +2,25 @@
 My notes (and codes) on deep learnig
 
 ## 📑 Table of Contents
-0. [👩‍🏫 Theoric Concepts of Neural Networks](./0-NNConcepts)
-0. [🙋‍♀️ Hello World of Deep Learning With Neural Networks](./1-HelloWorld)
-0. [👓 Introduction to Computer Vision](./2-Intro2ComputerVision)
-0. [👩‍🏫 Theoric Concepts of Convolutional Neural Networks](./3-CNNConcepts)
-0. [👩‍🔧 Works on Convolutional Neural Networks](./4-CNNWorks)
-0. [🚙 Deep Learning Strategies](./5-TransferLearning)
-0. [🤡 Image Augmentation](./6-ImageAugmentation)
-0. [👷‍♀️ Applied Machine Learning](./7-AppliedML)
-0. [🕵️‍♀️ Object Detection](./8-ObjectDetection)
-1. [➰ Sequence Models](./9-SequenceModels)
+
+| #  | Title                                                                   |
+| -- |-------------------------------------------------------------------------|
+| 0. | [👩‍🏫 Theoric Concepts of Neural Networks](./0-NNConcepts)                |
+| 1. | [🙋‍♀️ Hello World of Deep Learning With Neural Networks](./1-HelloWorld)  |
+| 2. | [👓 Introduction to Computer Vision](./2-Intro2ComputerVision)          |
+| 3. | [👩‍🏫 Theoric Concepts of Convolutional Neural Networks](./3-CNNConcepts) |
+| 4. | [👩‍🔧 Works on Convolutional Neural Networks](./4-CNNWorks)               |
+| 5. | [🚙 Deep Learning Strategies](./5-TransferLearning)                     |
+| 6. | [🤡 Image Augmentation](./6-ImageAugmentation)                          |
+| 7. | [👷‍♀️ Applied Machine Learning](./7-AppliedML)                            |
+| 8. | [🕵️‍♀️ Object Detection](./8-ObjectDetection)                              |
+| 9. | [➰ Sequence Models](./9-SequenceModels)                                |
 
 ## 💉 Extensions
-1. [📚 PDFs that I found and recommend](./Z-UsefulPDFs) 
-2. [👀 Visual materials for quick info](./Z-QuickVisualInfo) 
-
+| #  | Title                                                                   |
+| -- |-------------------------------------------------------------------------|
+| 0. | [📚 PDFs that I found and recommend](./Z-UsefulPDFs)                   |
+| 1. | [👀 Visual materials for quick info](./Z-QuickVisualInfo)              |
 
 ## 🙌 Quote
 Your learning algorithm has two main sources of knowledge; one is the **data** and other is whatever you **hand design** 🤔🚀
