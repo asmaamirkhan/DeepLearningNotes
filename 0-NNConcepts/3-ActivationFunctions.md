@@ -94,7 +94,7 @@ So the derivative is 1 when z is positive and 0 when z is negative
 * NN will learn much faster than when using tanh or sigmoid    
 
 
-## 🤔 Why NNs Need non-linear Activation Functions
+## 🤔 Why Do NNs Need non-linear Activation Functions
 Well, if we use linear function then the NN is just outputting a linear function of the input, so no matter how many layers out NN has 🙄, all it is doing is just computing a linear function 😕
 
 > ❗ Remember that the composition of two linear functions is itself a linear function

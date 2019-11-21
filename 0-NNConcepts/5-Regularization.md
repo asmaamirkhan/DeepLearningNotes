@@ -2,11 +2,13 @@
 Briefly: A technique to prevent overfitting -and reduce variance-
 
 ## 🙄 Problem
- In over-fitting status, our model tries to learn too well the details and the noise from the training data, which ultimately results in poor performance on the unseen data (test set), the following graph decribes better:
+In over-fitting situation, our model tries to learn too well the details and the noise from the training data, which ultimately results in poor performance on the unseen data (test set).
+
+The following graph describes better:
 
 <img src="../res/Overfitting.png" width="300"  />
 
-## 👩‍🏫 Better Definition of Regularization
+## 👩‍🏫 Better Definition for Regularization
 It is a technique which makes slight modifications to the learning algorithm such that the model generalizes better. This in turn improves the model’s performance on the unseen data as well.
 
 ## 🔨 Regularization Techniques
