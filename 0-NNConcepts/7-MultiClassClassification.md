@@ -24,8 +24,8 @@ Softmax is implemented through a neural network layer just before the output lay
 <img src="../res/formulas/Softmax.png" height="50"  />
 
 
-### 🔨 Hard max function 
-Tekes the output of softmax layer and convert it into _1 vs 0 vector_ (as I called it 🤭) which will be our _ŷ_
+### 🔨 Hard Max function 
+Takes the output of softmax layer and convert it into _1 vs 0 vector_ (as I called it 🤭) which will be our _ŷ_
 
 For example:
 ```
