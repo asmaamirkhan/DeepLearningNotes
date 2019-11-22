@@ -10,7 +10,7 @@ My notes (and codes) on deep learnig
 | 2. | [👓 Introduction to Computer Vision](./2-Intro2ComputerVision)          |
 | 3. | [👩‍🏫 Theoric Concepts of Convolutional Neural Networks](./3-CNNConcepts) |
 | 4. | [👩‍🔧 Works on Convolutional Neural Networks](./4-CNNWorks)               |
-| 5. | [🚙 Deep Learning Strategies](./5-TransferLearning)                     |
+| 5. | [🚙 Deep Learning Strategies](./5-DLStrategies)                     |
 | 6. | [🤡 Image Augmentation](./6-ImageAugmentation)                          |
 | 7. | [👷‍♀️ Applied Machine Learning](./7-AppliedML)                            |
 | 8. | [🕵️‍♀️ Object Detection](./8-ObjectDetection)                              |
