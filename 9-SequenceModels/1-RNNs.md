@@ -80,7 +80,7 @@ We can use multiple layers for each of the above transformations, which results 
 
 ### 👀 Visualization
 
-<img src="../res/DeepRNN.png" width="600"  />
+<img src="../res/DeepRNN.PNG" width="600"  />
 
 ## ❌ Problem: Vanishing Gradients with RNNs
 - An RNN that process a sequence data with the size of 10,000 time steps, has 10,000 deep layers which is very hard to optimize 🙄
