@@ -1,6 +1,6 @@
 # 🚩 Concepts of Object Detection
 
-## 📝 Common Terms
+## 📚 Common Terms
 
 | Term                 | Description                                    |
 | -------------------- | ---------------------------------------------- |
@@ -8,7 +8,7 @@
 | Classification and Localization |  Specifying the label and coordinates of an object in input image |
 | Object Detection     |  Specifying labels and coordinates of multiple objects in input image        |
 
-## 🔎 More Detailed 📑
+## 📑 More Detailed 
 
 |             | Classification  | Clf. and Localization | Detection              |
 | ----------- | --------------- | --------------------- | ---------------------- |
@@ -34,3 +34,6 @@
 - MobileNet
 - ResNet
 - VGG
+
+## 🤸‍♀️ Object Detection Series
+<img src="../res/ObjectDetectionSeries.png" width="600"  />
