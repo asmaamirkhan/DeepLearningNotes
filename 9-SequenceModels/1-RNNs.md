@@ -87,16 +87,22 @@ A vector which holds information for the current unit and it will pass it furthe
 <img src="../res/GRU.png" width="600"  />
 
 ### 🎉 GRU Conclusion
-A solution to eliminate the vanishing gradient problem since the model is not washing out the new input every single time but keeps the relevant information and passes it down to the next time steps of the network.
+- A solution to eliminate the **vanishing gradient** problem 
+- The model is not washing out the new input every single time but keeps the relevant information and passes it down to the next time steps of the network.
 
 ### 🤸‍♀️ Long Short-Term Memory
 
 #### 0️⃣ Forget Gate
-For the sake of this illustration, let's assume we are reading words in a piece of text, and want use an LSTM to keep track of grammatical structures, such as whether the subject is singular or plural. If the subject changes from a singular word to a plural word, we need to find a way to get rid of our previously stored memory value of the singular/plural state. In an LSTM, the forget gate let's us do this:
+- Let's assume we are reading words in a piece of text, and want use an LSTM to keep track of grammatical structures, such as whether the subject is singular or plural. 
+- If the subject changes from a singular word to a plural word, we need to find a way to get rid of our previously stored memory value of the singular/plural state. 
+- In an LSTM, the forget gate let's us do this:
 
 <img src="../res/ForgetGate.png" width="300"  />
 
-Here,  W<sub>f</sub>  are weights that govern the forget gate's behavior. We concatenate  [a<sup>⟨t−1⟩</sup>,x<sup>⟨t⟩</sup>]  and multiply by  WfWf . The equation above results in a vector  Γ<sub><i>f</i></sub><sup>⟨t⟩</sup>  with values between 0 and 1. This forget gate vector will be multiplied element-wise by the previous cell state c<sup>⟨t−1⟩</sup> . So if one of the values of Γ<sub><i>f</i></sub><sup>⟨t⟩</sup> is 0 (or close to 0) then it means that the LSTM should remove that piece of information (e.g. the singular subject) in the corresponding component of  c<sup>⟨t−1⟩</sup> . If one of the values is 1, then it will keep the information.
+- Here,  W<sub>f</sub>  are weights that govern the forget gate's behavior. We concatenate  [a<sup>⟨t−1⟩</sup>,x<sup>⟨t⟩</sup>]  and multiply by  W<sub>f</sub>. The equation above results in a vector  Γ<sub><i>f</i></sub><sup>⟨t⟩</sup>  with values between 0 and 1. 
+- This forget gate vector will be multiplied element-wise by the previous cell state c<sup>⟨t−1⟩</sup> . 
+- So if one of the values of Γ<sub><i>f</i></sub><sup>⟨t⟩</sup> is 0 (or close to 0) then it means that the LSTM should remove that piece of information (e.g. the singular subject) in the corresponding component of  c<sup>⟨t−1⟩</sup> . 
+- If one of the values is 1, then it will keep the information.
 
 #### 🔄 Update Gate
 Once we forget that the subject being discussed is singular, we need to find a way to update it to reflect that the new subject is now plural. Here is the formula for the update gate:
@@ -123,9 +129,9 @@ To decide which outputs we will use, we will use the following two formulas:
 
 Where in equation 5 you decide what to output using a sigmoid function and in equation 6 you multiply that by the _tanh_ of the previous state.
 
-> TODO
-
 <img src="../res/RNNLSTM.png" width="600"  />
+
+> GRU is newer than LSTM, LSTM is more powerful but GRU is easier to implement 🚧
 
 ## 🧐 Read More
 - [Recurrent Neural Networks Cheatsheet ✨](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks#)
