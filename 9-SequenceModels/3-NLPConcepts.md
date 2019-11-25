@@ -15,7 +15,7 @@ Basic concepts of Natural Language Processing
 
 #### 🔢 Embedded Matrix
 For a given word _w_, the embedding matrix _E_ is a matrix that maps its 1-hot representation o<sub>w</sub> to its embedding e<sub>w</sub> as follows:
-<img src="../res/EmbedMat.png" width="500"  />
+<img src="../res/EmbedMat.png" height="50"  />
 
 #### 🎀 Advantages
 - Words that have the **same** meaning have a **similar** representation.
