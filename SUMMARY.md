@@ -31,11 +31,11 @@
     - [Implementation Guidelines](./7-AppliedML/1-Guidelines.md)
   - [🚩 Concepts of Object Detection](./8-ObjectDetection/README.md)
     - [🚩 Region-Based CNNs](./8-ObjectDetection/0-RegionBasedAlgorithms.md)
-  - [〽 Sequence Models In Deep Learning](./9-SequenceModels/README.md)
+  - [➰ Sequence Models In Deep Learning](./9-SequenceModels/README.md)
     - [📚 General Concepts of Sequence Models](./9-SequenceModels/0-GeneralConcepts.md)
     - [➰ Recurrent Neural Networks](./9-SequenceModels/1-RNNs.md)
     - [🌌 Vanishing Gradients with RNNs](./9-SequenceModels/2-VanishingGradients.md)
-    - [💬 Basic Concepts of NLP](./9-SequenceModels/3-NLPConcepts.md)
+    - [🌚 Word Representation](./9-SequenceModels/3-WordRepres.md)
   - [Quick Visual Info](./Z-QuickVisualInfo/README.md)
 
 <!--Index-->
