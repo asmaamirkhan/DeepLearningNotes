@@ -35,6 +35,7 @@
     - [📚 General Concepts of Sequence Models](./9-SequenceModels/0-GeneralConcepts.md)
     - [➰ Recurrent Neural Networks](./9-SequenceModels/1-RNNs.md)
     - [🌌 Vanishing Gradients with RNNs](./9-SequenceModels/2-VanishingGradients.md)
+    - [💬 Basic Concepts of NLP](./9-SequenceModels/3-NLPConcepts.md)
   - [Quick Visual Info](./Z-QuickVisualInfo/README.md)
 
 <!--Index-->
