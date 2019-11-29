@@ -1,4 +1,4 @@
-# Quick Visual Info
+# 👀 Quick Visual Info
 This folder contains only viusal materials in order to give lots of information in short time
 
 > Materials will be divided into different files (or categories) as they increase 👮‍
