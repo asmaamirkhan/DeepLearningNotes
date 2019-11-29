@@ -1,6 +1,6 @@
-# Implementation Guidelines 
+# 👩‍🏫 Implementation Guidelines 
 
-## Common Terms
+## 📚 Common Terms
 
 | Term                 | Description                                    |
 | -------------------- | ---------------------------------------------- |
@@ -22,7 +22,7 @@ Is your model doing better than humans?
 
 > Suitable techniques will be added here
 
-## Study case
+## 🤓 Study case
 Let's assume that we have these two situations:
 
 |                    | Case1      | Case2    | 
@@ -39,24 +39,24 @@ Even though training and dev errors are same we will apply different tactics for
 
 > We call this procedure of analysis **Error analysis** 🕵️‍
 
-## Error Types Visualization
+## 👀 Error Types Visualization
 
 <img src="../res/ErrorTypes.png" width="350"  />
 
 > In computer vision issues, `human-level-error ≈ bayes-error` because humans are good in vision tasks
 
 
-## Problems thar ML surpasses human level performance 🤗
+## 🤗 Problems thar ML surpasses human level performance
 * Online advertising
 * Product recommendations
 * Logistics
 * Loan approvals
 * .....
 
-## My Detailed Notes on Bias / Variance and Related Procedures
+## ✨ My Detailed Notes on Bias / Variance and Related Procedures
 * [Here 🐾](../0-NNConcepts/4-PracticalAspects.md)
 
-## It is recommended to 👀
+## 🤸‍♀️ It is recommended to
 When we have a new project it is recommended to produce an initial model and then iterate over it until you get the best model, this is more practical than spending time building model theoretical and thinking about the best hyperparameter *-which is almost impossible 🙄-*
 
 > So, just don't overthink! **(In both ML problems and life problems 🤗🙆‍)**

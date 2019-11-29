@@ -1,9 +1,9 @@
-# Image Augmentation
+# 🤡 Image Augmentation
 Basics of Image Augmentation which is a technique to avoid overfitting :boom: , when we have got a small dataset we are able to manipluate the dataset without changing the underlying images to open up whole scenarios for training and to be abale to train by variuos techniques of image augmentation 
 
 > Note: Image augmentation is needed for both training and test set :sweat_smile:
 
-## Basic Concept of Image Augmentation
+## 🚩 Basic Concept of Image Augmentation
 
 The concept is very simple though: If we have limited data, then the chances of you having data to match potential future predictions is also limited, and logically, the less data we have, the less chance we have of getting accurate predictions for data that our model hasn't yet seen.
 
@@ -14,28 +14,28 @@ Augmentation simply amends our images on-the-fly while training using **transfor
 > Note: Doing image augmentation in runtime is prefered rather than to do it on memory to keep original data as it is :thinking:
 
 
-## Image Augmentation Techniques
-### Mirroring 
+## 🤸‍♀️ Image Augmentation Techniques
+### ✅ Mirroring 
 Flipping the image horizontally
 
-#### Example
+#### 🚀 Example
 <img src="../res/Mirroring.jpg" width="400"  />
 
 
-### Random Cropping 
+### ✂ Random Cropping 
 Picking an image and taking random crops
 
-#### Example
+#### 🚀 Example
 <img src="../res/Cropping.jpg" width="400"  />
 
-### Color Shifting 
+### 🎨 Color Shifting 
 Adding and subtracting some values from color channels
 
-#### Example
+#### 🚀 Example
 <img src="../res/ColorShifting.jpg" width="400"  />
 
 
-## Code Example
+## 👩‍💻 Code Example
 
 The following code is used to do image augmentation
 
@@ -66,7 +66,7 @@ train_datagenerator = ImageDataGenerator(
 
 > Full code example is [here](./0-ImageAugmentation.ipynb) 👈
 
-## References
+## 🧐 References
 * [More About Image Augmentation](https://github.com/keras-team/keras-preprocessing)
 * [More About Image Pre-processing](https://keras.io/preprocessing/image/)
 * [Detailed Image Augmentation Techniques](http://datahacker.rs/020-cnn-data-augmentations/)
