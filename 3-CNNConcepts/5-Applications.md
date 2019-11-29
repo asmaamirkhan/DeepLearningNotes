@@ -8,14 +8,14 @@
 
 
 ## 🧒👧 Face Verification
-### Comparison
+### 🙌 Comparison
 
 | Term              | Question                                 | Input           | Output       | Problem Class |
 | ----------------- | ---------------------------------------- | --------------- | ------------ | ------------- |
 | Face Verification | Is this the claimed person? 🕵️‍♂️          | Face image / ID | True / False | 1:1           |
 | Face Recognition  | Who is this person? 🧐                   | Face image      | ID of `K` faces in DB | 1:K  |
 
-## Solving Approach
+## 🤸‍♀️ Solving Approach
 
 ### 🤳 One Shot Learning
 Learning from one example (that we have in the database) to recognize the person again 
@@ -97,8 +97,3 @@ Which:
 - J<sub>Content</sub> denotes the similarity between G and C
 - J<sub>Style</sub> denotes the similarity between G and S,
 - _α_ and _β_ hyperparameters
-  
-
-
-
-

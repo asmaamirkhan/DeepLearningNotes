@@ -1,8 +1,8 @@
-# Introduction to Convolutional Neural Networks
+# 🚩 Introduction to Convolutional Neural Networks
 Improving Neural Networks used in Computer Vision problems
 > This folder contains **theoric** details about CNNs
 
-## Important Terms
+## 📚 Important Terms
 | Term            | Description   |
 | --------------- |---------------|
 | Convolutoin     | Applying some filter on an image so certain features in the image get emphasized |
@@ -11,9 +11,9 @@ Improving Neural Networks used in Computer Vision problems
 | Padding         | Adding additional border(s) to the image before convolution  |
 
 
-## Notes on performance :dizzy:
+## 💫 Notes on performance
 * Training speed of a CNN is too slower than plain NN because of its computational complexity :turtle:
 
 
-## References
+## 🧐 References
 * [More on Convolutional Neural Networks](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF)
