@@ -1,4 +1,4 @@
-# ➰ Recurrent Neural Networks
+# 🔄 Recurrent Neural Networks
 
 ## 🔎 Definition
 A class of neural networks that allow previous outputs to be used as inputs to the next layers
