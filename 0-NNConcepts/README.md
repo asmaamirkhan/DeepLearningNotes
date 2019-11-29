@@ -1,4 +1,4 @@
-# 🕵️‍♀️ Concepts of Neural Networks
+# 💎 Concepts of Neural Networks
 Concepts of neural network with **theoric** details.
 
 ## 🔎 Definition
