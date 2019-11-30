@@ -37,5 +37,6 @@
     - [🌌 Vanishing Gradients with RNNs](9-SequenceModels/2-VanishingGradients.md)
     - [🌚 Word Representation](9-SequenceModels/3-WordRepres.md)
   - [👀 Quick Visual Info](Z-QuickVisualInfo/README.md)
+  - [📚 PDFs that I found and recommend](Z-UsefulPDFs/README.md)
 
 <!--Index-->

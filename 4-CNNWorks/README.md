@@ -71,3 +71,4 @@ The visualization of the output of each layer is available [here](./1-CNNVisuali
 * [Binary Classification](https://www.youtube.com/watch?v=eqEc66RFY0I&t=6s)
 * [TensorFlow: an ML platform for solving impactful and challenging problems](https://www.youtube.com/watch?v=NlpS-DhayQA)
 * [Rock Paper Scissors Dataset](http://www.laurencemoroney.com/rock-paper-scissors-dataset/)
+
