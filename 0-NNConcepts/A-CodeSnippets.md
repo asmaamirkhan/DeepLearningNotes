@@ -6,8 +6,7 @@
 
 ## 📚 General Code Snippets in ML
 
-<details>
-<summary>Sigmoid Function</summary>
+Sigmoid Function
 
 **Formula:**
 
@@ -27,12 +26,10 @@ def sigmoid(x):
     
     return result
 ```
-</details>
 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Sigmoid Gradient</summary>
+Sigmoid Gradient
 
 **Description:** A function that computes gradients to optimize loss functions using backpropagation
 
@@ -57,13 +54,11 @@ def sigmoid(x):
     
     return ds
 ```
-</details>
+
 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Reshaping Arrays (or images)</summary>
-
+Reshaping Arrays (or images)
 
 ```python
     def arr2vec(arr, target):
@@ -79,12 +74,10 @@ def sigmoid(x):
     
     return v
 ```
-</details>
 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Normalizing Rows</summary>
+ Normalizing Rows
 
 **Description:** Dividing each row vector of x by its norm.
 
@@ -113,12 +106,10 @@ def normalizeRows(x):
     
     return x
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Softmax Function</summary>
+ Softmax Function
 
 **Description:**  A normalizing function used when the algorithm needs to classify two or more classes
 
@@ -151,12 +142,10 @@ def normalizeRows(x):
 
     return s
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>L1 Loss Function</summary>
+ L1 Loss Function
 
 **Description:**  The loss is used to evaluate the performance of the model. The bigger the loss is, the more different that predictions ( ŷ ) are from the true values ( y ). In deep learning, we use optimization algorithms like Gradient Descent to train the model and to minimize the cost.
 
@@ -181,13 +170,11 @@ def L1(yhat, y):
     
     return loss
 ```
-</details>
-
+ 
 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>L2 Loss Function</summary>
+L2 Loss Function
 
 **Description:**  The loss is used to evaluate the performance of the model. The bigger the loss is, the more different that predictions ( ŷ ) are from the true values ( y ). In deep learning, we use optimization algorithms like Gradient Descent to train the model and to minimize the cost.
 
@@ -212,12 +199,10 @@ def L2(yhat, y):
     
     return loss
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Propagation Function</summary>
+ Propagation Function
 
 **Description:**  Doing the "forward" and "backward" propagation steps for learning the parameters
 
@@ -266,13 +251,11 @@ def propagate(w, b, X, Y):
     
     return grads, cost
 ```
-</details>
-
+ 
 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Gradient Descent (Optimization)</summary>
+ Gradient Descent (Optimization)
 
 **Description:**  The goal is to learn _ω_ and _b_ by minimizing the cost function _J_. For a parameter _ω_
 
@@ -335,8 +318,7 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
     
     return params, grads, costs
 ```
-</details>
-
+ 
 
 
 [//]: ------------------------------------------------------------------------------
@@ -351,8 +333,7 @@ Functions of 2-layer NN
 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Parameter Initialization</summary>
+ Parameter Initialization
 
 **Description:**  Initializing `W`s and `b`s, `W`s must be initialized randomly in order to do **symmetry-breaking**, we can do _zero initalization_ for `b`s
 
@@ -385,12 +366,10 @@ def initialize_parameters(n_x, n_h, n_y):
     
     return parameters
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Forward Propagation</summary>
+ Forward Propagation
 
 **Description:**  Each layer accepts the input data, processes it as per the activation function and passes to the next layer
 
@@ -425,12 +404,10 @@ def forward_propagation(X, parameters):
     
     return A2, cache
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------
 
-<details>
-<summary>Cost Function</summary>
+ Cost Function
 
 **Description:**  The average of the loss functions of the **entire** training set due to the output layer -_from A2 in our example_-
 
@@ -462,13 +439,11 @@ def compute_cost(A2, Y):
     
     return cost
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------
 
 
-<details>
-<summary>Back Propagation</summary>
+ Back Propagation
 
 **Description:** Proper tuning of the weights ensures lower error rates, making the model reliable by increasing its generalization.
 
@@ -515,14 +490,12 @@ def backward_propagation(parameters, cache, X, Y):
     
     return grads
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------
 
 
 
-<details>
-<summary>Updating Parameters</summary>
+ Updating Parameters
 
 **Description:**  Updating the parameters due to the learning rate to complete the gradient descent
 
@@ -568,6 +541,5 @@ def update_parameters(parameters, grads, learning_rate = 1.2):
     
     return parameters
 ```
-</details>
-
+ 
 [//]: ------------------------------------------------------------------------------

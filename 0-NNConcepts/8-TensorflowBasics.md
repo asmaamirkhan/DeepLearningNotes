@@ -1,6 +1,6 @@
-# 👓 Brief Introduction to Tensorflow
+# 🏃‍♀️ Brief Introduction to Tensorflow
 
-## 🚩 Main flow of programs in Tensorflow:
+## 🚩 Main flow of programs in Tensorflow
 1. Create Tensors (variables) that are not yet executed/evaluated.
 1. Write operations between those Tensors.
 1. Initialize your Tensors.
@@ -32,11 +32,11 @@ with tf.Session() as session:
     print(session.run(loss)) 
 ```
 
-> when we created a variable for the loss, we simply defined the loss as a function of other quantities, but did not evaluate its value. To evaluate it, we had to the initializer.
+> When we created a variable for the loss, we simply defined the loss as a function of other quantities, but did not evaluate its value. To evaluate it, we had to use the initializer.
 
-## ❗ Note on variable initalization
+## ❗ Değişken Başlatma _(initalization)_ Hakkında Not
 
-Fow the following code:
+For the following code:
 
 ```python
 a = tf.constant(2)
@@ -45,19 +45,19 @@ c = tf.multiply(a,b)
 print(c)
 ```
 
-<details>
-<summary>The output is</summary>
+🤸‍♀️ The output is
 
 ```
 Tensor("Mul:0", shape=(), dtype=int32)
 ```
 
-As expected, we will not see 20! We got a tensor saying that the result is a tensor that does not have the shape attribute, and is of type "int32". All we did was put in the **'computation graph'**, but we have not run this computation yet.
+As expected, we will not see 20 🤓! We got a tensor saying that the result is a tensor that does not have the shape attribute, and is of type "int32". All we did was put in the **'computation graph'**, but we have not run this computation yet.
 
-</details>
+
 
 ## 📦 Placeholders in TF
-A placeholder is an object whose value you can specify **only later**. To specify values for a placeholder, we can pass in values by using a `feed dictionary`. Below, a placeholder has been created for x. This allows us to pass in a number later when we run the session.
+- A placeholder is an object whose value you can specify **only later**. To specify values for a placeholder, we can pass in values by using a `feed dictionary`. 
+- Below, a placeholder has been created for x. This allows us to pass in a number later when we run the session.
 
 ```python
 x = tf.placeholder(tf.int64, name = 'x')
@@ -66,8 +66,7 @@ sess.close()
 ```
 
 ## 🎀 More examples
-<details>
-<summary>Computing sigmoid function with TF</summary>
+Computing sigmoid function with TF
 
 ```python
 def sigmoid(z):
@@ -95,10 +94,7 @@ def sigmoid(z):
     return result
 ```
 
-</details>
-
-<details>
-<summary>Computing cost function with TF</summary>
+Computing cost function with TF
 
 ```python
 def cost(logits, labels):
@@ -131,5 +127,3 @@ def cost(logits, labels):
         
     return cost
 ```
-
-</details>
