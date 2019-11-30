@@ -1,5 +1,8 @@
+---
+description: My notes (and codes) on deep learning 
+---
+
 # 💫 Deep Learning Notes
-My notes (and codes) on deep learnig
 
 ## 📑 Table of Contents
 
