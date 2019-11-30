@@ -22,7 +22,7 @@ description: My notes (and codes) on deep learning
 ## 💉 Extensions
 | #  | Title                                                                   |
 | -- |-------------------------------------------------------------------------|
-| 0. | [📚 PDFs that I found and recommend](./Z-UsefulPDFs)                   |
+| 0. | [📚 PDFs that I found and recommend](./Z-UsefulPDFs/README.md)                   |
 | 1. | [👀 Visual materials for quick info](./Z-QuickVisualInfo)              |
 
 ## 🙌 Quote
