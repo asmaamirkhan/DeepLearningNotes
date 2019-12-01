@@ -91,9 +91,6 @@ A function that computes gradients to optimize loss functions using backpropagat
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
-
-{% endtab %}
 {% endtabs %}
 
 ### 💥 Normalizing Rows
