@@ -13,5 +13,8 @@
 - [PandasVisualization.pdf](PandasVisualization.pdf)
 - [Python For Data Analysis by Boston University.pdf](Python%20For%20Data%20Analysis%20by%20Boston%20University.pdf)
 - [Top 50 Machine Learning Interview Questions.pdf](Top%2050%20Machine%20Learning%20Interview%20Questions.pdf)
+- [Deep Learning Tips and Tricks Cheatsheet](DLTricksCheatsheet.pdf)
+- [✨ Convolutional Neural Networks Cheatsheet](CNNCheatsheet.pdf)
+- [✨ Recurrent Neural Networks Cheatsheet](RNNCheatsheet.pdf)
 
 <!--Index-->
