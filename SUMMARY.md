@@ -36,6 +36,7 @@
     - [🔄 Recurrent Neural Networks](9-SequenceModels/1-RNNs.md)
     - [🌌 Vanishing Gradients with RNNs](9-SequenceModels/2-VanishingGradients.md)
     - [🌚 Word Representation](9-SequenceModels/3-WordRepres.md)
+    - [💬 Mixed Info On NLP](9-SequenceModels/4-AboutNLP.md)
   - [👀 Quick Visual Info](Z-QuickVisualInfo/README.md)
   - [📚 PDFs that I found and recommend](Z-UsefulPDFs/README.md)
 
