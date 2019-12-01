@@ -110,9 +110,9 @@ Similarly: If you have a matrix **A** that is `(m,n)` and you want to add / subt
 ### 👀 Simple Visualization
 <img src="../res/Broadcasting.jpg" width="400"  />
 
-
 ### 👩‍💻 Code Examples:
-Adding a (1,n) row vector to a (2,n) matrix
+
+#### ➕ Adding a (1,n) row vector to a (2,n) matrix
 
 ```python
 a = np.array([[0, 1, 2], 
@@ -124,8 +124,7 @@ print(a + b)
 #          [ 6  8 10]]
 ``` 
 
-
-Subtracting <i><b>a</b></i> scalar from a matrix
+#### ➖ Subtracting <i><b>a</b></i> scalar from a matrix
 
 ```python
 a = np.array( [[0, 1, 2], 
@@ -135,7 +134,6 @@ print(a - c)
 # Output: [[-2 -1  0]
 #          [ 3  4  5]]
 ```
-
 
 ## 1️⃣ Rank 1 Array
 
@@ -162,7 +160,6 @@ print('shape:', z.shape, 'rank:', z.ndim)
 
 ### 🤔 Why it is recommended not to use 1 rank arrays?
 Rank 1 arrays may cause bugs that are difficult to find and fix, for example:
-
 
 Dot operation on rank 1 arrays:
 ```python
