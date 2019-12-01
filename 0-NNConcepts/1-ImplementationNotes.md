@@ -42,27 +42,24 @@ v_result = np.dot(array1, array2)
 # v_result: 244.4311
 ``` 
 
-<details>
-<summary>Applying exponential operation on every element of an array (or matrix)</summary>
+#### 📈 Applying exponential operation on every element of an array (or matrix)
 
 ```python
 array = np.random.rand(1000)
 exp = np.exp(array)
 ```
-</details>
 
-<details>
-<summary>Vectorized version of sigmoid function</summary>
+#### 🚀 Vectorized version of sigmoid function
 
 ```python
 array = np.random.rand(1000)
 sigmoid = 1 / (1 + np.exp(-array))
 ```
-</details>
+
 
 ### 👩‍💻 Common Supported Operations in Numpy
-<details>
-<summary>Common single array functions</summary>
+
+#### 🤸‍♀️ Common single array functions
 
 * Taking the square root of each element in the array
   * `np.sqrt(x)`
@@ -75,20 +72,14 @@ sigmoid = 1 / (1 + np.exp(-array))
 * Applying **logarithmic** functions on each element in the array
   * `np.log(x)`, `np.log10(x)`, `np.log2(x)`
 
-</details>
-
-<details>
-<summary>Common multiple array functions</summary>
+#### 🤸‍♂️ Common multiple array functions
 
 * Applying **arithmetic** operations on corresponded elements in the arrays
   * `np.add(x, y)`, `np.subtract(x, y)`, `np.divide(x, y)`, `np.multiply(x, y)`
 * Applying **power** operation on corresponded elements in the arrays
   * `np.power(x, y)`
 
-</details>
-
-<details>
-<summary>Common sequential functions</summary>
+#### ➰ Common sequential functions
 
 * Getting **mean** of an array
   * `np.mean(x)`
@@ -102,9 +93,6 @@ sigmoid = 1 / (1 + np.exp(-array))
   * `np.max(x)`, `np.min(x)`
 * Getting **index** of maximum or minimum value of an array
   * `np.argmax(x)`, `np.argmin(x)`
-</details>
-
-
 
 ## 💉 Broadcasting
 The term broadcasting describes how _numpy_ treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is **“broadcast”** across the larger array so that they have compatible shapes.
@@ -136,8 +124,8 @@ print(a + b)
 #          [ 6  8 10]]
 ``` 
 
-<details>
-<summary>Subtracting <i><b>a</b></i> scalar from a matrix</summary>
+
+Subtracting <i><b>a</b></i> scalar from a matrix
 
 ```python
 a = np.array( [[0, 1, 2], 
@@ -147,7 +135,7 @@ print(a - c)
 # Output: [[-2 -1  0]
 #          [ 3  4  5]]
 ```
-</details>
+
 
 ## 1️⃣ Rank 1 Array
 
