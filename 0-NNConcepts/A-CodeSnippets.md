@@ -8,7 +8,7 @@
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/sigmoid.png)
+![](../res/formulas/Sigmoid.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -41,7 +41,7 @@ A function that computes gradients to optimize loss functions using backpropagat
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/sigmoidgradient.png)
+![](../res/formulas/SigmoidGradient.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -106,7 +106,7 @@ Dividing each row vector of x by its norm.
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/normalization.png)
+![](../res/formulas/Normalization.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -143,7 +143,7 @@ A normalizing function used when the algorithm needs to classify two or more cla
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/softmax.png)
+![](../res/formulas/Softmax.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -185,7 +185,7 @@ The loss is used to evaluate the performance of the model. The bigger the loss i
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/l1function.png)
+![](../res/formulas/L1Function.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -219,7 +219,7 @@ def L1(yhat, y):
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/l2function.png)
+![](../res/formulas/L2Function.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -251,9 +251,9 @@ Doing the "forward" and "backward" propagation steps for learning the parameters
 {% endtab %}
 
 {% tab title="➗ Formula" %}
-![](../.gitbook/assets/gradw.png)
+![](../res/formulas/GradW.png)
 
-![](../.gitbook/assets/gradb.png)
+![](../res/formulas/GradB.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -310,7 +310,7 @@ The goal is to learn _ω_ and _b_ by minimizing the cost function _J_. For a par
 {% tab title="➗ Formula" %}
 
 
-![ Where &#x3B1; is the learning rate](../.gitbook/assets/optimizationfunction.png)
+![ Where &#x3B1; is the learning rate](../res/formulas/OptimizationFunction.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -471,7 +471,7 @@ def forward_propagation(X, parameters):
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/costnn.png)
+![](../res/formulas/CostNN.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -514,7 +514,7 @@ Proper tuning of the weights ensures lower error rates, making the model reliabl
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/summarygd.PNG)
+![](../res/SummaryGD.PNG)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -572,7 +572,7 @@ Updating the parameters due to the learning rate to complete the gradient descen
 {% tab title="➗ Formula" %}
 
 
-![](../.gitbook/assets/updatingnn.png)
+![](../res/formulas/UpdatingNN.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
