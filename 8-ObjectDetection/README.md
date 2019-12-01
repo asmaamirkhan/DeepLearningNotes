@@ -1,4 +1,4 @@
-# 🕵️‍♀️ Concepts of Object Detection
+# 🕵️‍♀️ Basics of Object Detection
 
 ## 📚 Common Terms
 

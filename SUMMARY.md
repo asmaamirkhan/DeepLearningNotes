@@ -29,7 +29,7 @@
   - [🤸‍♀️ Notes on Applied Machine Learning](7-AppliedML/README.md)
     - [👩‍🔧 Notes on Structuring Machine Learning Projects](7-AppliedML/0-Evaluation.md)
     - [👩‍🏫 Implementation Guidelines](7-AppliedML/1-Guidelines.md)
-  - [🕵️‍♀️ Concepts of Object Detection](8-ObjectDetection/README.md)
+  - [🕵️‍♀️ Basics of Object Detection](8-ObjectDetection/README.md)
     - [⭕ Region-Based CNNs](8-ObjectDetection/0-RegionBasedAlgorithms.md)
     - [🤳 SSD and YOLO](8-ObjectDetection/1-SSDandYOLO.md)
   - [➰ Sequence Models In Deep Learning](9-SequenceModels/README.md)
