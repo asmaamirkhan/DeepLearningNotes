@@ -1,6 +1,8 @@
 # 🔎 The Problem in General 
 Given a dataset like:
 
+$$[(x^{1},y^{1}), (x^{2},y^{2}), ...., (x^{m},y^{m})]$$
+
 <img src="../res/formulas/Dataset.png" height="25"  />
 
 We want:
