@@ -3,9 +3,9 @@ Given a dataset like:
 
 $$[(x^{1},y^{1}), (x^{2},y^{2}), ...., (x^{m},y^{m})]$$
 
-<img src="../res/formulas/Dataset.png" height="25"  />
-
 We want:
+
+$$\^{y}^{(i)} \approx y^{(i)}$$
 
 <img src="../res/formulas/GoodOutput.png" height="25"  />
 
@@ -15,7 +15,7 @@ We want:
 | Concept         | Description   |
 | --------------- |---------------|
 | `m`             | Number of examples in dataset |
-| x<sup>(i)</sup> | `i`th example in the dataset  |
+| $$x^{(i)}$$     | `i`th example in the dataset  |
 | `ŷ`             | Predicted output |
 | Loss Function `𝓛(ŷ, y)` | A function to compute the error for a **single** training example |
 | Cost Function `𝙹(w, b)` | The average of the loss functions of the **entire** training set  |
