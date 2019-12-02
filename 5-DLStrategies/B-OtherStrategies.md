@@ -16,8 +16,6 @@ In short: We start simultaneously trying to have one NN do several things at sam
 
 <img src="../res/SingleTaskVsMultiTask.png" width="300"  />
 
-
-
 ## 🏴 End to End Deep Learning
 Briefly, there have beeen some data processing systems or kearning systems that requires multiple stages of processing, end to end learning can take all these multiple stages and replace it with just a single nn  
 

@@ -19,7 +19,7 @@ Basic Concepts of ANN
 | Activation Function | A function that converts an input signal of a node to an output signal by applying some transformation |
 | Shallow NN       |  NN with few number of hidden layers (one or two)  |
 | Deep NN          |  NN with large number of hidden layers |
-| n<sup>[l]</sup>  |  Number of units in _l_ layer |
+| $$n^{[l]}$$      |  Number of units in _l_ layer |
 
 
 ## 🧠 What does an artificial neuron do?
@@ -33,10 +33,10 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 | Parameter        | Dimension     |
 | ---------------  |---------------|
-| w<sup>[<i>l</i>]</sup>   |  (n<sup>[<i>l</i>]</sup>,n<sup>[<i>l-1</i>]</sup>) |
-| b<sup>[<i>l</i>]</sup>   |  (n<sup>[<i>l</i>]</sup>,1) |
-| dw<sup>[<i>l</i>]</sup>  |  (n<sup>[<i>l</i>]</sup>,n<sup>[<i>l-1</i>]</sup>) |
-| db<sup>[<i>l</i>]</sup>  |  (n<sup>[<i>l</i>]</sup>,1) |
+| $w^{[l]}$        |  $(n^{[l]},n^{[l-1]})$ |
+| $b^{[l]}$        |  $(n^{[l]},1)$ |
+| $dw^{[l]}$       |  $(n^{[l]},n^{[l-1]})$ |
+| $db^{[l]}$       |  $(n^{[l]},1)$ |
 
 
 > Making sure that these dimensions are true help us to write better and bug-free :bug: codes
@@ -45,29 +45,30 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 |                  |                 |
 | ---------------- | --------------- |
-| **Input:**       |  a<sup>[<i>l</i>-1]</sup> |
-| **Output:**      |  a<sup>[<i>l</i>]</sup>, chache (z<sup>[<i>l</i>]</sup>) |
+| **Input:**       |  $a^{[l-1]}$ |
+| **Output:**      |  $a^{[l]}, chache (z^{[l]})$ |
 
 **Vectorized Equations:**
 
-<img src="../res/formulas/ForwardProp.png" height="80"  />
+$$Z^{[l]} =W^{[l]}A^{[l-1]}+b^{[l]}$$
+$$A^{[l]} = g^{[l]}(Z^{[l]})$$
 
 ## 🎈 Summary of Back Propagation Process
 
 |                  |                 |
 | ---------------- | --------------- |
-| **Input:**       |  da<sup>[<i>l</i>]</sup> |
-| **Output:**      | da<sup>[<i>l</i>-1]</sup>, dW<sup>[<i>l</i>]</sup>, db<sup>[<i>l</i>]</sup> |
+| **Input:**       |  $da^{[l]}$ |
+| **Output:**      | $da^{[l-1]}, dW^{[l]}, db^{[l]}$ |
 
 **Vectorized Equations:**
 
-<img src="../res/formulas/BackProp1.png" height="30"  />
-<br>
-<img src="../res/formulas/BackProp2.png" height="50"  />
-<br>
-<img src="../res/formulas/BackProp3.png" height="50"  />
-<br>
-<img src="../res/formulas/BackProp4.png" height="30"  />
+$$dZ^{[l]}=dA^{[l]}*g^{[l]}'(Z^{[l]})$$
+
+$$dW^{[l]}=\frac{1}{m}dZ^{[l]}A^{[l-1]T}$$
+
+$$db^{[l]}=\frac{1}{m}np.sum(dZ^{[l]}, axis=1, keepdims=True)$$
+
+$$dA^{[l-1]}=W^{[l]T}dZ^{[l]}$$
 
 ## ➰➰ To Put Forward Prop. and Back Prop. Together
 
@@ -78,8 +79,8 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 ## ✨ Parameters vs Hyperparameters
 
 **Parameters:**
-* W<sup>[<i>1</i>]</sup>, W<sup>[<i>2</i>]</sup>, W<sup>[<i>3</i>]</sup>
-* b<sup>[<i>1</i>]</sup>, b<sup>[<i>2</i>]</sup>
+* $$W^{[1]}, W^{[2]}, W^{[3]}$$
+* $$b^{[1]}, b^{[2]}$$
 * ......
 
 

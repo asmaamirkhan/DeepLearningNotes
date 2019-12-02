@@ -16,8 +16,7 @@ The main purpose of Activation Functions is to convert an input signal of a node
 
 **Formula:**
 
-<img src="../res/formulas/LinearActivation.png" height="30"  />
-
+$$linear(x)=x$$
 
 **Graph:**
 
@@ -29,8 +28,7 @@ The main purpose of Activation Functions is to convert an input signal of a node
 
 **Formula:**
 
-<img src="../res/formulas/Sigmoid.png" height="40"  />
-
+$$sigmoid(x)=\frac{1}{1+exp(-x)}$$
 
 **Graph:**
 
@@ -43,7 +41,7 @@ Almost always strictly superior than sigmoid function
 
 **Formula:**
 
-<img src="../res/formulas/Tanh.png" height="40"  />
+$$tanh(x)=\frac{2}{1+e^{-2x}}-1$$
 
 > Shifted version of the Sigmoid function 🤔
 
@@ -60,9 +58,13 @@ If z is very large or very small then the derivative _(or the slope)_ of these f
 Another and very popular choice
 
 **Formula:**
-
-<img src="../res/formulas/Relu.png" height="50"  />
-
+$$
+relu(x)=\left\{\begin{matrix}
+0, if x<0
+\\
+x,if x\geq0
+\end{matrix}\right.
+$$
 
 **Graph:**
 
@@ -75,9 +77,13 @@ So the derivative is 1 when z is positive and 0 when z is negative
 ### 🎩 Leaky Relu
 
 **Formula:**
-
-<img src="../res/formulas/LeakyRelu.png" height="50"  />
-
+$$
+leaky\_relu(x)=\left\{\begin{matrix}
+0.01x, if x<0
+\\
+x,if x\geq0
+\end{matrix}\right.
+$$
 
 **Graph:**
 
