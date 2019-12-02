@@ -5,10 +5,7 @@ $$[(x^{1},y^{1}), (x^{2},y^{2}), ...., (x^{m},y^{m})]$$
 
 We want:
 
-$$\^{y}^{(i)} \approx y^{(i)}$$
-
-<img src="../res/formulas/GoodOutput.png" height="25"  />
-
+$$\hat{y}^{(i)} \approx y^{(i)}$$
 
 ## 📚 Basic Concepts and Notations
 
@@ -28,9 +25,9 @@ $$\^{y}^{(i)} \approx y^{(i)}$$
 ## 📉 Gradient Descent
 General Formula:
 
-<img src="../res/formulas/GradientDescentW.png" height="40"  />
-<img src="../res/formulas/GradientDescentB.png" height="40"  />
+$$w:=w-\alpha\frac{dJ(w,b)}{dw}$$
 
+$$b:=b-\alpha\frac{dJ(w,b)}{dw}$$
 
 > `α` _(alpha)_ is the **Learning Rate** 
 
