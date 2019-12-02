@@ -8,7 +8,7 @@ It is a part of _data preparation_
 
 **Formula:**
 
-<img src="../res/formulas/NormalizedData.png" height="30"  />
+$$normalized=\frac{x_{i}-\mu }{\sigma}$$
 
 > Benifit: It makes cost function _J_ easier and faster to optimize 😋
 

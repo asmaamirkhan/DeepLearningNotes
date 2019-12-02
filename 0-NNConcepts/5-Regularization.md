@@ -16,7 +16,7 @@ It is a technique which makes slight modifications to the learning algorithm suc
 ### 🔩 L2 Regularization (Weight decay)
 The most common type of regularization, given by following formula:
 
-<img src="../res/formulas/CostL2.png" height="40"  />
+$$J=Loss+\frac{\lambda}{2m}-\sum ||w||^{2}$$
 
 Here, lambda is the regularization parameter. It is the **hyperparameter** whose value is optimized for better results. L2 regularization is also known as weight decay as it forces the weights to decay towards zero (but not exactly zero)
 

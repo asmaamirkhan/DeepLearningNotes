@@ -50,8 +50,13 @@ The following image describes better: 🧐
 
 **Formula:**
 
-<img src="../res/formulas/GDwithMomentum.png" height="100"  />
+$$v_{dW} = \beta v_{dW }+ (1-\beta)dW$$
 
+$$v_{db} = \beta v_{db }+ (1-\beta)db$$
+
+$$W = W -\alpha v_{dW}$$
+
+$$b = b -\alpha v_{db}$$
 
 For better understanding:
 
@@ -66,7 +71,13 @@ The RMSprop optimizer is similar to the gradient descent algorithm with momentum
 
 The difference between RMSprop and gradient descent is on how the gradients are calculated, RMSProp gradients are calculated by the following formula:
 
-<img src="../res/formulas/RMSProp.png" height="180"  />
+$$S_{dW} = \beta S_{dW} + (1-\beta)dW^2$$
+
+$$S_{db} = \beta S_{db} + (1-\beta)db^2$$
+
+$$W = W -\alpha\frac{dW}{\sqrt{S_{dW}}}$$
+
+$$b = b -\alpha\frac{db}{\sqrt{S_{db}}} $$
 
 ## ✨ Adam Optimizer
 
