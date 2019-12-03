@@ -41,8 +41,8 @@ A function that computes gradients to optimize loss functions using backpropagat
 
 {% tab title="➗ Formula" %}
 
+$$\sigma^'(x)=\sigma(x)(1-\sigma(x))$$
 
-![](../res/formulas/SigmoidGradient.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -103,8 +103,8 @@ Dividing each row vector of x by its norm.
 
 {% tab title="➗ Formula" %}
 
+$$Normalization(x)=\frac{x}{||x||}$$
 
-![](../res/formulas/Normalization.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -140,8 +140,8 @@ A normalizing function used when the algorithm needs to classify two or more cla
 
 {% tab title="➗ Formula" %}
 
+$$Softmax(x_i)=\frac{exp(x_i)}{\sum_{j}exp(x_j)}$$
 
-![](../res/formulas/Softmax.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -182,8 +182,8 @@ The loss is used to evaluate the performance of the model. The bigger the loss i
 
 {% tab title="➗ Formula" %}
 
+$$L_1(\hat{y},y)=\sum_{i=0}^{m}(|y^{(i)}-\hat{y}^{(i)}|)$$
 
-![](../res/formulas/L1Function.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -216,8 +216,8 @@ def L1(yhat, y):
 
 {% tab title="➗ Formula" %}
 
+$$L_2(\hat{y},y)=\sum_{i=0}^{m}(y^{(i)}-\hat{y}^{(i)})^2$$
 
-![](../res/formulas/L2Function.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -249,9 +249,11 @@ Doing the "forward" and "backward" propagation steps for learning the parameters
 {% endtab %}
 
 {% tab title="➗ Formula" %}
-![](../res/formulas/GradW.png)
 
-![](../res/formulas/GradB.png)
+$$\frac{\partial J}{\partial w}=\frac{1}{m}X(A-Y)^T$$
+
+$$\frac{\partial J}{\partial b}=\frac{1}{m}\sum_{i=1}^{m}(a^{(i)}-y^{(i)})$$
+
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -307,8 +309,10 @@ The goal is to learn _ω_ and _b_ by minimizing the cost function _J_. For a par
 
 {% tab title="➗ Formula" %}
 
+$$w=w-\alpha dw$$
 
-![ Where &#x3B1; is the learning rate](../res/formulas/OptimizationFunction.png)
+Where &#x3B1; is the learning rate
+
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -468,8 +472,8 @@ def forward_propagation(X, parameters):
 
 {% tab title="➗ Formula" %}
 
+$$J=-\frac{1}{m}\sum_{i=1}^{m}(y^{(i)}log(a^{[2](i)}) + (1-y^{(i)}log(1-a^{[2](i)})))$$
 
-![](../res/formulas/CostNN.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
@@ -569,8 +573,8 @@ Updating the parameters due to the learning rate to complete the gradient descen
 
 {% tab title="➗ Formula" %}
 
+$$\theta := \theta - \alpha \frac{\partial J}{\partial \theta}$$
 
-![](../res/formulas/UpdatingNN.png)
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
