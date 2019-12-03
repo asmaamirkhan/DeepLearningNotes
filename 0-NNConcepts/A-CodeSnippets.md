@@ -8,7 +8,8 @@
 {% tab title="➗ Formula" %}
 
 
-![](../res/formulas/Sigmoid.png)
+$$sigmoid(x)=\frac{1}{1+exp(-x)}$$
+
 {% endtab %}
 
 {% tab title="👩‍💻 Code" %}
