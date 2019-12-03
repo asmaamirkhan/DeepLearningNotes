@@ -87,7 +87,25 @@ Commonly used algorithm nowadays, Adam can be looked at as a combination of RMSp
 
 > To summarize: Adam = RMSProp + GD with momentum + bias correction
 
-<img src="../res/formulas/AdamFormula.png" height="200"  />
+$$v_{dW}=\beta_1v_{dW}+ (1-\beta_1)dW$$
+
+$$v_{db}=\beta_1v_{db}+ (1-\beta_1)db$$
+
+$$S_{dW}=\beta_2S_{dW}+ (1-\beta_2)dW^2$$
+
+$$S_{db}=\beta_2S_{db}+ (1-\beta_2)db^2$$
+
+$$v^{corrected}_{dW}=\frac{v_{dW}}{1-\beta^t_1}$$
+
+$$v^{corrected}_{db}=\frac{v_{dW}}{1-\beta^t_1}$$
+
+$$S^{corrected}_{dW}=\frac{S_{dW}}{1-\beta^t_2}$$
+
+$$S^{corrected}_{db}=\frac{S_{db}}{1-\beta^t_2}$$
+
+$$W = W-\alpha \frac{v^{corrected}_{dW}}{\sqrt{S^{corrected}_{dW}}+\epsilon}$$
+
+$$b = b-\alpha \frac{v^{corrected}_{db}}{\sqrt{S^{corrected}_{db}}+\epsilon}$$
 
 > 😵😵😵
 

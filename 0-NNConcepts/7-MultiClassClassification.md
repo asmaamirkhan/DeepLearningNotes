@@ -21,8 +21,7 @@ Softmax is implemented through a neural network layer just before the output lay
 
 ### 💥 Softmax Activation Function
 
-<img src="../res/formulas/Softmax.png" height="50"  />
-
+$$Softmax(x_i)\frac{exp(x_i)}{\sum_{j}exp(x_j)}$$
 
 ### 🔨 Hard Max function 
 Takes the output of softmax layer and convert it into _1 vs 0 vector_ (as I called it 🤭) which will be our _ŷ_
@@ -38,7 +37,7 @@ And so on 🐾
 
 ### 🔎 Loss Function
 
-<img src="../res/formulas/SoftmaxLoss.png" height="50"  />
+$$L(\hat{y},y)=-\sum_{j=1}^{c}y_jlog(\hat{y}_j)$$
 
 > Y and  ŷ are (C,m) dimensional matrices 👩‍🔧
 

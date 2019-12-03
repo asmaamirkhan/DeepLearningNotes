@@ -12,7 +12,7 @@
 ## 👩‍💻 Code Example
 To calculate the following formula:
 
-_loss = L(ŷ, y) = (ŷ<sup>(i)</sup>-y<sup>(i)</sup>)<sup>2</sup>_:
+$$loss=L(\hat{y},y)=(\hat{y}^{(i)}-y^{(i)})^2$$
 
 ```python
 # Creating tensors and writing operations between them 
