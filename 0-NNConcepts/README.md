@@ -9,19 +9,19 @@ Neural networks are able to perform what has been termed deep learning. While th
 ## 📑 Types of NNs
 There are many types of neural networks, choosing atype is due to the problem that we are trying to solve, for example
 
-| Type               | Description         | Application    | 
-| ------------------ | ------------------- | -------------- |
-| Standard NN        | We input some features and estimate the output  | Online Advertizing, Real Estate   |     
-| CNN                | We add `convolutions` for feature extraction    | Photo Tagging |
-| RNN                | Suitable for sequence data  | Machine Translation, Speech Recognition |
-| Custom NN / Hybrid | For complex problems  | Autonomous Driving |
+| Type                   | Description         | Application    | 
+| ---------------------- | ------------------- | -------------- |
+| 👼 Standard NN        | We input some features and estimate the output  | Online Advertizing, Real Estate   |     
+| 🎨 CNN                | We add `convolutions` for feature extraction    | Photo Tagging |
+| 🔃 RNN                | Suitable for sequence data  | Machine Translation, Speech Recognition |
+| 🤨 Custom NN / Hybrid | For complex problems  | Autonomous Driving |
 
 
 ## 📑 Types of Data in Supervised Learning
-* Structured Data
+* 🚧 Structured Data
   * Such as tables
   * We have input fields and an output field
-* Unstructured Data
+* 🤹‍♂️ Unstructured Data
   * Such as images, audio and texts
   * We need to use feature extraction algorithms to build our model
 

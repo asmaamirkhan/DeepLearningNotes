@@ -3,9 +3,9 @@
 ## Important Terms
 | Term                | Description   |
 | ------------------- |---------------|
-| Padding             | Adding additional border(s) to the image before convolution  |
-| Strided Convolution | Convolving by `s` steps |
-| Convolutions Over Volume | Applying convs on n-dimensional input (such as an RGB image) |
+| 🔷 Padding             | Adding additional border(s) to the image before convolution  |
+| 🌠 Strided Convolution | Convolving by `s` steps |
+| 🏐 Convolutions Over Volume | Applying convs on n-dimensional input (such as an RGB image) |
 
 ## 🙌 Padding
 Adding an additional one border _or more_ to the image so the image is n+2*n+2 and after convolution we end up with n * n image which is the origianl size of the image
@@ -72,13 +72,13 @@ To apply convoltion operation on an RGB image; for example on 10x10 px RGB image
 
 | Layer                | Description   |
 | -------------------- |---------------|
-| Convolution `CONV`   | Filters to estract features |
-| Pooling `POOL`       | A technique to reduce size of representation and to speed up the computations |
-| Fully Connected `FC` | standard single neural network layer (one dimensional) |
+| 💫 Convolution `CONV`   | Filters to estract features |
+| 🌀 Pooling `POOL`       | A technique to reduce size of representation and to speed up the computations |
+| ⭕ Fully Connected `FC` | standard single neural network layer (one dimensional) |
 
 
 
-> Usually when people report number of layers in an NN they just report the number off layers that have weights and params 
+> 👩‍🏫 Usually when people report number of layers in an NN they just report the number off layers that have weights and params 
 
 > Convention: `CONV1` + `POOL1` = `LAYER1`
 

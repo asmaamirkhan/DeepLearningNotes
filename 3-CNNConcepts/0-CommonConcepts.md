@@ -77,8 +77,8 @@ By that we can get -learned- horizontal, vertical, angled, or any edge type auto
 If we have an `n*n` image and we convolove it by `f*f` filter the the output image will be `n-f+1*n-f+1` 
 
 ### 😐 Downsides
-1. If we apply many filters then our image shrinks.
-2. Pixels at corners aren't being touched enough, so we are throwing away a lot of information from the edges of the image .
+1. 🌀 If we apply many filters then our image shrinks.
+2. 🤨 Pixels at corners aren't being touched enough, so we are throwing away a lot of information from the edges of the image .
 
 ### 💡 Solution
 We can [_pad_](./1-CommonConcepts-P2.md#padding) the image 💪 
