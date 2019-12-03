@@ -15,7 +15,7 @@ A way to represent words so we can treat with them easily
 Let's say that we have a dictionary that consists of 10 words (🤭) and the words of the dictionary are: 
 - Car, Pen, Girl, Berry, Apple, Likes, The, And, Boy, Book.
 
-Our X<sup>(<i>i</i>)</sup> is: **The Girl Likes Apple And Berry**
+Our $X^{(i)}$ is: **The Girl Likes Apple And Berry**
 
 So we can represent this sequence like the following 👀
 
@@ -45,9 +45,9 @@ By representing sequences in this way we can feed our data to neural networks✨
   - The dimension of each vector is related to the number of features that we pick
 
 ### 🔢 Embedded Matrix
-For a given word _w_, the embedding matrix _E_ is a matrix that maps its 1-hot representation o<sub>w</sub> to its embedding e<sub>w</sub> as follows:
+For a given word _w_, the embedding matrix _E_ is a matrix that maps its 1-hot representation $o_w$ to its embedding $e_w$ as follows:
 
-<img src="../res/EmbedMat.png" height="40"  />
+$$e_w=Eo_w$$
 
 ### 🎀 Advantages
 - Words that have the **same** meaning have a **similar** representation.
@@ -68,7 +68,7 @@ For a given word _w_, the embedding matrix _E_ is a matrix that maps its 1-hot r
 ## Skip Gram Model
 The skip-gram word2vec model is a supervised learning task that learns word embeddings by assessing the likelihood of any given target word _t_ happening with a context word _c_. By noting θt a parameter associated with _t_, the probability _P(t|c)_ is given by:
 
-<img src="../res/SkipGram.PNG" width="200"  />
+$$P(t|c)=\frac{exp(\theta^T_te_c)}{\sum_{j=1}^{|V|}exp(\theta^T_je_c)} $$
 
 > Remark: summing over the whole vocabulary in the denominator of the softmax part makes this model computationally expensive
 
@@ -80,14 +80,14 @@ The skip-gram word2vec model is a supervised learning task that learns word embe
 
 ## 🧤 GloVe
 The GloVe model, short for global vectors for word representation, is a word embedding technique that uses a co-occurence matrix _X_ where each 
-X<sub>i,j</sub> denotes the number of times that a target _i_ occurred with a context _j_. Its cost function _J_ is as follows:
+$X_{ij}$ denotes the number of times that a target _i_ occurred with a context _j_. Its cost function _J_ is as follows:
 
-<img src="../res/Glove.PNG" width="500"  />
+$$J(\theta)=\frac{1}{2}\sum_{i,j=1}^{|V|}f(X_{ij})(\theta^T_ie_j+b_i+b'_j-log(X_{ij}))^2$$
 
-where _f_ is a weighting function such that X<sub>i,j</sub>=0 ⟹ f(X<sub>i,j</sub>) = 0.
-Given the symmetry that _e_ and _θ_ play in this model, the final word embedding e <sup>(final)</sup><sub>w</sub> is given by:
+where _f_ is a weighting function such that $X_{ij}$=0 ⟹ $f(X_{ij})$ = 0.
+Given the symmetry that _e_ and _θ_ play in this model, the final word embedding e $e^{(final)}_w$ is given by:
 
-<img src="../res/GloveE.PNG" width="200"  />
+$$e^{(final)}_w=\frac{e_w+\theta_w}{2}$$
 
 ## 👩‍🏫 Conclusion of Word Embeddings
 - If this is your first try, you should try to download a pre-trained model that has been made and actually works best.

@@ -4,19 +4,19 @@
 
 | Term                 | Description                                    |
 | -------------------- | ---------------------------------------------- |
-| Bayes Error 👩‍🎓       |  The **lowest** possible error rate for any classifier (The optimal error 🤔) |
-| Human Level Error 👩‍🏫 |  The error rate that can be obtained by a human |
-| Avoidable Bias 👮‍    |  The difference between Bayes error and human level error |
+| 👩‍🎓 Bayes Error        |  The **lowest** possible error rate for any classifier (The optimal error 🤔) |
+| 👩‍🏫 Human Level Error  |  The error rate that can be obtained by a human |
+| 👮‍♀️ Avoidable Bias ‍    |  The difference between Bayes error and human level error |
 
 ## I did my best, my project is still doing bad, what shall I do? 😥
 Well, in this stage we have a criteria, is your model doing worse than humans (Because humans are quite good at a lot of tasks 👩‍🎓)? If yes, you can:
-* Get labeled data from humans 👩‍🏫
-* Gain insight from manual error analysis; (Why did a person get this right? 🙄) 
-* Better analysis of bias / variance 🔍
+* 👩‍🏫 Get labeled data from humans 
+* 👀 Gain insight from manual error analysis; (Why did a person get this right? 🙄) 
+* 🔎 Better analysis of bias / variance 🔍
 
-> Note: knowing how well humans can do on a task can help us to understand better how much we should try to reduce bias and variance  
+> 🤔 Note: knowing how well humans can do on a task can help us to understand better how much we should try to reduce bias and variance  
 
-Is your model doing better than humans?
+### 🧐 Is your model doing better than humans?
 
 * Processes are less clear 😥
 

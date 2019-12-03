@@ -18,13 +18,13 @@ A class of neural networks that allow previous outputs to be used as inputs to t
 Basic RNN cell. Takes as input x⟨t⟩ (current input) and a<sup>⟨t−1⟩</sup> (previous hidden state containing information from the past), and outputs a<sup>⟨t⟩</sup> which is given to the next RNN cell and also used to predict y<sup>⟨t⟩</sup>
 
 ## ⏩ Forward Propagation
-**To find a<sup><<i>t</i>></sup>:**
+**To find $a^{<t>}$:**
 
-<img src="../res/RNNForwardA.png" height="25"  />
+$$a^{<t>}=g(W_{aa}a^{<t-1>}+W_{ax}x^{<t>}+b_a)$$
 
-**To find ŷ<sup><<i>t</i>></sup>:**
+**To find $\hat{y}^{<t>}$:**
 
-<img src="../res/RNNForwardY.png" height="25"  />
+$$\hat{y}^{<t>} = g(W_{ya}a^{<t>}+b_y)$$
 
 ### 👀 Visualization
 
@@ -33,25 +33,23 @@ Basic RNN cell. Takes as input x⟨t⟩ (current input) and a<sup>⟨t−1⟩</s
 ## ⏪ Back Propagation
 **Loss Function is defined like the following**
 
-<img src="../res/RNNOneLoss.png" height="25"  />
+$$L^{<t>}(\hat{y}^{<t>}, y^{<t>})=-y^{<t>}log(\hat{y})-(1-y^{<t>})log(1-\hat{y}^{<t>})$$
 
-</br>
-
-<img src="../res/RNNLoss.png" height="60"  />
+$$L(\hat{y},y)=\sum_{t=1}^{T_y}L^{<t>}(\hat{y}^{<t>}, y^{<t>})$$
 
 ## 🎨 Types of RNNs
-- **One-to-One** (Traditional ANN)
-- **One-to-Many** (Music Generation)
-- **Many-to-One** (Semantic Analysis)
-- **Many-to-Many** T<sub>x</sub> = T<sub>y</sub> (Speech Recognition)
-- **Many-to-Many** T<sub>x</sub> != T<sub>y</sub> (Machine Translation)
+- 1️⃣ ➡ 1️⃣ **One-to-One** (Traditional ANN)
+- 1️⃣ ➡ 🔢 **One-to-Many** (Music Generation)
+- 🔢 ➡ 1️⃣ **Many-to-One** (Semantic Analysis)
+- 🔢 ➡ 🔢 **Many-to-Many** $T_x$ = $T_y$ (Speech Recognition)
+- 🔢 ➡ 🔢 **Many-to-Many** $T_x$ != $T_y$ (Machine Translation)
 
 <img src="../res/RNNTypes.png" width="600"  />
 
 # 🔥 Advanced Recurrent Neural Networks
 
 ## 🔄 Bidirectional RNNs (BRNN)
-- In many applications we want to output a prediction of y (t) which may depend on the whole input sequence
+- In many applications we want to output a prediction of $y^{(t)}$ which may depend on the whole input sequence
 - Bidirectional RNNs combine an RNN that moves **forward** through time beginning from the start of the sequence with another RNN that moves **backward** through time beginning from the end of the sequence ✨
 
 ### 💬 In Other Words
@@ -72,9 +70,9 @@ We need the entire sequence of data efore you can make prediction anywhere.
 
 ## 🕸 Deep RNNs
 The computation in most RNNs can be decomposed into three blocks of parameters and associated transformations:
-1. From the input to the hidden state, x(t) ➡ a(t)
-2. From the previous hidden state to the next hidden state, a(t-1) ➡ a(t)
-3. From the hidden state to the output, a(t) ➡ y(t)
+1. From the input to the hidden state, $x^{(t)}$ ➡ $a^{(t)}$
+2. From the previous hidden state to the next hidden state, $a^{(t-1)}$ ➡ $a^{(t)}$
+3. From the hidden state to the output, $a^{(t)}$ ➡ $y^{(t)}$
 
 We can use multiple layers for each of the above transformations, which results in deep recurrent networks 😋
 

@@ -47,35 +47,35 @@ A vector which holds information for the current unit and it will pass it furthe
 - If the subject changes from a singular word to a plural word, we need to find a way to get rid of our previously stored memory value of the singular/plural state. 
 - In an LSTM, the forget gate let's us do this:
 
-<img src="../res/ForgetGate.png" width="300"  />
+$$\Gamma ^{<t>}_f = \sigma(W_f[a^{<t-1>}, x^{<t>}]+b_f)$$
 
-- Here,  W<sub>f</sub>  are weights that govern the forget gate's behavior. We concatenate  [a<sup>⟨t−1⟩</sup>,x<sup>⟨t⟩</sup>]  and multiply by  W<sub>f</sub>. The equation above results in a vector  Γ<sub><i>f</i></sub><sup>⟨t⟩</sup>  with values between 0 and 1. 
-- This forget gate vector will be multiplied element-wise by the previous cell state c<sup>⟨t−1⟩</sup> . 
-- So if one of the values of Γ<sub><i>f</i></sub><sup>⟨t⟩</sup> is 0 (or close to 0) then it means that the LSTM should remove that piece of information (e.g. the singular subject) in the corresponding component of  c<sup>⟨t−1⟩</sup> . 
+- Here,  $W_f$  are weights that govern the forget gate's behavior. We concatenate  $[a^{<t-1>}, x^{<t>}]$  and multiply by  $W_f$. The equation above results in a vector  $\Gamma_f^{<t>}$  with values between 0 and 1. 
+- This forget gate vector will be multiplied element-wise by the previous cell state $c^{<t-1>}$ . 
+- So if one of the values of $\Gamma_f^{<t>}$ is 0 (or close to 0) then it means that the LSTM should remove that piece of information (e.g. the singular subject) in the corresponding component of  $c^{<t-1>}$ . 
 - If one of the values is 1, then it will keep the information.
 
 ### 🔄 Update Gate
 Once we forget that the subject being discussed is singular, we need to find a way to update it to reflect that the new subject is now plural. Here is the formula for the update gate:
 
-<img src="../res/UpdateGate.png" width="300"  />
+$$\Gamma ^{<t>}_u = \sigma(W_u[a^{<t-1>}, x^{<t>}]+b_u)$$
 
-Similar to the forget gate, here  Γ<sub><i>u</i></sub><sup>⟨t⟩</sup>  is again a vector of values between 0 and 1. This will be multiplied element-wise with  c̃<sup>⟨t⟩</sup>, in order to compute c<sup>⟨t⟩</sup>.
+Similar to the forget gate, here  $\Gamma_u^{<t>}$  is again a vector of values between 0 and 1. This will be multiplied element-wise with  c̃<sup>⟨t⟩</sup>, in order to compute c<sup>⟨t⟩</sup>.
 
 ### 👩‍🔧 Updating the Cell
 To update the new subject we need to create a new vector of numbers that we can add to our previous cell state. The equation we use is:
 
-<img src="../res/StateUpdate.png" width="300"  />
+$$\tilde{c}^{<t>}=tanh(W_c[a^{<t-1>}, x^{<t>}]+b_c)$$
 
 Finally, the new cell state is:
 
-<img src="../res/NextState.png" width="300"  />
+$$c^{<t>}=\Gamma _f^{<t>}*c^{<t-1>} + \Gamma _u^{<t>}*\tilde{c}^{<t>}$$
 
 ### 🚪 Output Gate
 To decide which outputs we will use, we will use the following two formulas:
 
-<img src="../res/OutputGate1.png" width="300"  />
+$$\Gamma _o^{<t>}=\sigma(W_o[a^{<t-1>}, x^{<t>}]+b_o)$$
 
-<img src="../res/OutputGate2.png" width="300"  />
+$$a^{<t>} = \Gamma _o^{<t>}*tanh(c^{<t>})$$
 
 Where in equation 5 you decide what to output using a sigmoid function and in equation 6 you multiply that by the _tanh_ of the previous state.
 
