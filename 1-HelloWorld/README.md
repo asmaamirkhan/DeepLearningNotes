@@ -1,3 +1,6 @@
+---
+description: 👩‍💻 Intro to Neural Networks Coding
+---
 # 🙋‍♀️ Hello World of Deep Learning with Neural Networks
 Like every first app we should start with something super simple that gives us an idea about the whole methodology. 
 

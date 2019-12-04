@@ -1,3 +1,7 @@
+---
+description: 🥽 Popular Strategies Used In the Contest of Deep Learning 
+---
+
 # 💄 Popular Strategies of Deep Learning
 
 ## 📚 Popular Terms

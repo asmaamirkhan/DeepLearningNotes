@@ -1,5 +1,7 @@
+---
+description: 🚪 Beginning to solve problems of computer vision with Tensorflow and Keras 
+---
 # 🚪 Introduction to Computer Vision
-Beginning to solve problems of computer vision with Tensorflow and Keras
 
 ## 👗 What is MNIST?
 The MNIST database: **(Modified National Institute of Standards and Technology database)**

@@ -1,3 +1,7 @@
+---
+description: 🔦 Convolutional Neural Networks Codes 
+---
+
 # 👩‍💻 Works and Notes on CNN
 This folder will be filled by codes and notes gradually
 

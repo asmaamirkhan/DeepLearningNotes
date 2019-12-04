@@ -1,4 +1,8 @@
+---
+description: List of useful PDFs that I recommend
+---
 
+> PDFs will be categorized as they increase 👩‍🔧
 
 <!--Index-->
 # 📚 PDFs that I found and recommend

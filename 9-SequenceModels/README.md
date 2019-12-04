@@ -1,3 +1,7 @@
+---
+description: ⛓ ‍Basics of Sequence Models
+---
+
 # ➰ Sequence Models In Deep Learning
 
 ## ⛓ Sequence Models In General

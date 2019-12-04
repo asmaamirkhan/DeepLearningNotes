@@ -1,5 +1,7 @@
+---
+description: 👩‍🏫 Concepts of neural network with **theoric** details 
+---
 # 💎 Concepts of Neural Networks
-Concepts of neural network with **theoric** details.
 
 ## 🔎 Definition
 A neural network is a type of machine learning which models itself after the human brain. This creates an artificial neural network that via an algorithm allows the computer to learn by incorporating new data.

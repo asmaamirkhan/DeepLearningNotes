@@ -1,5 +1,8 @@
+---
+description: ✨ Improving Neural Networks used in Computer Vision problems 
+---
 # 🚩 Introduction to Convolutional Neural Networks
-Improving Neural Networks used in Computer Vision problems
+
 > This folder contains **theoric** details about CNNs
 
 ## 📚 Important Terms
