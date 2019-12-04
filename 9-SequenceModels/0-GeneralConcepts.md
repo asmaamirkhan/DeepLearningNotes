@@ -6,12 +6,12 @@ In the context of text processing (e.g: Natural Language Processing _NLP_)
 
 | Symbol                             | Description                                 |
 | ---------------------------------- |---------------------------------------------|
-| $X^{<t>}$           | The `t`th word in the input sequence        |
-| $Y^{<t>}$             | The `t`th word in the output sequence       |
-| $X^{(i)<t>}$   | The `t`th word in the `i`th input sequence  |
-| $Y^{(i)<t>}$   | The `t`th word in the `i`th output sequence |
-| $T^{(i)}_x$ | The length of the `i`th input sequence      |
-| $T^{(i)}_y$ | The length of the `i`th output sequence     |
+| $$X^{<t>}$$           | The `t`th word in the input sequence        |
+| $$Y^{<t>}$$             | The `t`th word in the output sequence       |
+| $$X^{(i)<t>}$$   | The `t`th word in the `i`th input sequence  |
+| $$Y^{(i)<t>}$$   | The `t`th word in the `i`th output sequence |
+| $$T^{(i)}_x$$ | The length of the `i`th input sequence      |
+| $$T^{(i)}_y$$ | The length of the `i`th output sequence     |
 
 ## 🚀 One Hot Encoding
 A way to represent words so we can treat with them easily 
@@ -20,7 +20,7 @@ A way to represent words so we can treat with them easily
 Let's say that we have a dictionary that consists of 10 words (🤭) and the words of the dictionary are: 
 - Car, Pen, Girl, Berry, Apple, Likes, The, And, Boy, Book.
 
-Our $X^{(i)}$ is: **The Girl Likes Apple And Berry**
+Our $$X^{(i)}$$ is: **The Girl Likes Apple And Berry**
 
 So we can represent this sequence like the following 👀
 

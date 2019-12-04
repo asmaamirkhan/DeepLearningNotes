@@ -49,9 +49,9 @@ A vector which holds information for the current unit and it will pass it furthe
 
 $$\Gamma ^{<t>}_f = \sigma(W_f[a^{<t-1>}, x^{<t>}]+b_f)$$
 
-- Here,  $W_f$  are weights that govern the forget gate's behavior. We concatenate  $[a^{<t-1>}, x^{<t>}]$  and multiply by  $W_f$. The equation above results in a vector  $\Gamma_f^{<t>}$  with values between 0 and 1. 
-- This forget gate vector will be multiplied element-wise by the previous cell state $c^{<t-1>}$ . 
-- So if one of the values of $\Gamma_f^{<t>}$ is 0 (or close to 0) then it means that the LSTM should remove that piece of information (e.g. the singular subject) in the corresponding component of  $c^{<t-1>}$ . 
+- Here,  $W_f$  are weights that govern the forget gate's behavior. We concatenate  $$[a^{<t-1>}, x^{<t>}]$$  and multiply by  $$W_f$$. The equation above results in a vector  $$\Gamma_f^{<t>}$$  with values between 0 and 1. 
+- This forget gate vector will be multiplied element-wise by the previous cell state $$c^{<t-1>}$$. 
+- So if one of the values of $$\Gamma_f^{<t>}$$ is 0 (or close to 0) then it means that the LSTM should remove that piece of information (e.g. the singular subject) in the corresponding component of  $$c^{<t-1>}$$ . 
 - If one of the values is 1, then it will keep the information.
 
 ### 🔄 Update Gate
@@ -59,7 +59,7 @@ Once we forget that the subject being discussed is singular, we need to find a w
 
 $$\Gamma ^{<t>}_u = \sigma(W_u[a^{<t-1>}, x^{<t>}]+b_u)$$
 
-Similar to the forget gate, here  $\Gamma_u^{<t>}$  is again a vector of values between 0 and 1. This will be multiplied element-wise with  c̃<sup>⟨t⟩</sup>, in order to compute c<sup>⟨t⟩</sup>.
+Similar to the forget gate, here  $$\Gamma_u^{<t>}$$  is again a vector of values between 0 and 1. This will be multiplied element-wise with  $$\tilde{c}^{<t>}$$, in order to compute $$c^{⟨t⟩}$$.
 
 ### 👩‍🔧 Updating the Cell
 To update the new subject we need to create a new vector of numbers that we can add to our previous cell state. The equation we use is:
