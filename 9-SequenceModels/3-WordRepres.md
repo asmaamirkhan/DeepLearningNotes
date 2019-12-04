@@ -15,7 +15,7 @@ A way to represent words so we can treat with them easily
 Let's say that we have a dictionary that consists of 10 words (🤭) and the words of the dictionary are: 
 - Car, Pen, Girl, Berry, Apple, Likes, The, And, Boy, Book.
 
-Our $X^{(i)}$ is: **The Girl Likes Apple And Berry**
+Our $$X^{(i)}$$ is: **The Girl Likes Apple And Berry**
 
 So we can represent this sequence like the following 👀
 
@@ -80,12 +80,12 @@ $$P(t|c)=\frac{exp(\theta^T_te_c)}{\sum_{j=1}^{|V|}exp(\theta^T_je_c)} $$
 
 ## 🧤 GloVe
 The GloVe model, short for global vectors for word representation, is a word embedding technique that uses a co-occurence matrix _X_ where each 
-$X_{ij}$ denotes the number of times that a target _i_ occurred with a context _j_. Its cost function _J_ is as follows:
+$$X_{ij}$$ denotes the number of times that a target _i_ occurred with a context _j_. Its cost function _J_ is as follows:
 
 $$J(\theta)=\frac{1}{2}\sum_{i,j=1}^{|V|}f(X_{ij})(\theta^T_ie_j+b_i+b'_j-log(X_{ij}))^2$$
 
-where _f_ is a weighting function such that $X_{ij}$=0 ⟹ $f(X_{ij})$ = 0.
-Given the symmetry that _e_ and _θ_ play in this model, the final word embedding e $e^{(final)}_w$ is given by:
+where _f_ is a weighting function such that $$X_{ij}=0$$ ⟹ $$f(X_{ij})$$ = 0.
+Given the symmetry that _e_ and _θ_ play in this model, the final word embedding e $$e^{(final)}_w$$ is given by:
 
 $$e^{(final)}_w=\frac{e_w+\theta_w}{2}$$
 

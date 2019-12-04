@@ -12,7 +12,7 @@ We can say that softmax regression generalizes logistic regression
 
 ### 📚 Notation
 C = number of classes = number of units of the output layer
-So,  ŷ<sub>_j_</sub>  is a (C, 1) dimensional vector.
+So,  $$\hat{y}_j$$  is a (C, 1) dimensional vector.
 
 ### 🎨 Softmax Layer
 Softmax is implemented through a neural network layer just before the output layer. The Softmax layer must have the same number of nodes as the output layer.

@@ -94,6 +94,6 @@ We can define _J_ as
 $$J(G)=\alpha J_{Content}(C,G)+\beta J_{Style}(S,G)$$
 
 Which:
-- $J_{Content}$ denotes the similarity between G and C
-- $J_{Style}$ denotes the similarity between G and S,
+- $$J_{Content}$$ denotes the similarity between G and C
+- $$J_{Style}$$ denotes the similarity between G and S,
 - _α_ and _β_ hyperparameters

@@ -33,10 +33,10 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 | Parameter        | Dimension     |
 | ---------------  |---------------|
-| $w^{[l]}$        |  $(n^{[l]},n^{[l-1]})$ |
-| $b^{[l]}$        |  $(n^{[l]},1)$ |
-| $dw^{[l]}$       |  $(n^{[l]},n^{[l-1]})$ |
-| $db^{[l]}$       |  $(n^{[l]},1)$ |
+| $$w^{[l]}$$        |  $$(n^{[l]},n^{[l-1]})$$ |
+| $$b^{[l]}$$        |  $$(n^{[l]},1)$$ |
+| $$dw^{[l]}$$       |  $$(n^{[l]},n^{[l-1]})$$ |
+| $$db^{[l]}$$       |  $$(n^{[l]},1)$$ |
 
 
 > Making sure that these dimensions are true help us to write better and bug-free :bug: codes
@@ -45,8 +45,8 @@ It calculates a _weighted sum_ of its input, adds a bias and then decides whethe
 
 |                  |                 |
 | ---------------- | --------------- |
-| **Input:**       |  $a^{[l-1]}$ |
-| **Output:**      |  $a^{[l]}, chache (z^{[l]})$ |
+| **Input:**       |  $$a^{[l-1]}$$ |
+| **Output:**      |  $$a^{[l]}, chache (z^{[l]})$$ |
 
 **Vectorized Equations:**
 
@@ -57,8 +57,8 @@ $$A^{[l]} = g^{[l]}(Z^{[l]})$$
 
 |                  |                 |
 | ---------------- | --------------- |
-| **Input:**       |  $da^{[l]}$ |
-| **Output:**      | $da^{[l-1]}, dW^{[l]}, db^{[l]}$ |
+| **Input:**       | $$da^{[l]}$$ |
+| **Output:**      | $$da^{[l-1]}, dW^{[l]}, db^{[l]}$$ |
 
 **Vectorized Equations:**
 
