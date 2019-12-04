@@ -62,7 +62,7 @@ $$A^{[l]} = g^{[l]}(Z^{[l]})$$
 
 **Vectorized Equations:**
 
-$$dZ^{[l]}=dA^{[l]}*g^{[l]}'(Z^{[l]})$$
+$$dZ^{[l]}=dA^{[l]} * {g^{[l]}}'(Z^{[l]})$$
 
 $$dW^{[l]}=\frac{1}{m}dZ^{[l]}A^{[l-1]T}$$
 
