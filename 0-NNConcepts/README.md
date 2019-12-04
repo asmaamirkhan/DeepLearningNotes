@@ -1,5 +1,5 @@
 ---
-description: 👩‍🏫 Concepts of neural network with **theoric** details 
+description: 👩‍🏫 Concepts of neural network with theoric details 
 ---
 # 💎 Concepts of Neural Networks
 
