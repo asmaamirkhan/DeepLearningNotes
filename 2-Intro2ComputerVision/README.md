@@ -19,12 +19,12 @@ The MNIST database: **(Modified National Institute of Standards and Technology d
 ## 📚 Important Terms
 | Term            | Description   |
 | --------------- |---------------|
-| Sequential      | That defines a SEQUENCE of layers in the neural network |
-| Flatten         | Flatten just takes that square and turns it into a 1 dimensional set (used for input layer)   |
-| Dense           | Adds a layer of neurons |
-| Activation Function | A formula that introduces non-linear properties to our Network |
-| Relu ✨        | An activation function by the rule: If X>0 return X, else return 0 |
-| Softmax         | An activation function that takes a set of values, and effectively picks the biggest one |
+| ➰ Sequential      | That defines a SEQUENCE of layers in the neural network |
+| ⛓ Flatten         | Flatten just takes that square and turns it into a 1 dimensional set (used for input layer)   |
+| 🔷 Dense           | Adds a layer of neurons |
+| 💥 Activation Function | A formula that introduces non-linear properties to our Network |
+| ✨ Relu         | An activation function by the rule: If X>0 return X, else return 0 |
+| 🎨 Softmax         | An activation function that takes a set of values, and effectively picks the biggest one |
 
 > The main purpose of activation function is to convert a input signal of a node in a NN to an output signal. That output signal now is used as a input in the next layer in the stack.
 

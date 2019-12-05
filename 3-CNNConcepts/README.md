@@ -1,7 +1,7 @@
 ---
 description: ✨ Improving Neural Networks used in Computer Vision problems 
 ---
-# 🚩 Introduction to Convolutional Neural Networks
+# 🚩 Concepts of Convolutional Neural Networks
 
 > This folder contains **theoric** details about CNNs
 
