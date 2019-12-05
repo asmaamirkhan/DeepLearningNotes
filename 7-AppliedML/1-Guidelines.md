@@ -46,7 +46,7 @@ Even though training and dev errors are same we will apply different tactics for
 > In computer vision issues, `human-level-error ≈ bayes-error` because humans are good in vision tasks
 
 
-## 🤗 Problems thar ML surpasses human level performance
+## 🤗 Problems that ML surpasses human level performance
 * Online advertising
 * Product recommendations
 * Logistics
