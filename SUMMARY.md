@@ -14,7 +14,7 @@
     - [👩‍💻 Pyhton Code Snippets on The Basics of Neural Networks](0-NNConcepts/A-CodeSnippets.md)
   - [🙋‍♀️ Hello World of Deep Learning with Neural Networks](1-HelloWorld/README.md)
   - [🚪 Introduction to Computer Vision](2-Intro2ComputerVision/README.md)
-  - [🚩 Introduction to Convolutional Neural Networks](3-CNNConcepts/README.md)
+  - [🚩 Concepts of Convolutional Neural Networks](3-CNNConcepts/README.md)
     - [📌 Common Concepts About Convolutional Neural Networks](3-CNNConcepts/0-CommonConcepts.md)
     - [🌟 Advanced Concepts About Convolutional Neural Networks](3-CNNConcepts/1-CommonConcepts-P2.md)
     - [👀 Visualization of Convolutional Neural Networks](3-CNNConcepts/2-Visualization.md)
