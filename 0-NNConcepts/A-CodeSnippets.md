@@ -197,7 +197,7 @@ def L1(yhat, y):
     y -- vector of size m (true labels)
 
     Returns:
-    loss -- the value of the L1 loss function defined above
+    loss -- the value of the L1 loss function defined previously
     """
 
     loss = np.sum(np.abs(y - yhat))
@@ -482,14 +482,14 @@ $$J=-\frac{1}{m}\sum_{i=1}^{m}(y^{(i)}log(a^{[2](i)}) + (1-y^{(i)}log(1-a^{[2](i
 ```python
 def compute_cost(A2, Y):
     """
-    Computes the cross-entropy cost given in equation (13)
+    Computes the cross-entropy cost given in the formula
 
     Arguments:
     A2 -- The sigmoid output of the second activation, of shape (1, number of examples)
     Y -- "true" labels vector of shape (1, number of examples)   
 
     Returns:
-    cost -- cross-entropy cost given equation (13)
+    cost -- cross-entropy cost given in the formula
 
     """
 
@@ -525,7 +525,7 @@ Proper tuning of the weights ensures lower error rates, making the model reliabl
 ```python
 def backward_propagation(parameters, cache, X, Y):
     """
-    Implement the backward propagation using the instructions above.
+    Implement the backward propagation using the previously given instructions.
 
     Arguments:
     parameters -- python dictionary containing our parameters 
@@ -583,7 +583,7 @@ $$\theta := \theta - \alpha \frac{\partial J}{\partial \theta}$$
 ```python
 def update_parameters(parameters, grads, learning_rate = 1.2):
     """
-    Updates parameters using the gradient descent update rule given above
+    Updates parameters using the gradient descent update rule given previously
 
     Arguments:
     parameters -- python dictionary containing your parameters 
