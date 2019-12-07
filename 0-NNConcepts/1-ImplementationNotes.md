@@ -5,10 +5,10 @@
 
 | Term             | Description   |
 | ---------------  |---------------|
-| Vectorization    |  A way to speed up the Python code **without using loop** |
-| Broadcasting     |  Another technique to make Python code run faster by stretching arrays |
-| Rank of an Array |  The number of dimensions it has         |
-| Rank 1 Array     |  An array that has only one dimension         |
+| 👩‍🔧 Vectorization    |  A way to speed up the Python code **without using loop** |
+| ⚙ Broadcasting     |  Another technique to make Python code run faster by stretching arrays |
+| 🔢 Rank of an Array |  The number of dimensions it has         |
+| 1️⃣ Rank 1 Array     |  An array that has only one dimension         |
 
 > A scalar is considered to have rank zero ❗❕
 
@@ -23,7 +23,7 @@ Vectorization is used to speed up the Python _(or Matlab)_ code without using lo
 <img src="../res/Vectorization.png" width="400"  />
 
 
-### 👩‍💻 Code Examples:
+### 👩‍💻 Code Examples
 Finding the _dot product_ of two arrays:
 
 ```python
@@ -124,7 +124,7 @@ print(a + b)
 #          [ 6  8 10]]
 ``` 
 
-#### ➖ Subtracting <i><b>a</b></i> scalar from a matrix
+#### ➖ Subtracting 'a' scalar from a matrix
 
 ```python
 a = np.array( [[0, 1, 2], 

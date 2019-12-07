@@ -34,11 +34,11 @@ $$b:=b-\alpha\frac{dJ(w,b)}{dw}$$
 ## 🥽 Learning Rate
 It is a positive scalar determining the size of the step of each iteration of gradient descent due to the corresponded estimated error each time the model weights are updated, so, it controls how quickly or slowly a neural network model learns a problem.
 
-**Good Learning Rate:**
+### 🎀 Good Learning Rate
 
 <img src="../res/GoodSGD.gif" width="300"  />
 
-**Bad Learning Rate:**
+### 💢 Bad Learning Rate
 
 <img src="../res/BadSGD.gif" width="300"  />
 

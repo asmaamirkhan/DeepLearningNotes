@@ -9,11 +9,11 @@ A neural network is a type of machine learning which models itself after the hum
 Neural networks are able to perform what has been termed deep learning. While the basic unit of the brain is the **neuron**, the essential building block of an artificial neural network is a **perceptron** which accomplishes simple signal processing, and these are then connected into a large mesh network.
 
 ## 📑 Types of NNs
-There are many types of neural networks, choosing atype is due to the problem that we are trying to solve, for example
+There are many types of neural networks, choosing a type is due to the problem that we are trying to solve, for example
 
 | Type                   | Description         | Application    | 
 | ---------------------- | ------------------- | -------------- |
-| 👼 Standard NN        | We input some features and estimate the output  | Online Advertizing, Real Estate   |     
+| 👼 Standard NN        | We input some features and estimate the output  | Online Advertising, Real Estate   |     
 | 🎨 CNN                | We add `convolutions` for feature extraction    | Photo Tagging |
 | 🔃 RNN                | Suitable for sequence data  | Machine Translation, Speech Recognition |
 | 🤨 Custom NN / Hybrid | For complex problems  | Autonomous Driving |
