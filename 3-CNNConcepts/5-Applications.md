@@ -57,7 +57,7 @@ We can train the network by taking an anchor (basic) image _A_ and comparing it 
 
 So:
 
-<img src="../res/TripletLoss.png" width="400"  />
+$$L=max(d(a,p)-d(a,n)+margin, 0)$$
 
 > Another variable called *margin*, which is a **hyperparameter** is added to the loss equation. Margin defines how far away the dissimilarities should be, i.e if margin = 0.2 and d(a,p) = 0.5 then d(a,n) should at least be equal to 0.7. Margin helps us distinguish the two images better
 
