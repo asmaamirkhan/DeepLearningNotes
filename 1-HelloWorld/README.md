@@ -17,7 +17,7 @@ Keras is a high-level **neural networks API**, written in Python and capable of 
 ## 👩‍🔬 The Simplest Neural Network
 It contains one layer with one neuron.
 
-### 👩‍💻 Code example:
+### 👩‍💻 Code Example
 ```python
 # initialize the model
 model = Sequential()
@@ -29,23 +29,23 @@ model.add(Dense(units=1, input_shape=[1]))
 model.compile(optimizer='sgd', loss='mean_squared_error')
 ```
 
-After building out neural network we can feed it with our sample data.
+After building out neural network we can feed it with our sample data 😋
 
-### 👩‍💻 Code example:
+### 👩‍💻 Code Example
 
 ```python
 xs = np.array([-1.0,  0.0, 1.0, 2.0, 3.0, 4.0], dtype=float)
 ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
 ```
-Then we have to start training process.
+Then we have to start training process 🚀
 
-### 👩‍💻 Code example:
+### 👩‍💻 Code Example
 ```python
 model.fit(xs, ys, epochs=500)
 ```
 Every thing is done 😎 ! Now we can test our neural network with new data 🎉
 
-### 👩‍💻 Code example:
+### 👩‍💻 Code Example
 ```python
 print(model.predict([10.0]))
 ```
