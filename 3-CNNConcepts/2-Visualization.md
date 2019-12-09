@@ -1,5 +1,5 @@
 # 👀 Visualization of Convolutional Neural Networks
-Viualization of concepts explained in [P1](./0-CommonConcepts.md) and [P2](./1-CommonConcepts-P2.md) to wrap them up 👩‍🎓
+Visualization of concepts explained in [P1](./0-CommonConcepts.md) and [P2](./1-CommonConcepts-P2.md) to wrap them up 👩‍🎓
 
 ### 💫 Convolution
 Applying a filter to extract features 🤗
@@ -25,7 +25,7 @@ Filters must have depth that is equal to number of color channels
 <img src="../res/ConvOverVol.png" width="450"  />
 
 ### 🤡 Ok, now I want to apply `n` filters 
-Depth od the output will be equal to `n` 
+Depth of the output will be equal to `n` 
 
 <img src="../res/ConvMultiFilter.png" width="450"  />
 

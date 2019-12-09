@@ -8,7 +8,7 @@
 | 🏐 Convolutions Over Volume | Applying convs on n-dimensional input (such as an RGB image) |
 
 ## 🙌 Padding
-Adding an additional one border _or more_ to the image so the image is n+2*n+2 and after convolution we end up with n * n image which is the origianl size of the image
+Adding an additional one border _or more_ to the image so the image is `n+2 x n+2` and after convolution we end up with `n x n` image which is the original size of the image
 
 `p` = number of added borders
 
@@ -49,12 +49,12 @@ Another approach of convolutions, we calculate the output by applying filter on 
 
 ## 🤗 To Generalize
 
-For an `n*n` image and `f*f` filter, with `p` padding and stride `s`; the output image size can be calculated by the following formula
+For an `n x n` image and `f x f` filter, with `p` padding and stride `s`; the output image size can be calculated by the following formula
 
 $$\left \lfloor{\frac{n+2p-f}{s}+1}\right \rfloor \times \left \lfloor{\frac{n+2p-f}{s}+1}\right \rfloor$$
 
 ## 🚀 Convolutions Over Volume
-To apply convoltion operation on an RGB image; for example on 10x10 px RGB image, technically the image's dimension is 10x10x3 so we can apply for example a 3x3x3 filter _or fxfx3_ 🤳
+To apply convolution operation on an RGB image; for example on 10x10 px RGB image, technically the image's dimension is 10x10x3 so we can apply for example a 3x3x3 filter _or fxfx3_ 🤳
 
 
 > Filters can be applied on a special color channel 🎨
@@ -72,13 +72,11 @@ To apply convoltion operation on an RGB image; for example on 10x10 px RGB image
 
 | Layer                | Description   |
 | -------------------- |---------------|
-| 💫 Convolution `CONV`   | Filters to estract features |
+| 💫 Convolution `CONV`   | Filters to extract features |
 | 🌀 Pooling `POOL`       | A technique to reduce size of representation and to speed up the computations |
-| ⭕ Fully Connected `FC` | standard single neural network layer (one dimensional) |
+| ⭕ Fully Connected `FC` | Standard single neural network layer (one dimensional) |
 
-
-
-> 👩‍🏫 Usually when people report number of layers in an NN they just report the number off layers that have weights and params 
+> 👩‍🏫 Usually when people report number of layers in an NN they just report the number of layers that have weights and params 
 
 > Convention: `CONV1` + `POOL1` = `LAYER1`
 
