@@ -9,7 +9,7 @@ One of the challenges with building machine learning systems is that there are s
 
 What should we pay attention to while evaluating an ML project? How to optimize it? How to speed up? Since there are a lot of parameters how to know where to fix and which parameter to tune? 🤔🤕
 
-Before answering these question let's take a look at the whole process 🧐
+Before answering these questions let's take a look at the whole process 🧐
 
 ## ⛓ Chain of assumptions in ML
 **The model should:**
