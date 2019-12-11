@@ -2,7 +2,7 @@
 description: 🔦 Convolutional Neural Networks Codes 
 ---
 
-# 👩‍💻 Works and Notes on CNN
+# 👩‍💻 Works and Notes on CNNs
 This folder will be filled by codes and notes gradually
 
 ## 👩‍💻 Codes
@@ -46,7 +46,7 @@ dense_15 (Dense)             (None, 10)                1290
 ``` 
 
 👩‍💻 For code in the notebook:
-> [Here](./0-CNN.ipynb) :feet:
+> [Here](./0-CNN.ipynb) 🐾
 
 * 🔎 The original dimensions of the images were 28x28 px
 * 1️⃣ 1st layer: The filter can not be applied on the pixels on the edges 
@@ -54,7 +54,7 @@ dense_15 (Dense)             (None, 10)                1290
 * 2️⃣ 2nd layer: After applying `2x2 max pooling` the dimensions will be divided by 2
   * The output of this layer has 13x13 px
 * 3️⃣ 3rd layer: The filter can not be applied on the pixels on the edges 
-  * The output of first layer has 11x11 px
+  * The output of this layer has 11x11 px
 * 4️⃣ 4th layer: After applying `2x2 max pooling` the dimensions will be divided by 2
   * The output of this layer has 5x5 px
 * 5️⃣ 5th layer: The output of the previous layer will be flattened
