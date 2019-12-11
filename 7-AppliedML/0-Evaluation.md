@@ -2,16 +2,16 @@
 
 ## ✨ How to effectively set up evaluation metrics?
 * While looking to precesion _P_ and recall _R_ (for example) we may be not able to choose the best model correctly
-  * So we have to create a new evaluation metric that makes a relation between _P_ an _R_
-  * Now we can choose the best model duw to our new metric 🐣
+  * So we have to create a new evaluation metric that makes a relation between _P_ and _R_
+  * Now we can choose the best model due to our new metric 🐣
   * For example: (as a popular associated metric) _F1 Score_ is:
     * $$F1 = \frac{2}{\frac{1}{P}+\frac{1}{R}}$$
 
-* To summarize: we can construct our own metrics due to our models and values to be able to get the best choice 👩‍🏫
+> To summarize: we can construct our own metrics due to our models and values to be able to get the best choice 👩‍🏫
 
 ## 📚 Types of Metrics
 
-For better evalution we have to classify our metrics as the following:
+For better evaluation we have to classify our metrics as the following:
 
 
 | Metric Type            | Description                                    |
@@ -21,10 +21,10 @@ For better evalution we have to classify our metrics as the following:
 
 Technically, If we have `N` metrics we have to try to optimize `1` metric and to satisfice  `N-1` metrics 🙄
 
-> 🙌 Clarification: we tune saticficing metrics due to a _threshold_ that we determine
+> 🙌 Clarification: we tune satisficing metrics due to a _threshold_ that we determine
 
 ## 🚀 How to set up datasets to maximize the efficiency
-* It is recommended to choose the dev and test sets from the same destribution, so we have to shuffle the data randomly and then split it. 
+* It is recommended to choose the dev and test sets from the same distribution, so we have to shuffle the data randomly and then split it. 
 * As a result, both test and dev sets have data from all categories ✨  
 
 ### 👩‍🏫 Guideline

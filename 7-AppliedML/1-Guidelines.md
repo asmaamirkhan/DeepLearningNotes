@@ -32,9 +32,9 @@ Let's assume that we have these two situations:
 | Dev Error          | 10%        | 10%      |
 
 Even though training and dev errors are same we will apply different tactics for better performance
-* In **Case1**, We have `High Bias` so we have to focus on _bias reduction techniques_ 🤔, in other words we have to reduce the difference between training and uman errors **the avoidable error**
+* In **Case1**, We have `High Bias` so we have to focus on _bias reduction techniques_ 🤔, in other words we have to reduce the difference between training and human errors **the avoidable error**
   * Better algorithm, better NN structure, ......
-* In **Case**, We have `High Variance` so we have to focus on _variance reduction techniques_ 🙄, in other words we have to reduce the difference between training and dev errors
+* In **Case2**, We have `High Variance` so we have to focus on _variance reduction techniques_ 🙄, in other words we have to reduce the difference between training and dev errors
   * Adding regularization, getting more data, ......
 
 > We call this procedure of analysis **Error analysis** 🕵️‍
