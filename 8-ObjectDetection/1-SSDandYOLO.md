@@ -2,7 +2,7 @@
 
 ## 😉 You Only Look Once
 - 💥 The approach involves a single neural network trained end to end
-  - It that takes a photograph as input and predicts bounding boxes and class labels for each bounding box directly.
+  - It takes an image as input and predicts bounding boxes and class labels for each bounding box directly.
 - 😕 The technique offers lower predictive accuracy (e.g. more localization errors) _Compared with region based models_
 - ➗ YOLO divides the input image into an S×S grid. Each grid cell predicts only one object
 
@@ -31,8 +31,8 @@
   - The concept is, maybe a vertical rectangle is more fit for human, and a horizontal rectangle is more fit for car.
 - For each of the bounding box, we will compute c class scores and 4 offsets relative to the original default bounding box shape.
 
-### 🤓Long Story Short 
-The SSD object detection composes of 2 parts:
+### 🤓 Long Story Short 
+The SSD object detection algorithm is composed of 2 parts:
 - Extract feature maps
 - Apply convolution filters to detect objects.
 

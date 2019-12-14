@@ -8,7 +8,7 @@ description: 🕵️‍♀️ Popular Object Detection Techniques
 
 | Term                 | Description                                    |
 | -------------------- | ---------------------------------------------- |
-| Classification       |  Specifying the label of an object in input image |
+| Classification       |  Specifying the label (class) of an object in input image |
 | Classification and Localization |  Specifying the label and coordinates of an object in input image |
 | Object Detection     |  Specifying labels and coordinates of multiple objects in input image        |
 
