@@ -3,7 +3,7 @@
 ## 🔷 R-CNN _(Region Based Convoltional Neural Network)_
 It depends on:
 1. Selecting huge number of regions
-2. And then decrease them to 2000 by _selective search_
+2. And then decreasing them to 2000 by _selective search_
    * Each region is called a _region proposal_
 3. Extracting convolutional features from each region
 4. Finally checking if any object exists
@@ -64,7 +64,7 @@ Faster R-CNN fixes the problem of selective search by replacing it with Region P
 So, it depends on:
 1. We feed the **whole** image to the CNN
 2. The CNN generates a feature map
-3. We apply Region proposal network is applied on feature map 
+3. We apply Region proposal network on feature map 
 4. The RPN returns the object proposals along with their _objectness_ score
    - Problem of selective search is solved 🎉
 5. Then, we resize the regions into a fixed size (using ROI pooling layer)
