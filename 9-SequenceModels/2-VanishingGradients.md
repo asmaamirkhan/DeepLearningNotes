@@ -11,7 +11,7 @@
 GRUs are improved version of standard recurrent neural network ✨, GRU uses _update gate and reset gate_ . 
 - Basically, these are two vectors which decide what information should be passed to the output. 
 - The special thing about them is that they can be trained to keep information from long ago
-  - Without washing it through time or remove information which is irrelevant to the prediction.
+  - Without washing it through time or removing information which is relevant to the prediction.
 
 | Gate           | Description                                 |
 | -------------- |---------------------------------------------|

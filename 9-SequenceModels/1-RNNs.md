@@ -2,7 +2,7 @@
 
 ## 🔎 Definition
 A class of neural networks that allow previous outputs to be used as inputs to the next layers
-> They remember things they learnt during training ✨
+> They remember things they learned during training ✨
 
 ## 🧱 Architecture
 
@@ -15,7 +15,7 @@ A class of neural networks that allow previous outputs to be used as inputs to t
 
 <img src="../res/RNNCell.png" width="600"  />
 
-Basic RNN cell. Takes as input x⟨t⟩ (current input) and $$a^{⟨t−1⟩}$$ (previous hidden state containing information from the past), and outputs $$a^{⟨t⟩}$$ which is given to the next RNN cell and also used to predict $$y^{⟨t⟩}$$
+Basic RNN cell. Takes as input $$x^{⟨t⟩}$$ (current input) and $$a^{⟨t−1⟩}$$ (previous hidden state containing information from the past), and outputs $$a^{⟨t⟩}$$ which is given to the next RNN cell and also used to predict $$y^{⟨t⟩}$$
 
 ## ⏩ Forward Propagation
 **To find $$a^{<t>}$$:**
@@ -59,9 +59,9 @@ $$L(\hat{y},y)=\sum_{t=1}^{T_y}L^{<t>}(\hat{y}^{<t>}, y^{<t>})$$
 - 🎉 This structure allows the networks to have both backward and forward information about the sequence at every time step. 
 
 ### 👎 Disadvantages
-We need the entire sequence of data efore you can make prediction anywhere.
+We need the entire sequence of data before we can make prediction anywhere.
 
->e.g: not suitable for real time speach recognition 
+>e.g: not suitable for real time speech recognition 
 
 ### 👀 Visualization
 
@@ -81,8 +81,8 @@ We can use multiple layers for each of the above transformations, which results 
 <img src="../res/DeepRNN.PNG" width="600"  />
 
 ## ❌ Problem: Vanishing Gradients with RNNs
-- An RNN that process a sequence data with the size of 10,000 time steps, has 10,000 deep layers which is very hard to optimize 🙄
-- Same in Deep Neural Networks, deeper networks are getting into the vanishing gradient problem. 
+- An RNN that processes a sequence data with the size of 10,000 time steps, has 10,000 deep layers which is very hard to optimize 🙄
+- Same in Deep Neural Networks, deeper networks are getting into the vanishing gradient problem 🥽
 - That also happens with RNNs with a long sequence size 🐛
 
 ### 🧙‍♀️ Solutions

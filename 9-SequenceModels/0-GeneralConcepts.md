@@ -4,14 +4,14 @@
 
 In the context of text processing (e.g: Natural Language Processing _NLP_)
 
-| Symbol                             | Description                                 |
-| ---------------------------------- |---------------------------------------------|
-| $$X^{<t>}$$           | The `t`th word in the input sequence        |
-| $$Y^{<t>}$$             | The `t`th word in the output sequence       |
+| Symbol           | Description                                 |
+| ---------------- |---------------------------------------------|
+| $$X^{<t>}$$      | The `t`th word in the input sequence        |
+| $$Y^{<t>}$$      | The `t`th word in the output sequence       |
 | $$X^{(i)<t>}$$   | The `t`th word in the `i`th input sequence  |
 | $$Y^{(i)<t>}$$   | The `t`th word in the `i`th output sequence |
-| $$T^{(i)}_x$$ | The length of the `i`th input sequence      |
-| $$T^{(i)}_y$$ | The length of the `i`th output sequence     |
+| $$T^{(i)}_x$$    | The length of the `i`th input sequence      |
+| $$T^{(i)}_y$$    | The length of the `i`th output sequence     |
 
 ## 🚀 One Hot Encoding
 A way to represent words so we can treat with them easily 
@@ -37,7 +37,7 @@ Boy   -8)  | 0 |  | 0 |  | 0 |  | 0 |  | 0 |  | 0 |
 Book  -9)  ⌊ 0 ⌋   ⌊ 0 ⌋   ⌊ 0 ⌋   ⌊ 0 ⌋  ⌊ 0 ⌋   ⌊ 0 ⌋
 ```
 
-By representing sequences in this way we can feed out data to neural networks✨
+By representing sequences in this way we can feed out data to neural networks ✨
 
 ### 🙄 Disadvantage
 - If our dictionary consists of 10,000 words so each vector will be 10,000 dimensional 🤕 
