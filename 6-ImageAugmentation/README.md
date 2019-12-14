@@ -18,9 +18,9 @@ If we have limited data, then the chances of you having data to match potential 
 
 - Augmentation simply amends our images on-the-fly while training using **transforms** like rotation. 
 - So, it could 'simulate' an image of a cat lying down by rotating a 'standing' cat by 90 degrees. 
-- As such we get a cheap :sparkles: way of extending our dataset beyond what we have already.
+- As such we get a cheap ✨ way of extending our dataset beyond what we have already.
 
-> 🔎 Note: Doing image augmentation in runtime is prefered rather than to do it on memory to keep original data as it is 🤔
+> 🔎 Note: Doing image augmentation in runtime is preferred rather than to do it on memory to keep original data as it is 🤔
 
 
 ## 🤸‍♀️ Image Augmentation Techniques
@@ -43,6 +43,12 @@ Adding and subtracting some values from color channels
 #### 🚀 Example
 <img src="../res/ColorShifting.jpg" width="400"  />
 
+
+### 📐 Shearing Transformation
+Shear transformation slants the shape of the image
+
+#### 🚀 Example
+<img src="../res/ShearingTransform.jpg" width="400"  />
 
 ## 👩‍💻 Code Example
 
