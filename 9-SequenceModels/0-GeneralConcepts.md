@@ -41,3 +41,4 @@ By representing sequences in this way we can feed out data to neural networks �
 
 ### 🙄 Disadvantage
 - If our dictionary consists of 10,000 words so each vector will be 10,000 dimensional 🤕 
+- This representation can not capture semantic features 💔

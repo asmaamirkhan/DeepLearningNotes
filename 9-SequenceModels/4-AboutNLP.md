@@ -8,9 +8,9 @@ Mixed Info On Natural Language Processing
 - It is sometimes referred as a _conditional language model_.
 
 ### 🕵️‍♀️ Neural Machine Translation with Attention
-- If you had to translate a book's paragraph from French to English, you would not read the whole paragraph, then close the book and translate.
-- Even during the translation process, you would read/re-read and focus on the parts of the French paragraph corresponding to the parts of the English you are writing down.
-- The attention mechanism tells a Neural Machine Translation model where it should pay attention to at any step
+- If you had to translate a book's paragraph from French to English, you would not read the whole paragraph, then close the book and translate 😅
+- Even during the translation process, you would read/re-read and focus on the parts of the French paragraph corresponding to the parts of the English you are writing down 🤔
+- The attention mechanism tells a Neural Machine Translation model where it should pay attention to at any step 👩‍🏫
 
 
 

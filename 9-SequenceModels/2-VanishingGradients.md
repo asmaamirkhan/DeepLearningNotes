@@ -45,7 +45,7 @@ A vector which holds information for the current unit and it will pass it furthe
 ### 0️⃣ Forget Gate
 - Let's assume we are reading words in a piece of text, and want use an LSTM to keep track of grammatical structures, such as whether the subject is singular or plural. 
 - If the subject changes from a singular word to a plural word, we need to find a way to get rid of our previously stored memory value of the singular/plural state. 
-- In an LSTM, the forget gate let's us do this:
+- In an LSTM, the forget gate let us do this:
 
 $$\Gamma ^{<t>}_f = \sigma(W_f[a^{<t-1>}, x^{<t>}]+b_f)$$
 
@@ -77,7 +77,7 @@ $$\Gamma _o^{<t>}=\sigma(W_o[a^{<t-1>}, x^{<t>}]+b_o)$$
 
 $$a^{<t>} = \Gamma _o^{<t>}*tanh(c^{<t>})$$
 
-Where in equation 5 you decide what to output using a sigmoid function and in equation 6 you multiply that by the _tanh_ of the previous state.
+Where in first equation we decide what to output using a sigmoid function and in second equation we multiply that by the _tanh_ of the previous state.
 
 <img src="../res/RNNLSTM.png" width="600"  />
 

@@ -36,7 +36,7 @@ By representing sequences in this way we can feed our data to neural networks✨
 
 ## 🙄 Disadvantage
 - If our dictionary consists of 10,000 words so each vector will be 10,000 dimensional 🤕 
-- This represeentation can not capture semantic features 💔
+- This representation can not capture semantic features 💔
 
 ## 🎎 Featurized Representation (Word Embedding)
 - Representing words by associating them with features such as gender, age, royal, food, cost, size.... and so on 
@@ -45,12 +45,12 @@ By representing sequences in this way we can feed our data to neural networks✨
   - The dimension of each vector is related to the number of features that we pick
 
 ### 🔢 Embedded Matrix
-For a given word _w_, the embedding matrix _E_ is a matrix that maps its 1-hot representation $o_w$ to its embedding $e_w$ as follows:
+For a given word _w_, the embedding matrix _E_ is a matrix that maps its 1-hot representation $$o_w$$ to its embedding $$e_w$$ as follows:
 
 $$e_w=Eo_w$$
 
 ### 🎀 Advantages
-- Words that have the **same** meaning have a **similar** representation.
+- Words that have the **similar** meaning have a **similar** representation.
 - This model can capture semantic features ✨ 
 - Vectors are smaller than vectors in one hot representation.
 
@@ -66,7 +66,7 @@ $$e_w=Eo_w$$
 > Creating _Context to Target_ pairs with _window size = 2_ 🙌
 
 ## Skip Gram Model
-The skip-gram word2vec model is a supervised learning task that learns word embeddings by assessing the likelihood of any given target word _t_ happening with a context word _c_. By noting θt a parameter associated with _t_, the probability _P(t|c)_ is given by:
+The skip-gram word2vec model is a supervised learning task that learns word embeddings by assessing the likelihood of any given target word _t_ happening with a context word _c_. By noting $$θ_{t}$$ a parameter associated with _t_, the probability _P(t|c)_ is given by:
 
 $$P(t|c)=\frac{exp(\theta^T_te_c)}{\sum_{j=1}^{|V|}exp(\theta^T_je_c)} $$
 
@@ -79,8 +79,7 @@ $$P(t|c)=\frac{exp(\theta^T_te_c)}{\sum_{j=1}^{|V|}exp(\theta^T_je_c)} $$
 
 
 ## 🧤 GloVe
-The GloVe model, short for global vectors for word representation, is a word embedding technique that uses a co-occurence matrix _X_ where each 
-$$X_{ij}$$ denotes the number of times that a target _i_ occurred with a context _j_. Its cost function _J_ is as follows:
+The GloVe model, short for global vectors for word representation, is a word embedding technique that uses a co-occurence matrix _X_ where each $$X_{ij}$$ denotes the number of times that a target _i_ occurred with a context _j_. Its cost function _J_ is as follows:
 
 $$J(\theta)=\frac{1}{2}\sum_{i,j=1}^{|V|}f(X_{ij})(\theta^T_ie_j+b_i+b'_j-log(X_{ij}))^2$$
 
@@ -93,7 +92,6 @@ $$e^{(final)}_w=\frac{e_w+\theta_w}{2}$$
 - If this is your first try, you should try to download a pre-trained model that has been made and actually works best.
 - If you have enough data, you can try to implement one of the available algorithms.
 - Because word embeddings are very computationally expensive to train, most ML practitioners will load a pre-trained set of embeddings.
-- A final note that you can't guarantee that the axis used to represent the features will be well-aligned with what might be easily humanly interpretable axis like gender, royal, age.
 
 ## 🧐 References
 - [Recurrent Neural Networks Cheatsheet ✨](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
