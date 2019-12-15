@@ -1,5 +1,5 @@
 ---
-description: 👀 Viusal materials to give lots of information in short time
+description: 👀 Visual materials to give lots of information in short time
 ---
 
 # 👀 Quick Visual Info
@@ -18,5 +18,5 @@ description: 👀 Viusal materials to give lots of information in short time
 ### 🧠 Machine Learning Mind Map
 <img src="../res/MLMindMap.jpg" width="400"  />
 
-### Good Sources That Must Be Followed
+## Good Sources That Must Be Followed
 * [Instagram AI Machine Learning](https://www.instagram.com/ai_machine_learning/)

@@ -29,8 +29,8 @@ description: My notes (and codes) on deep learning
 Your learning algorithm has two main sources of knowledge; one is the **data** and other is whatever you **hand design** 🤔🚀
 
 ## ⭐ Please..
-- ✨ Help me to improve and to increase the content by openning a _pull request_
-- 👓 Tell me your suggestions by sending me an [email](mailto:asmaamirkhan.am@gmail.com) or openning an issue
+- ✨ Help me to improve and to increase the content by opening a _pull request_
+- 👓 Tell me your suggestions by sending me an [email](mailto:asmaamirkhan.am@gmail.com) or opening an issue
 
 ## 🤝 Contact
 Find me on [LinkedIn](https://www.linkedin.com/in/asmaamirkhan/) and feel free to mail me, [Asmaa 🦋](mailto:asmaamirkhan.am@gmail.com)
