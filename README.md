@@ -22,8 +22,11 @@ description: My notes (and codes) on deep learning
 ## 💉 Extensions
 | #  | Title                                                                   |
 | -- |-------------------------------------------------------------------------|
-| 0. | [📚 PDFs that I found and recommend](./Z-UsefulPDFs/README.md)                   |
+| 0. | [📚 PDFs that I found and recommend](./Z-UsefulPDFs/README.md)          |
 | 1. | [👀 Visual materials for quick info](./Z-QuickVisualInfo)              |
+
+## 🚀 Other Version
+- **Turkish** version of this project is [here](https://dltr.asmaamir.com/)
 
 ## 🙌 Quote
 Your learning algorithm has two main sources of knowledge; one is the **data** and other is whatever you **hand design** 🤔🚀
