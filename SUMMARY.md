@@ -43,5 +43,5 @@
 
 <!--Index-->
 
-# Other Version
+## Other Version
 - [🚀 Turkish](https://dltr.asmaamir.com/)
