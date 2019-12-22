@@ -42,3 +42,6 @@
   - [📚 PDFs that I found and recommend](Z-UsefulPDFs/README.md)
 
 <!--Index-->
+
+# Other Version
+- [🚀 Turkish](https://dltr.asmaamir.com/)
