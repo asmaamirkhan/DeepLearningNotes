@@ -19,7 +19,7 @@ There are many types of neural networks, choosing a type is due to the problem t
 | 🤨 Custom NN / Hybrid | For complex problems  | Autonomous Driving |
 
 
-## 📑 Types of Data in Supervised Learning
+## 🎨 Types of Data in Supervised Learning
 * 🚧 Structured Data
   * Such as tables
   * We have input fields and an output field
