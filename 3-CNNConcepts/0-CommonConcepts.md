@@ -74,7 +74,7 @@ By that we can get -learned- horizontal, vertical, angled, or any edge type auto
 
 
 ## 🤸‍♀️ Computational Details
-If we have an `n*n` image and we convolove it by `f*f` filter the the output image will be `n-f+1*n-f+1` 
+If we have an `n*n` image and we convolve it by `f*f` filter the the output image will be `n-f+1*n-f+1` 
 
 ### 😐 Downsides
 1. 🌀 If we apply many filters then our image shrinks.

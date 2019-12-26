@@ -29,7 +29,7 @@ In short: We start simultaneously trying to have one NN do several things at sam
 
 ### ➖ Cons:
 
-* 🤸‍♀️ May need large amount of data
+* 💔 May need large amount of data
 * 🔎 Excludes potentially useful hand designed components
 
 ### 🚩 Guideline to Make Decision to Use It
