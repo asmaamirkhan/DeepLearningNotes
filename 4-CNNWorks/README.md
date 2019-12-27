@@ -67,6 +67,8 @@ dense_15 (Dense)             (None, 10)                1290
 ## 👀 Visualization
 The visualization of the output of each layer is available [here](./1-CNNVisualization.ipynb) 🔎
 
+## 👷‍♀️ Network Visualization Tool
+[Netron ✨✨](https://github.com/lutzroeder/netron)
 
 ## 🧐 References
 * [Binary Cross-Entropy](https://gombru.github.io/2018/05/23/cross_entropy_loss/)
