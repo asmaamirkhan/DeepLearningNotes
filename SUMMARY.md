@@ -2,6 +2,7 @@
 
 - [💫 Deep Learning Notes](README.md)
 - [🚀 Turkish Version](https://dltr.asmaamir.com/)
+- [💼 Practical Tools ](Tools.md)
 - [💎 Concepts of Neural Networks](0-NNConcepts/README.md)
   - [🔎 The Problem in General](0-NNConcepts/0-GeneralConcepts.md)
   - [👷‍♀️ Notes on Implementation of Neural Networks](0-NNConcepts/1-ImplementationNotes.md)
