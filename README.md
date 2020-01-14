@@ -29,7 +29,7 @@ description: My notes (and codes) on deep learning
 - **Turkish** version of this project is [here](https://dltr.asmaamir.com/)
 
 ## 🙌 Quote
-"Your learning algorithm has two main sources of knowledge; one is the **data** and other is whatever you **hand design**" 🤔🚀
+"_Your learning algorithm has two main sources of knowledge; one is the **data** and other is whatever you **hand design**_" 🤔🚀
 
 ## ⭐ Please..
 - ✨ Help me to improve and to increase the content by opening a _pull request_
