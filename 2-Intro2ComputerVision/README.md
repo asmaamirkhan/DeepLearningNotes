@@ -40,6 +40,7 @@ The MNIST database: **(Modified National Institute of Standards and Technology d
 ## 👩‍💻 My Codes
 - [👗 Fashion MNIST](./0-Fashion-MNIST.ipynb)
 - [1️⃣ Digit MNIST](./1-DIGIT-MNIST.ipynb)
+- [🎈 Main Workflow](./2-CNNWorkflow.ipynb)
 
 ## 🧐 References
 * [Official Documentation of Keras](https://keras.io/)
