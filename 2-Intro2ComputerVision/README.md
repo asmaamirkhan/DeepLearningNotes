@@ -41,6 +41,7 @@ The MNIST database: **(Modified National Institute of Standards and Technology d
 - [👗 Fashion MNIST](./0-Fashion-MNIST.ipynb)
 - [1️⃣ Digit MNIST](./1-DIGIT-MNIST.ipynb)
 - [🎈 Main Workflow](./2-CNNWorkflow.ipynb)
+- [🎨 Detailed Classification](./3-DetailedClassfication.ipynb)
 
 ## 🧐 References
 * [Official Documentation of Keras](https://keras.io/)
