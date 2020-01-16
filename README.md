@@ -4,6 +4,10 @@ description: My notes (and codes) on deep learning
 
 # 💫 Deep Learning Notes
 
+## 🎤 About
+- 🕸 My notes about Artificial Neural Networks, Convolutional Neural Networks and Recurrent Neural Networks with theoretical details
+- 🦋 I will share new details as I learn new concepts in this context
+
 ## 📑 Table of Contents
 
 | #  | Title                                                                   |
