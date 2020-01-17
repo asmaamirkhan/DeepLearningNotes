@@ -25,3 +25,6 @@ description: ⛓ ‍Basics of Sequence Models
   - ✔ Maintain sequence order
   - ✔ Keep track of long-term dependencies rather than cutting input data too short
   - ✔ Share parameters across the sequence (so not **re-learn** things across the sequence)
+
+## 👩‍💻 My Codes
+- [💬 Text Classification](A-TextClassification.ipynb)
