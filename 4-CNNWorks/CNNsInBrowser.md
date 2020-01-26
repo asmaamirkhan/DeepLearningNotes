@@ -49,7 +49,8 @@ const ys = tf.tensor2d([-3.0, -1.0, 2.0, 3.0, 5.0, 7.0], [6, 1]);
 // train
 doTraining(model).then(() => {
     // after training
-    console.log(model.predict(tf.tensor2d([10], [1,1])));
+    predict = model.predict(tf.tensor2d([10], [1,1]));
+    predict.print();
 });
 ```
 #### 👁‍🗨 Attention
@@ -71,3 +72,6 @@ async function doTraining(model){
         });
 }
 ```
+
+## 👩‍💻 Full Code
+- [🐾 Here](./5-TFJS.html)
