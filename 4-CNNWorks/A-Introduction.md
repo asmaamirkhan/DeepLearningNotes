@@ -2,7 +2,7 @@
 description: 🔦 Convolutional Neural Networks Codes 
 ---
 
-# 👩‍💻 Works and Notes on CNNs
+# 🌱 Introduction
 This section will be filled by codes and notes gradually
 
 ## 👩‍💻 Codes

@@ -2,7 +2,7 @@
 description: 🕵️‍♀️ Popular Object Detection Techniques
 ---
 
-# 🕵️‍♀️ Basics of Object Detection
+# 🌱 Introduction
 
 ## 📚 Common Terms
 

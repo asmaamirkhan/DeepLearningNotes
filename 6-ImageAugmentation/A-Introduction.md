@@ -2,7 +2,7 @@
 description: 🤡 Concepts of Image Augmentation Technique
 ---
 
-# 🤡 Image Augmentation
+# 🌱 Introduction
 - 💥 Basics of Image Augmentation which is a technique to avoid overfitting
 - ⭐ When we have got a small dataset we are able to manipluate the dataset without changing the underlying images to open up whole scenarios for training and to be able to train by variuos techniques of image augmentation 
 
