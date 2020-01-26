@@ -53,6 +53,13 @@ doTraining(model).then(() => {
     predict.print();
 });
 ```
+> `([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], [6, 1])`
+> 
+> `[-1.0, 0.0, 1.0, 2.0, 3.0, 4.0]`: Data set values
+> 
+> `[6, 1]`: Shape of input
+
+
 #### 👁‍🗨 Attention
 - 🐢 Training is a long process so that we have to do it in an asynchronous function
 ```js
@@ -72,6 +79,8 @@ async function doTraining(model){
         });
 }
 ```
+
+
 
 ## 👩‍💻 Full Code
 - [🐾 Here](./5-TFJS.html)
