@@ -24,6 +24,7 @@
   - [✨ Other Approaches for Building CNNs](3-CNNConcepts/4-OtherApproaches.md)
   - [🕸 Common Applications of CNNs](3-CNNConcepts/5-Applications.md)
 - [👩‍💻 Works and Notes on CNN](4-CNNWorks/README.md)
+  - [🌐 CNNs In Browser](4-CNNWorks/CNNsInBrowser.md)
 - [💄 Popular Strategies of Deep Learning](5-DLStrategies/README.md)
   - [🚙 Transfer Learning](5-DLStrategies/A-TransferLearning.md)
   - [📚 Other Strategies of Deep Learning](5-DLStrategies/B-OtherStrategies.md)
