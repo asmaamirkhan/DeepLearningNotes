@@ -3,7 +3,7 @@ description: Notes on Implementing CNNs In The Browser
 ---
 
 # 🌐 CNNs In Browser
-To implement our CNN based works in the Browser we need to use _Tensorflow.JS_
+To implement our CNN based works in the Browser we need to use _Tensorflow.JS_ 🚀
 
 ## 👷‍♀️ Workflow
 1. 🚙 Import [Tensorflow.js](https://js.tensorflow.org/)
@@ -22,6 +22,7 @@ We can import Tensorflow.js in the way below
 
 ### 👷‍♀️ Creating The Model
 😎 Same as we did in Python:
+
 1. 🐣 Decalre a Sequential object
 2. 👩‍🔧 Add layers
 3. 🚀 Compile the model
