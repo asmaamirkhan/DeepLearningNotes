@@ -14,7 +14,7 @@
   - [✨ Optimization Algorithms](0-NNConcepts/7-Optimization.md)
   - [🎨 Softmax Regression](0-NNConcepts/8-MultiClassClassification.md)
   - [🏃‍♀️ Brief Introduction to Tensorflow](0-NNConcepts/9-TensorflowBasics.md)
-  - [👩‍💻 Pyhton Code Snippets on The Basics of Neural Networks](0-NNConcepts/A-CodeSnippets.md)
+  - [👩‍💻 Python Code Snippets on The Basics of Neural Networks](0-NNConcepts/A-CodeSnippets.md)
 - [🙋‍♀️ Hello World of Deep Learning with Neural Networks](1-HelloWorld/README.md)
   - [🌱 Introduction](1-HelloWorld/A-Introduction.md)
 - [🚪 Introduction to Computer Vision](2-Intro2ComputerVision/README.md)
