@@ -52,6 +52,7 @@ print(model.predict([10.0]))
 
 ## 👩‍💻 My Code
 - Full source code is [here 🐾](./HelloWorldWithTF.ipynb)
+- Tensorflow.js in browser [here 🐾](./1-TFJS.html)
 
 ## 🔃 Traditional Programming vs Machine Learning
 <img src="../res/TraditionalProgvsML.JPG" width="350"  />

@@ -11,7 +11,6 @@ This section will be filled by codes and notes gradually
 2. [Human vs Horse Classifier with CNN](./2-HorseHumanClassifier.ipynb)
 3. [Dog vs Cat Classifier with CNN](./3-DogCatClassifier.ipynb) 
 4. [Multi-Class Classification](./4-MultiClassRPS.ipynb)
-5. [CNNs in Browser](./5-CNNsInBrowser.html)
 
 ## ✋ RPS Dataset
 - Rock Paper Scissors is an available dataset containing 2,892 images of diverse hands in Rock/Paper/Scissors poses.

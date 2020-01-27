@@ -84,4 +84,4 @@ async function doTraining(model){
 
 
 ## 👩‍💻 Full Code
-- [🐾 Here](./5-TFJS.html)
+- [🐾 Here](./1-TFJS.html)
