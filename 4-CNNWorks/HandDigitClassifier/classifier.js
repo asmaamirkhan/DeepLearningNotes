@@ -86,7 +86,6 @@ async function train(model, data) {
     shuffle: true,
     callbacks: fitCallbacks
   });
-  
 }
 
 function setPosition(e) {
@@ -144,7 +143,7 @@ async function main() {
   tfvis.show.modelSummary({ name: "Model Arch" }, model);
   await train(model, data);
   init();
-  alert("I have learnt 👶, now I can recognize your digits 👩‍🎓, try it! 😉");
+  alert("I have learnt 👶, now I can recognize your digits 👩‍🎓, try me! 😉");
 }
 
-document.addEventListener('DOMContentLoaded', main);
+document.addEventListener("DOMContentLoaded", main);
