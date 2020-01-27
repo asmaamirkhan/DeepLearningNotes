@@ -101,6 +101,8 @@ function draw(e) {
   ctx.lineCap = "round";
   ctx.strokeStyle = "white";
   ctx.moveTo(pos.x, pos.y);
+  setPosition(e);
+  ctx.lineTo(pos.x, pos.y);
   ctx.stroke();
   rawImage.src = canvas.toDataURL("image/png");
 }
