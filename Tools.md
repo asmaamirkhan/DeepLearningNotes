@@ -10,4 +10,8 @@ description: 💼 Useful tools in the context of Deep Learning
 
 ## 💫 CNN Input / Output Visualization Tool
 - Watch the inputs and outputs of each layer in your CNN
--  [Tensorspace 🎉](https://tensorspace.org/)
+- [Tensorspace 🎉](https://tensorspace.org/)
+
+## 🖼️ OpenImages Downloading Tool
+- 🚀 Download images by class
+- [OID](https://github.com/EscVM/OIDv4_ToolKit)
