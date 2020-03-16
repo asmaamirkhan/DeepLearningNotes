@@ -14,4 +14,4 @@ description: 💼 Useful tools in the context of Deep Learning
 
 ## 🖼️ OpenImages Downloading Tool
 - 🚀 Download images by class
-- [OID](https://github.com/EscVM/OIDv4_ToolKit)
+- [🔗 OID](https://github.com/EscVM/OIDv4_ToolKit)
