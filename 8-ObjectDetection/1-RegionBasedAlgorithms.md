@@ -2,6 +2,7 @@
 
 ## 🔷 R-CNN _(Region Based Convoltional Neural Network)_
 It depends on:
+
 1. Selecting huge number of regions
 2. And then decreasing them to 2000 by _selective search_
    * Each region is called a _region proposal_
@@ -39,6 +40,7 @@ R-CNNs are very slow 🐢 beacause of:
 Instead of running a CNN 2,000 times per image, we can run it just once per image and get all the regions of interest (regions containing some object).
 
 So, it depends on:
+
 1. We feed the **whole** image to the CNN
 2. The CNN generates a feature map
 3. Using the generated feature map we extract ROI (Region of interests)
@@ -62,6 +64,7 @@ Region proposals still bottlenecks in Fast R-CNN algorithm and they affect its p
 Faster R-CNN fixes the problem of selective search by replacing it with Region Proposal Network (RPN) 🤗
 
 So, it depends on:
+
 1. We feed the **whole** image to the CNN
 2. The CNN generates a feature map
 3. We apply Region proposal network on feature map 
@@ -100,7 +103,7 @@ Anchor boxes are fixed sized boundary boxes that are placed throughout the image
 | ➰ Faster R-CNN |  Replaces the selective search method with RPN          | slow (?)  |
 
 
-## ⚖ Benchmarks
+## 🤹‍♀️ Benchmarks
 
 <img src="../res/RCNNComparison.png" width="400"  />
 
