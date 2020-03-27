@@ -48,7 +48,7 @@ Adding and subtracting some values from color channels
 Shear transformation slants the shape of the image
 
 #### 🚀 Example
-<img src="../res/ShearingTransform.jpg" width="400"  />
+<img src="../res/ShearingTransform.png" width="400"  />
 
 ## 👩‍💻 Code Example
 
