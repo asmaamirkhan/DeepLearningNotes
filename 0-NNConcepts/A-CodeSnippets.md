@@ -41,7 +41,7 @@ A function that computes gradients to optimize loss functions using backpropagat
 
 {% tab title="➗ Formula" %}
 
-$$\sigma^'(x)=\sigma(x)(1-\sigma(x))$$
+$$\sigma^{'}(x)=\sigma(x)(1-\sigma(x))$$
 
 {% endtab %}
 
