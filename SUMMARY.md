@@ -44,6 +44,7 @@
   * [🌱 Introduction](8-objectdetection/0-introduction.md)
   * [⭕ Region-Based CNNs](8-objectdetection/1-regionbasedalgorithms.md)
   * [🤳 SSD and YOLO](8-objectdetection/2-ssdandyolo.md)
+  * [🤖 TensorFlow Object Detection API](8-objectdetection/tensorflow-object-detection-api.md)
 * [➰ Sequence Models In Deep Learning](9-sequencemodels/README.md)
   * [🌱 Introduction](9-sequencemodels/0-introduction.md)
   * [📚 General Concepts of Sequence Models](9-sequencemodels/1-generalconcepts.md)
