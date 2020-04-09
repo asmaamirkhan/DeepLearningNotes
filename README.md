@@ -1,43 +1,50 @@
 ---
-description: Asmaa Mirkhan's notes (and codes) on deep learning 
+description: Asmaa Mirkhan's notes (and codes) on deep learning
 ---
 
 # 💫 Deep Learning Notes
 
 ## 🎤 About
-- 🕸 My notes about Artificial Neural Networks, Convolutional Neural Networks and Recurrent Neural Networks with theoretical details
-- 🦋 I will share new details as I learn new concepts in this context
+
+* 🕸 My notes about Artificial Neural Networks, Convolutional Neural Networks and Recurrent Neural Networks with theoretical details
+* 🦋 I will share new details as I learn new concepts in this context 
 
 ## 📑 Table of Contents
 
-| #  | Title                                                                   |
-| -- |-------------------------------------------------------------------------|
-| 0. | [👩‍🏫 Theoric Concepts of Neural Networks](./0-NNConcepts)                |
-| 1. | [🙋‍♀️ Hello World of Deep Learning With Neural Networks](./1-HelloWorld)  |
-| 2. | [👓 Introduction to Computer Vision](./2-Intro2ComputerVision)          |
-| 3. | [👩‍🏫 Theoric Concepts of Convolutional Neural Networks](./3-CNNConcepts) |
-| 4. | [👩‍🔧 Works on Convolutional Neural Networks](./4-CNNWorks)               |
-| 5. | [🚙 Deep Learning Strategies](./5-DLStrategies)                     |
-| 6. | [🤡 Image Augmentation](./6-ImageAugmentation)                          |
-| 7. | [👷‍♀️ Applied Machine Learning](./7-AppliedML)                            |
-| 8. | [🕵️‍♀️ Object Detection](./8-ObjectDetection)                              |
-| 9. | [➰ Sequence Models](./9-SequenceModels)                                |
+| \# | Title |
+| :--- | :--- |
+| 0. | [👩‍🏫 Theoric Concepts of Neural Networks](0-nnconcepts/) |
+| 1. | [🙋‍♀️ Hello World of Deep Learning With Neural Networks](1-helloworld/) |
+| 2. | [👓 Introduction to Computer Vision](2-intro2computervision/) |
+| 3. | [👩‍🏫 Theoric Concepts of Convolutional Neural Networks](3-cnnconcepts/) |
+| 4. | [👩‍🔧 Works on Convolutional Neural Networks](4-cnnworks/) |
+| 5. | [🚙 Deep Learning Strategies](5-dlstrategies/) |
+| 6. | [🤡 Image Augmentation](6-imageaugmentation/) |
+| 7. | [👷‍♀️ Applied Machine Learning](7-appliedml/) |
+| 8. | [🕵️‍♀️ Object Detection](8-objectdetection/) |
+| 9. | [➰ Sequence Models](9-sequencemodels/) |
 
 ## 💉 Extensions
-| #  | Title                                                                   |
-| -- |-------------------------------------------------------------------------|
-| 0. | [📚 PDFs that I found and recommend](./Z-UsefulPDFs/README.md)          |
-| 1. | [👀 Visual materials for quick info](./Z-QuickVisualInfo)              |
+
+| \# | Title |
+| :--- | :--- |
+| 0. | [📚 PDFs that I found and recommend](z-usefulpdfs.md) |
+| 1. | [👀 Visual materials for quick info](z-quickvisualinfo.md) |
 
 ## 🚀 Other Version
-- **Turkish** version of this project is [here](https://dltr.asmaamir.com/)
+
+* **Turkish** version of this project is [here](https://dltr.asmaamir.com/)
 
 ## 🙌 Quote
+
 "_Your learning algorithm has two main sources of knowledge; one is the **data** and other is whatever you **hand design**_" 🤔🚀
 
 ## ⭐ Please..
-- ✨ Help me to improve and to increase the content by opening a _pull request_
-- 👓 Tell me your suggestions by sending me an [email](mailto:asmaamirkhan.am@gmail.com) or opening an issue
+
+* ✨ Help me to improve and to increase the content by opening a _pull request_
+* 👓 Tell me your suggestions by sending me an [email](mailto:asmaamirkhan.am@gmail.com) or opening an issue
 
 ## 🤝 Contact
+
 Find me on [LinkedIn](https://www.linkedin.com/in/asmaamirkhan/) and feel free to mail me, [Asmaa Mirkhan 🦋](mailto:asmaamirkhan.am@gmail.com)
+
