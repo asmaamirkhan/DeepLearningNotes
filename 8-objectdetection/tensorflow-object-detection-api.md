@@ -125,7 +125,7 @@ OK (skipped=1)
 
 ## 🖼️ Image Acquiring 
 
-#### 👮‍♀️ Directory Structure
+### 👮‍♀️ Directory Structure
 
 * 🏗️ I suppose that you created a structure like:
 
@@ -155,7 +155,7 @@ E:
 | 👩‍💻 `scripts`  | will contain scripts that we will use for pre-processing and training processes |
 | 🚴‍♀️ `training`  | will contain generated check points during training |
 
-#### 🚀 OpenImages Dataset
+### 🚀 OpenImages Dataset
 
 * 🕵️‍♀️ You can get images in various methods 
 * 👩‍🏫 I will show process of organizing OpenImages data set
@@ -164,10 +164,10 @@ E:
 
 {% embed url="https://storage.googleapis.com/openimages/web/index.html" %}
 
-#### 🎨 Downloading By Category
+### 🎨 Downloading By Category
 
-* OIDv4\_Toolkit is a tool that we can use to download OpenImages dataset by category and by set \(test, train, validation\)
-* 
+\*\*\*\*[**OIDv4\_Toolkit**](https://github.com/EscVM/OIDv4_ToolKit) is a tool that we can use to download OpenImages dataset by category and by set \(test, train, validation\)
+
 💻 To clone and build the project, open CMD and run:
 
 ```bash
@@ -185,8 +185,27 @@ E:
 ```
 
 {% hint style="warning" %}
-👮‍♀️ If object name consists of 2 parts write it with `_, e.g.` Bell\_pepper
+👮‍♀️ If object name consists of 2 parts then write it with `'_', e.g.` Bell\_pepper
 {% endhint %}
+
+### 🚙 Organizing Images
+
+* 👩‍💻 [**OpenImagesTool**](https://github.com/asmaamirkhan/OpenImagesTool) is a tool to convert OpenImages images and annotations to _TensorFlow_-friendly structure.
+* 🙄 OpenImages provides annotations ad `.txt` files in a format like:`<OBJECT_NAME> <XMIN> <YMIN> <XMAX> <YMAX>` which is not compatible with TensorFlow that requires VOC annotation format
+* 💫 To do that synchronization we can do the following  
+
+💻 To clone and build the project, open CMD and run:
+
+```bash
+(tf1) E:\pre_trainded_model>git clone https://github.com/asmaamirkhan/OpenImagesTool.git
+(tf1) E:\pre_trainded_model>cd OpenImagesTool/src
+```
+
+### 
+
+
+
+
 
 
 
