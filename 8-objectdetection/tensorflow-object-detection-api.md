@@ -386,6 +386,33 @@ tensorboard --logdir=E:/demo/eval
 python export_inference_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant  
 ```
 
+* If you are using SSD and planning to convert it to tflite later you have to run
+
+```bash
+# under (tf1) E:\models\research\object_detection>
+# python export_tflite_ssd_graph.py --input_type image_tensor 
+# --pipline_config_path <PATH_TO_CONFIG_FILE> 
+# --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
+# --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
+python export_tflite_ssd_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant  
+```
+
+## 🐞 Common Issues
+
+#### 🥅 nets module issue
+
+`ModuleNotFoundError: No module named 'nets'`
+
+This means that there is a problem in setting `PYTHONPATH`, try to run:
+
+```bash
+(tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
+```
+
+#### 🤯 LossTensor is inf issue
+
+\`\`[`LossTensor is inf or nan. : Tensor had NaN values`](https://github.com/tensorflow/models/issues/1881)
+
  
 
 
