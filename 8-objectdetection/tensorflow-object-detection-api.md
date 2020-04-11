@@ -217,6 +217,18 @@ python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_tr
 👩‍🔬 _OpenImagesTool_ adds validation images to training set by default, if you wand to disable this behavior you can add `-v` flag to the command.
 {% endhint %}
 
+### 🏭 Generating CSV Files
+
+```bash
+
+```
+
+### 👩‍🏭 Generating TF Records
+
+```bash
+
+```
+
 ## 🤖 Model Selecting
 
 * 🎉 [**TensorFLow Object Detection Zoo**](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models) provides a lot of pre-trained models
