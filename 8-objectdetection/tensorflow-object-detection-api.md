@@ -13,6 +13,7 @@ description: "Building Custom Object Detection Step by Step (under development \
 * Model Configuration
 * Training
 * Evaluation
+* Model Exporting
 
 ## 👩‍💻 Environment Preparation
 
@@ -134,6 +135,7 @@ E:
 |___ models
 |___ demo
       |___ annotations
+      |___ eval
       |___ images
       |___ inference
       |___ OIDv4_ToolKit
@@ -147,6 +149,7 @@ E:
 | :--- | :--- |
 | 🤖 `models` | the repo [**here**](https://github.com/tensorflow/models)\*\*\*\* |
 | 📄 `annotations` | will contain generated `.csv` and `.tfrecord` files |
+| 👮‍♀️ `eval` | will contain results of evaluation |
 | 🖼️ `images` | will contain image data set |
 | ▶️ `inference` | will contain exported models after training |
 | 🔽 `OIDv4_ToolKit` | the repo [**here**](https://github.com/EscVM/OIDv4_ToolKit) \(_OpenImages_ Downloader\) |
@@ -368,7 +371,22 @@ python eval.py --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized
 tensorboard --logdir=E:/demo/eval
 ```
 
+## 👒 Model Exporting
 
+* 🔧 After training and evaluation processes are done, we have to make the model in such a format that we can use
+* 🦺 For now, we have only checkpoints, so that we have to export `.pb` file
+* 💻 So, open  CMD and run:
+
+```bash
+# under (tf1) E:\models\research\object_detection>
+# python export_inference_graph.py --input_type image_tensor 
+# --pipline_config_path <PATH_TO_CONFIG_FILE> 
+# --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
+# --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
+python export_inference_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant  
+```
+
+ 
 
 
 
