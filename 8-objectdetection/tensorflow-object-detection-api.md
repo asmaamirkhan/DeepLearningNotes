@@ -223,7 +223,23 @@ python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_tr
 * 🕵️‍♀️ Models differentiate in terms of accuracy and speed, you can select the suitable model due to your priorities
 * 💾 Select a model, extract it and save it under `pre_trained_model` folder
 
-   
+## 👩‍🔧 Model Configuration
+
+### ⏬ Downloading config File
+
+* 😎 We have downloaded the models \(pre-trained weights\) but now we have to download configuration file that contains training parameters and settings
+* 👮‍♀️ Every model in TensorFlow Object Detection Zoo has a configuration file presented [**here**](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
+* 💾 Download the config file that corresponds to the models you have selected and save it under `training` folder
+
+### 👩‍🔬 Updating config File
+
+You have to update the following lines:
+
+```bash
+
+```
+
+
 
 
 
