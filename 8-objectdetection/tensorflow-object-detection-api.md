@@ -326,9 +326,47 @@ eval_input_reader: {
 🤹‍♀️ If you give the whole test set to evaluation process then shuffle functionality won't affect the results, it will only give you different examples on TensorBoard
 {% endhint %}
 
-👶 Training
+## 👶 Training
 
+* 🎉 Now we have done all preparations
+* 🚀 Let the computer start learning
+* 💻 Open CMD and run:
 
+```bash
+# under (tf1) E:\models\research\object_detection\legacy> 
+# python train.py --train_dir=<DIRECTORY_TO_SAVE_CHECKPOINTS> 
+# --pipline_config_path=<PATH_TO_CONFIG_FILE>
+python train.py --train_dir=E:/demo/training --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config
+```
+
+* 🕐 This process will take long \(You can take a nap 🤭, but a long nap 🙄\)
+* 🕵️‍♀️ While model is being trained you will see loss values on CMD
+* ✋ You can stop the process when the loss value achieves a good value \(under 1\)  
+
+## 👮‍♀️ Evaluation
+
+### 🎳 Evaluating Script
+
+* 🤭 After training process is done, let's do an exam to know how good \(or bad 🙄\) is our model doing
+* 🎩 The following command will use the model on whole test set and after that print the results, so that we can do error analysis.
+* 💻 So that, open CMD and run:
+
+```bash
+# under (tf1) E:\models\research\object_detection\legacy> 
+# python eval.py --logtostderr --pipline_config_path=<PATH_TO_CONFIG_FILE>
+# --checkpoint_dir=<DIRECTORY_OF_CHECKPOINTS> --eval_dir=<DIRECTORY_TO_SAVE_EVAL_RESULTS>
+python eval.py --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --checkpoint_dir=--pipline_config_path=E:/demo/training --eval_dir=--pipline_config_path=E:/demo/eval
+```
+
+###  👀 Visualizing Results
+
+* ✨ To see results on charts and images we can use TensorBoard for better analyzing
+*  💻 Open CMD and run:
+
+```bash
+# under (tf1) E:\>
+tensorboard --logdir=E:/demo/eval
+```
 
 
 
