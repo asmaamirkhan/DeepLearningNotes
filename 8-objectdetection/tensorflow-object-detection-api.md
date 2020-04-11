@@ -217,6 +217,32 @@ python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_tr
 👩‍🔬 _OpenImagesTool_ adds validation images to training set by default, if you wand to disable this behavior you can add `-v` flag to the command.
 {% endhint %}
 
+### 🏷️ Creating Label Map
+
+* ⛓️ `label_map.pbtxt` is a file that maps object names to corresponded IDs
+* ➕ Create `label_map.pbtxt`file under annotations folder and open it in a text editor
+* 🖊️ Write your objects names and IDs in the following format
+
+```javascript
+item {
+    id: 1
+    name: 'Hmster'
+}
+
+item {
+    id: 2
+    name: 'Apple'
+}
+```
+
+{% hint style="info" %}
+`👮‍♀️ id:0` is reserved for background, so don' t use it
+
+🐞 Related error: `ValueError: Label map id 0 is reserved for the background label`
+{% endhint %}
+
+   
+
 ### 🏭 Generating CSV Files
 
 * 🔄 Now we have to convert `.xml` files to csv file
@@ -230,9 +256,20 @@ python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_tr
 python xml_to_csv.py -i E:\demo\images\train -o E:\demo\annotations\train_labels.csv 
 ```
 
-### 👩‍🏭 Generating TF Records
+#### 👩‍🔬 Generating test csv file
 
 ```bash
+# under (tf1) E:\demo\scripts>
+python xml_to_csv.py -i E:\demo\images\test -o E:\demo\annotations\test_labels.csv 
+```
+
+### 👩‍🏭 Generating TF Records
+
+* 🙇‍♀️ Now, we will generate tfrecords that will be used in training precess
+* 🔻 Download [**generate\_tfrecords.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/generate_tfrecords.py) script and save it under `scripts` folder
+
+```bash
+# under (tf1) E:\demo\scripts>
 
 ```
 
