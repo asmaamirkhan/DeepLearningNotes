@@ -241,8 +241,6 @@ item {
 🐞 Related error: `ValueError: Label map id 0 is reserved for the background label`
 {% endhint %}
 
-   
-
 ### 🏭 Generating CSV Files
 
 * 🔄 Now we have to convert `.xml` files to csv file
@@ -291,11 +289,44 @@ python xml_to_csv.py -i E:\demo\images\test -o E:\demo\annotations\test_labels.c
 
 You have to update the following lines:
 
-```bash
+```javascript
+// number of classes
+num_classes: 1 // set it to total number of classes you have
 
+// path of pre-trained checkpoint
+fine_tune_checkpoint: "E:/demo/pre_trained_model/ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18/model.ckpt"
+
+// path to train tfrecord
+tf_record_input_reader {
+    input_path: "E:/demo/annotations/train.record"
+}
+
+// number of images that will be used in evaluation process
+eval_config: {
+  metrics_set: "coco_detection_metrics"
+  use_moving_averages: false
+  // I suggest setting it to total number of testing set to get accurate results
+  num_examples: 11193
+}
+
+eval_input_reader: {
+  tf_record_input_reader {
+    // path to test tfrecord
+    input_path: "E:/demo/annotations/test.record"
+  }
+  // path to label map
+  label_map_path: "E:/demo/annotations/label_map.pbtxt"
+  // set it to true if you want to shuffle test set at each evaluation   
+  shuffle: false
+  num_readers: 1
+}
 ```
 
+{% hint style="info" %}
+🤹‍♀️ If you give the whole test set to evaluation process then shuffle functionality won't affect the results, it will only give you different examples on TensorBoard
+{% endhint %}
 
+👶 Training
 
 
 
