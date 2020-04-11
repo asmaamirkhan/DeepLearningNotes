@@ -179,8 +179,14 @@ E:
 ⏬ To start downloading by category:
 
 ```bash
+# python main.py downloader --classes <OBJECT_LIST> --type_csv <TYPE>
+# TYPE: all | test | train | validation 
 (tf1) E:\pre_trainded_model\OIDv4_ToolKit>python main.py downloader --classes Apple Orange --type_csv validation
 ```
+
+{% hint style="warning" %}
+👮‍♀️ If object name consists of 2 parts write it with `_, e.g.` Bell\_pepper
+{% endhint %}
 
 
 
