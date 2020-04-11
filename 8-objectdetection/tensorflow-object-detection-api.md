@@ -107,7 +107,7 @@ conda install -c anaconda protobuf
 (tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
 ```
 
-### 👩‍🔬 Installing Test
+### 👩‍🔬 Installation Test
 
 #### 💻 Command
 
@@ -117,11 +117,49 @@ conda install -c anaconda protobuf
 
 #### 🎉 Expected Output
 
-```text
+```bash
 Ran 17 tests in 0.833s
 
 OK (skipped=1)
 ```
+
+## 🖼️ Image Acquiring 
+
+#### 👮‍♀️ Directory Structure
+
+* 🏗️ I suppose that you created a structure like:
+
+```graphql
+E:
+|___ models
+|___ demo
+      |___ annotations
+      |___ images
+      |___ inference
+      |___ pre_trainded_model
+      |___ scripts
+      |___ training
+```
+
+| 📂 Folder | 📃 Description |
+| :--- | :--- |
+| 🤖 `models` | the repo [**here**](https://github.com/tensorflow/models)\*\*\*\* |
+| 📄 `annotations` | will contain generated `.csv` and `.tfrecord` files |
+| 🖼️ `images` | will contain image data set |
+| ▶️ `inference` | will contain exported models after training |
+| 👩‍🏫`pre_trained_model`  | will contain files of TensorFlow model that we will retrain |
+| 👩‍💻 `scripts`  | will contain scripts that we will use for pre-processing and training processes |
+| 🚴‍♀️ `training`  | will contain generated check points during training |
+
+#### 🚀 OpenImages Dataset
+
+* 🕵️‍♀️ You can get images in various methods 
+* 👩‍🏫 I will show process of organizing OpenImages data set
+* 🗃️ OpenImages is a huge data set contains annotated images of 600 objects
+
+{% embed url="https://storage.googleapis.com/openimages/web/index.html" %}
+
+#### 
 
 
 
