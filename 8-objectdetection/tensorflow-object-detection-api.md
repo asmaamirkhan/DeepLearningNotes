@@ -171,9 +171,9 @@ E:
 💻 To clone and build the project, open CMD and run:
 
 ```bash
-(tf1) E:\pre_trainded_model>git clone https://github.com/EscVM/OIDv4_ToolKit.git
-(tf1) E:\pre_trainded_model>cd OIDv4_ToolKit
-(tf1) E:\pre_trainded_model\OIDv4_ToolKit>pip install -r requirements.txt
+(tf1) E:\demo>git clone https://github.com/EscVM/OIDv4_ToolKit.git
+(tf1) E:\demo>cd OIDv4_ToolKit
+(tf1) E:\demo\OIDv4_ToolKit>pip install -r requirements.txt
 ```
 
 ⏬ To start downloading by category:
@@ -181,7 +181,7 @@ E:
 ```bash
 # python main.py downloader --classes <OBJECT_LIST> --type_csv <TYPE>
 # TYPE: all | test | train | validation 
-(tf1) E:\pre_trainded_model\OIDv4_ToolKit>python main.py downloader --classes Apple Orange --type_csv validation
+(tf1) E:\demo\OIDv4_ToolKit>python main.py downloader --classes Apple Orange --type_csv validation
 ```
 
 {% hint style="warning" %}
@@ -199,8 +199,8 @@ E:
 💻 To clone and build the project, open _CMD_ and run:
 
 ```bash
-(tf1) E:\pre_trainded_model>git clone https://github.com/asmaamirkhan/OpenImagesTool.git
-(tf1) E:\pre_trainded_model>cd OpenImagesTool/src
+(tf1) E:\demo>git clone https://github.com/asmaamirkhan/OpenImagesTool.git
+(tf1) E:\demo>cd OpenImagesTool/src
 ```
 
 ### 💻 Applying Organizing
@@ -208,7 +208,7 @@ E:
 🚀 Now, we will convert images and annotations that we have downloaded and save them to `images` folder
 
 ```bash
-# under (tf1) E:\pre_trainded_model\OpenImagesTool\src> 
+# under (tf1) E:\demo\OpenImagesTool\src> 
 # python script.py -i <INPUT_PATH> -o <OUTPUT_PATH>
 python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_trainded_model\images
 ```
@@ -219,8 +219,15 @@ python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_tr
 
 ### 🏭 Generating CSV Files
 
-```bash
+* 🔄 Now we have to convert `.xml` files to csv file
+* 🔻 Download the script [**xml\_to\_csv.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/xml_to_csv.py)  ****script and save it under `scripts` folder
+*  💻 Open CMD and run:
 
+#### 👩‍🔬 Generating train csv file
+
+```bash
+# under (tf1) E:\demo\scripts>
+python xml_to_csv.py -i E:\demo\images\train -o E:\demo\annotations\train_labels.csv 
 ```
 
 ### 👩‍🏭 Generating TF Records
