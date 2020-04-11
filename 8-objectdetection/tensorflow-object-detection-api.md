@@ -188,20 +188,42 @@ E:
 👮‍♀️ If object name consists of 2 parts then write it with `'_', e.g.` Bell\_pepper
 {% endhint %}
 
-### 🚙 Organizing Images
+## 🤹‍♀️ Image Organization
+
+### 🔮 OpenImagesTool
 
 * 👩‍💻 [**OpenImagesTool**](https://github.com/asmaamirkhan/OpenImagesTool) is a tool to convert OpenImages images and annotations to _TensorFlow_-friendly structure.
-* 🙄 OpenImages provides annotations ad `.txt` files in a format like:`<OBJECT_NAME> <XMIN> <YMIN> <XMAX> <YMAX>` which is not compatible with TensorFlow that requires VOC annotation format
+* 🙄 _OpenImages_ provides annotations ad `.txt` files in a format like:`<OBJECT_NAME> <XMIN> <YMIN> <XMAX> <YMAX>` which is not compatible with _TensorFlow_ that requires _VOC_ annotation format
 * 💫 To do that synchronization we can do the following  
 
-💻 To clone and build the project, open CMD and run:
+💻 To clone and build the project, open _CMD_ and run:
 
 ```bash
 (tf1) E:\pre_trainded_model>git clone https://github.com/asmaamirkhan/OpenImagesTool.git
 (tf1) E:\pre_trainded_model>cd OpenImagesTool/src
 ```
 
-### 
+### 💻 Applying Organizing
+
+🚀 Now, we will convert images and annotations that we have downloaded and save them to `images` folder
+
+```bash
+# under (tf1) E:\pre_trainded_model\OpenImagesTool\src> 
+# python script.py -i <INPUT_PATH> -o <OUTPUT_PATH>
+python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_trainded_model\images
+```
+
+{% hint style="info" %}
+👩‍🔬 _OpenImagesTool_ adds validation images to training set by default, if you wand to disable this behavior you can add `-v` flag to the command.
+{% endhint %}
+
+## 🤖 Model Selecting
+
+* 🎉 [**TensorFLow Object Detection Zoo**](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models) provides a lot of pre-trained models
+* 🕵️‍♀️ Models differentiate in terms of accuracy and speed, you can select the suitable model due to your priorities
+* 💾 Select a model, extract it and save it under `pre_trained_model` folder
+
+   
 
 
 
