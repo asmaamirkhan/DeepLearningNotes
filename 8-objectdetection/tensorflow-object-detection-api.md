@@ -1,5 +1,5 @@
 ---
-description: "Custom Object Detection Notes (under development \U0001F469‍\U0001F52C)"
+description: "Building Custom Object Detection Step by Step (under development \U0001F469‍\U0001F52C)"
 ---
 
 # 🤖 TensorFlow Object Detection API
@@ -136,6 +136,8 @@ E:
       |___ annotations
       |___ images
       |___ inference
+      |___ OIDv4_ToolKit
+      |___ OpenImagesTool
       |___ pre_trainded_model
       |___ scripts
       |___ training
@@ -147,7 +149,9 @@ E:
 | 📄 `annotations` | will contain generated `.csv` and `.tfrecord` files |
 | 🖼️ `images` | will contain image data set |
 | ▶️ `inference` | will contain exported models after training |
-| 👩‍🏫`pre_trained_model`  | will contain files of TensorFlow model that we will retrain |
+| 🔽 `OIDv4_ToolKit` | the repo [**here**](https://github.com/EscVM/OIDv4_ToolKit) \(_OpenImages_ Downloader\) |
+| 👩‍🔧 `OpenImagesTool` | the repo [**here**](https://github.com/asmaamirkhan/OpenImagesTool) \(_OpenImages_ Organizer\) |
+| 👩‍🏫`pre_trained_model`  | will contain files of _TensorFlow_ model that we will retrain |
 | 👩‍💻 `scripts`  | will contain scripts that we will use for pre-processing and training processes |
 | 🚴‍♀️ `training`  | will contain generated check points during training |
 
@@ -156,12 +160,27 @@ E:
 * 🕵️‍♀️ You can get images in various methods 
 * 👩‍🏫 I will show process of organizing OpenImages data set
 * 🗃️ OpenImages is a huge data set contains annotated images of 600 objects
+* 🔍 You can explore images by categories from [**here**](https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&type=segmentation&r=false&c=%2Fm%2F0420v5) 
 
 {% embed url="https://storage.googleapis.com/openimages/web/index.html" %}
 
-#### 
+#### 🎨 Downloading By Category
 
+* OIDv4\_Toolkit is a tool that we can use to download OpenImages dataset by category and by set \(test, train, validation\)
+* 
+💻 To clone and build the project, open CMD and run:
 
+```bash
+(tf1) E:\pre_trainded_model>git clone https://github.com/EscVM/OIDv4_ToolKit.git
+(tf1) E:\pre_trainded_model>cd OIDv4_ToolKit
+(tf1) E:\pre_trainded_model\OIDv4_ToolKit>pip install -r requirements.txt
+```
+
+⏬ To start downloading by category:
+
+```bash
+(tf1) E:\pre_trainded_model\OIDv4_ToolKit>python main.py downloader --classes Apple Orange --type_csv validation
+```
 
 
 
