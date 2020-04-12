@@ -174,7 +174,7 @@ E:
 
 | 📂 Folder | 📃 Description |
 | :--- | :--- |
-| 🤖 `models` | the repo [**here**](https://github.com/tensorflow/models)\*\*\*\* |
+| 🤖 `models` | the repo [**here**](https://github.com/tensorflow/models) |
 | 📄 `annotations` | will contain generated `.csv` and `.record` files |
 | 👮‍♀️ `eval` | will contain results of evaluation |
 | 🖼️ `images` | will contain image data set |
@@ -196,7 +196,7 @@ E:
 
 ### 🎨 Downloading By Category
 
-\*\*\*\*[**OIDv4\_Toolkit**](https://github.com/EscVM/OIDv4_ToolKit) is a tool that we can use to download OpenImages dataset by category and by set \(test, train, validation\)
+[**OIDv4\_Toolkit**](https://github.com/EscVM/OIDv4_ToolKit) is a tool that we can use to download OpenImages dataset by category and by set \(test, train, validation\)
 
 💻 To clone and build the project, open CMD and run:
 
@@ -274,7 +274,7 @@ item {
 ### 🏭 Generating CSV Files
 
 * 🔄 Now we have to convert `.xml` files to csv file
-* 🔻 Download the script [**xml\_to\_csv.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/xml_to_csv.py)  \_\*\*\_script and save it under `scripts` folder
+* 🔻 Download the script [**xml\_to\_csv.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/xml_to_csv.py)  script and save it under `scripts` folder
 * 💻 Open CMD and run:
 
 #### 👩‍🔬 Generating train csv file
@@ -446,7 +446,7 @@ python export_tflite_ssd_graph.py --input_type image_tensor --pipline_config_pat
 * 📱 TensorFlow Lite is TensorFlow’s lightweight solution for mobile and embedded devices. 
 * 🧐 It enables on-device machine learning inference with low latency and a small binary size.
 * 😎 TensorFlow Lite uses many techniques for this such as quantized kernels that allow smaller and faster \(fixed-point math\) models.
-* 📍 [**Official site**](https://www.tensorflow.org/lite)\*\*\*\*
+* 📍 [**Official site**](https://www.tensorflow.org/lite)
 
 **🍫 Converting Command**
 
@@ -488,7 +488,7 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 
 `The following classes have no ground truth examples`
 
-* 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/1936)\*\*\*\*
+* 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/1936)
 * 👩‍🔧 For me it was a misspelling issue in `label_map` file, 
 * 🙄 Pay attention to small and capital letters
 
@@ -503,7 +503,7 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 
 `Value Error: No Variable to Save`
 
-* 👀 Related solution is [**here**](https://ai.yemreak.com/tensorflow-object-detection-api/hata-notlari#value-error-no-variable-to-save)\*\*\*\*
+* 👀 Related solution is [**here**](https://ai.yemreak.com/tensorflow-object-detection-api/hata-notlari#value-error-no-variable-to-save)
 * 👩‍🔧 Adding the following line to `.config` file solved the problem
 
 ```javascript
@@ -518,7 +518,7 @@ train_config: {
 
 `ModuleNotFoundError: No module named 'pycocotools'`
 
-* 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/3367)\*\*\*\*
+* 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/3367)
 * 👩‍🔧 Applying the downloading instructions provided [**here**](https://github.com/philferriere/cocoapi) solved the problem for me \(on Windows 10\) 
 
 #### 🥴 pycocotools type error issue
