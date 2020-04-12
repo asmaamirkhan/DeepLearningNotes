@@ -411,6 +411,8 @@ python eval.py --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized
 tensorboard --logdir=E:/demo/eval
 ```
 
+🔍 See the results on [localhost:6006](http://localhost:6006/)
+
 ## 👒 Model Exporting
 
 * 🔧 After training and evaluation processes are done, we have to make the model in such a format that we can use
