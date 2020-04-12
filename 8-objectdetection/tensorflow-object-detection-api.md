@@ -502,7 +502,7 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 * 👀 Related solution is [**here**](https://ai.yemreak.com/tensorflow-object-detection-api/hata-notlari#value-error-no-variable-to-save)\*\*\*\*
 * 👩‍🔧 Adding the following line to `.config` file solved the problem
 
-```text
+```javascript
 train_config: {
   ...
   fine_tune_checkpoint_type:  "detection"
@@ -528,4 +528,10 @@ train_config: {
 self.iouThrs = np.linspace(.5, 0.95, int(np.round((0.95 - .5) / .05)) + 1, endpoint=True)
 self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpoint=True)
 ```
+
+### 🔗 References
+
+* [Training Custom Object Detector](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#)
+* [TensorFlow Object Detection API \(YEmreAk.com\)](https://ai.yemreak.com/tensorflow-object-detection-api)
+*  [Custom Object Detection using TensorFlow from Scratch](https://towardsdatascience.com/custom-object-detection-using-tensorflow-from-scratch-e61da2e10087)
 
