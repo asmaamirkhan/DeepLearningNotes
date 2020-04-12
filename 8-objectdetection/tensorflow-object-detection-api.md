@@ -31,7 +31,8 @@ description: "Training Custom Object Detector Step by Step (under development \U
 
 #### 🔮 Create new env
 
-💻 Open cmd and run:
+* 🥦 Install [**Anaconda**](https://www.anaconda.com/)\*\*\*\*
+* 💻 Open cmd and run:
 
 ```bash
 # conda create -n <ENV_NAME> python=<REQUIRED_VERSION>
@@ -439,9 +440,58 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 
 #### 🤯 LossTensor is inf issue
 
-\`\`[`LossTensor is inf or nan. : Tensor had NaN values`](https://github.com/tensorflow/models/issues/1881)
+`LossTensor is inf or nan. : Tensor had NaN values`
 
- 
+* 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/1881), it is common that it is an annotation problem
+* 🙄 Maybe there is some bounding boxes outside the image boundaries
+*  🤯 The solution for me was minimizing batch size in `.config` file
 
+#### 🙄 Ground truth issue
 
+`The following classes have no ground truth examples`
+
+* 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/1936)\*\*\*\*
+* 👩‍🔧 For me it was a misspelling issue in `label_map` file, 
+* 🙄 Pay attention to small and capital letters
+
+#### 🏷️ labelmap issue
+
+`ValueError: Label map id 0 is reserved for the background label`
+
+* 👮‍♀️ id:0 is reserved for background, We can not use it for objects
+* 🆔 start IDs from 1
+
+####  🔦 No Variable to Save issue 
+
+`Value Error: No Variable to Save`
+
+* 👀 Related solution is [**here**](https://ai.yemreak.com/tensorflow-object-detection-api/hata-notlari#value-error-no-variable-to-save)\*\*\*\*
+* 👩‍🔧 Adding the following line to `.config` file solved the problem
+
+```text
+train_config: {
+  ...
+  fine_tune_checkpoint_type:  "detection"
+  ...
+}
+```
+
+#### 🧪 pycocotools module issue
+
+ `ModuleNotFoundError: No module named 'pycocotools'`
+
+* 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/3367)\*\*\*\*
+* 👩‍🔧 Applying the downloading instructions provided [**here**](https://github.com/philferriere/cocoapi) solved the problem for me \(on Windows 10\) 
+
+#### 🥴 pycocotools type error issue
+
+`pycocotools typeerror: object of type  cannot be safely interpreted as an integer.`
+
+* 👩‍🔧 I solved the problem by editing the following lines in cocoeval.py script under pycocotools package \(by adding casting\)
+* 👮‍♀️ Make sure that you are editting the package in you env not in other env.
+
+```python
+self.iouThrs = np.linspace(.5, 0.95, int(np.round((0.95 - .5) / .05)) + 1, endpoint=True)
+self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpoint=True)
+```
 
