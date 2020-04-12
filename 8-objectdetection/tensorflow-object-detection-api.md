@@ -10,7 +10,7 @@ description: "Training Custom Object Detector Step by Step (under development \U
 
 ## 🚩 Development Pipeline
 
-1. [👩‍💻 Environment Preparation](#environment-preparation)
+1. [👩‍💻 Environment Preparation](tensorflow-object-detection-api.md#environment-preparation)
 2. 🖼️ Image acquiring
 3. 🤹‍♀️ Image Organization
 4. 🤖 Model Selecting
@@ -37,7 +37,7 @@ description: "Training Custom Object Detector Step by Step (under development \U
 
 #### 🔮 Create new env
 
-* 🥦 Install [**Anaconda**](https://www.anaconda.com/)\*\*\*\*
+* 🥦 Install [**Anaconda**](https://www.anaconda.com/)
 * 💻 Open cmd and run:
 
 ```bash
@@ -68,13 +68,13 @@ conda activate tf1
 {% tabs %}
 {% tab title="🚀 GPU" %}
 ```bash
-conda install tensorflow-gpu=1.15 
+conda install tensorflow-gpu=1.15
 ```
 {% endtab %}
 
 {% tab title="🚙 CPU" %}
 ```bash
-conda install tensorflow=1.15 
+conda install tensorflow=1.15
 ```
 {% endtab %}
 {% endtabs %}
@@ -105,7 +105,7 @@ conda install -c anaconda protobuf
 ```
 
 {% hint style="warning" %}
-🧐 I assume that you are running your commands under `E` disk, 
+🧐 I assume that you are running your commands under `E` disk,
 {% endhint %}
 
 #### 🔃 Compiling Protobufs
@@ -147,7 +147,7 @@ Ran 17 tests in 0.833s
 OK (skipped=1)
 ```
 
-## 🖼️ Image Acquiring 
+## 🖼️ Image Acquiring
 
 ### 👮‍♀️ Directory Structure
 
@@ -177,9 +177,9 @@ E:
 | ▶️ `inference` | will contain exported models after training |
 | 🔽 `OIDv4_ToolKit` | the repo [**here**](https://github.com/EscVM/OIDv4_ToolKit) \(_OpenImages_ Downloader\) |
 | 👩‍🔧 `OpenImagesTool` | the repo [**here**](https://github.com/asmaamirkhan/OpenImagesTool) \(_OpenImages_ Organizer\) |
-| 👩‍🏫`pre_trained_model`  | will contain files of _TensorFlow_ model that we will retrain |
-| 👩‍💻 `scripts`  | will contain scripts that we will use for pre-processing and training processes |
-| 🚴‍♀️ `training`  | will contain generated check points during training |
+| 👩‍🏫`pre_trained_model` | will contain files of _TensorFlow_ model that we will retrain |
+| 👩‍💻 `scripts` | will contain scripts that we will use for pre-processing and training processes |
+| 🚴‍♀️ `training` | will contain generated check points during training |
 
 ### 🚀 OpenImages Dataset
 
@@ -188,7 +188,7 @@ E:
 * 🗃️ OpenImages is a huge data set contains annotated images of 600 objects
 * 🔍 You can explore images by categories from [**here**](https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&type=segmentation&r=false&c=%2Fm%2F0420v5) 
 
-{% embed url="https://storage.googleapis.com/openimages/web/index.html" %}
+{% embed url="https://storage.googleapis.com/openimages/web/index.html" caption="" %}
 
 ### 🎨 Downloading By Category
 
@@ -270,21 +270,21 @@ item {
 ### 🏭 Generating CSV Files
 
 * 🔄 Now we have to convert `.xml` files to csv file
-* 🔻 Download the script [**xml\_to\_csv.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/xml_to_csv.py)  ****script and save it under `scripts` folder
-*  💻 Open CMD and run:
+* 🔻 Download the script [**xml\_to\_csv.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/xml_to_csv.py)  _\*\*_script and save it under `scripts` folder
+* 💻 Open CMD and run:
 
 #### 👩‍🔬 Generating train csv file
 
 ```bash
 # under (tf1) E:\demo\scripts>
-python xml_to_csv.py -i E:\demo\images\train -o E:\demo\annotations\train_labels.csv 
+python xml_to_csv.py -i E:\demo\images\train -o E:\demo\annotations\train_labels.csv
 ```
 
 #### 👩‍🔬 Generating test csv file
 
 ```bash
 # under (tf1) E:\demo\scripts>
-python xml_to_csv.py -i E:\demo\images\test -o E:\demo\annotations\test_labels.csv 
+python xml_to_csv.py -i E:\demo\images\test -o E:\demo\annotations\test_labels.csv
 ```
 
 ### 👩‍🏭 Generating TF Records
@@ -397,10 +397,10 @@ python train.py --train_dir=E:/demo/training --pipline_config_path=E:/demo/train
 python eval.py --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --checkpoint_dir=--pipline_config_path=E:/demo/training --eval_dir=--pipline_config_path=E:/demo/eval
 ```
 
-###  👀 Visualizing Results
+### 👀 Visualizing Results
 
 * ✨ To see results on charts and images we can use TensorBoard for better analyzing
-*  💻 Open CMD and run:
+* 💻 Open CMD and run:
 
 ```bash
 # under (tf1) E:\>
@@ -419,7 +419,7 @@ tensorboard --logdir=E:/demo/eval
 # --pipline_config_path <PATH_TO_CONFIG_FILE> 
 # --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
 # --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
-python export_inference_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant  
+python export_inference_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
 ```
 
 * If you are using SSD and planning to convert it to tflite later you have to run
@@ -430,7 +430,7 @@ python export_inference_graph.py --input_type image_tensor --pipline_config_path
 # --pipline_config_path <PATH_TO_CONFIG_FILE> 
 # --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
 # --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
-python export_tflite_ssd_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant  
+python export_tflite_ssd_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
 ```
 
 ## 📱 Converting to tflite
@@ -478,7 +478,7 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 
 * 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/1881), it is common that it is an annotation problem
 * 🙄 Maybe there is some bounding boxes outside the image boundaries
-*  🤯 The solution for me was minimizing batch size in `.config` file
+* 🤯 The solution for me was minimizing batch size in `.config` file
 
 #### 🙄 Ground truth issue
 
@@ -495,7 +495,7 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 * 👮‍♀️ id:0 is reserved for background, We can not use it for objects
 * 🆔 start IDs from 1
 
-####  🔦 No Variable to Save issue 
+#### 🔦 No Variable to Save issue
 
 `Value Error: No Variable to Save`
 
@@ -512,14 +512,14 @@ train_config: {
 
 #### 🧪 pycocotools module issue
 
- `ModuleNotFoundError: No module named 'pycocotools'`
+`ModuleNotFoundError: No module named 'pycocotools'`
 
 * 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/3367)\*\*\*\*
 * 👩‍🔧 Applying the downloading instructions provided [**here**](https://github.com/philferriere/cocoapi) solved the problem for me \(on Windows 10\) 
 
 #### 🥴 pycocotools type error issue
 
-`pycocotools typeerror: object of type  cannot be safely interpreted as an integer.`
+`pycocotools typeerror: object of type cannot be safely interpreted as an integer.`
 
 * 👩‍🔧 I solved the problem by editing the following lines in cocoeval.py script under pycocotools package \(by adding casting\)
 * 👮‍♀️ Make sure that you are editting the package in you env not in other env.
