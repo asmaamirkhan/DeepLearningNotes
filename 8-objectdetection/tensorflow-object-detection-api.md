@@ -11,17 +11,17 @@ description: "Training Custom Object Detector Step by Step (under development \U
 ## 🚩 Development Pipeline
 
 1. [👩‍💻 Environment Preparation](tensorflow-object-detection-api.md#environment-preparation)
-2. 🖼️ Image acquiring
-3. 🤹‍♀️ Image Organization
-4. 🤖 Model Selecting
-5. 👩‍🔧 Model Configuration
-6. 👶 Training
-7. 👮‍♀️ Evaluation
-8. 👒 Model Exporting
-9. 📱 Converting to tflite
+2. [🖼️ Image acquiring](#image-acquiring)
+3. [🤹‍♀️ Image Organization](#image-organization)
+4. [🤖 Model Selecting](#model-selecting)
+5. [👩‍🔧 Model Configuration](#model-configuration)
+6. [👶 Training](#training)
+7. [👮‍♀️ Evaluation](#evaluation)
+8. [👒 Model Exporting](#model-exporting)
+9. [📱 Converting to tflite](#converting-to-tflite)
 
 {% hint style="info" %}
-🤕 While you are applying the instructions if you get errors you can check out 🐞 Common Issues section at the end of the article
+🤕 While you are applying the instructions if you get errors you can check out [🐞 Common Issues](#common-issues) section at the end of the article
 {% endhint %}
 
 ## 👩‍💻 Environment Preparation
