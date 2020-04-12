@@ -536,6 +536,6 @@ self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpo
 ## 🧐 References
 
 * 📖 [Training Custom Object Detector](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#)
-* 📖 [TensorFlow Object Detection API \(YEmreAk.com\)](https://ai.yemreak.com/tensorflow-object-detection-api)
+* 📖 [TensorFlow Object Detection API - Turkish \(YEmreAk.com\)](https://ai.yemreak.com/tensorflow-object-detection-api)
 * 📖 [Custom Object Detection using TensorFlow from Scratch](https://towardsdatascience.com/custom-object-detection-using-tensorflow-from-scratch-e61da2e10087)
 
