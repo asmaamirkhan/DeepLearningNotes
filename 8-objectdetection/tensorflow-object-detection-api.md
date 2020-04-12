@@ -9,14 +9,19 @@ description: "Training Custom Object Detector Step by Step (under development \U
 
 ## 🚩 Development Pipeline
 
-* Environment Preparation
-* Image acquiring
-* Image Organization
-* Model Selecting
-* Model Configuration
-* Training
-* Evaluation
-* Model Exporting
+* 👩‍💻 Environment Preparation
+* 🖼️ Image acquiring
+* 🤹‍♀️ Image Organization
+* 🤖 Model Selecting
+* 👩‍🔧 Model Configuration
+* 👶 Training
+* 👮‍♀️ Evaluation
+* 👒 Model Exporting
+* 📱 Converting to tflite
+
+{% hint style="info" %}
+🤕 While you are applying the instructions if you get errors you can check out 🐞 Common Issues section at the end of the article
+{% endhint %}
 
 ## 👩‍💻 Environment Preparation
 
