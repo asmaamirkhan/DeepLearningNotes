@@ -8,7 +8,7 @@ description: Training Custom Object Detector Step by Step
 
 * ✨ _Tensorflow_ object detection API is a powerful tool that allows us to create custom object detectors depending on pre-trained, fine tuned models even if we don't have strong AI background or strong _TensorFlow_ knowledge.
 * 💁‍♀️ Building models depending on pre-trained models saves us a lot of time and labor since we are using models that maybe trained for weeks using very strong machines, this principle is called [**Transfer Learning**](https://dl.asmaamir.com/5-dlstrategies/b-transferlearning)**.**
-* 🗃️ As a data set I will show you how to use _OpenImages_ data set and converting its data to _TensorFlow_-friendly format
+* 🗃️ As a data set I will show you how to use _OpenImages_ data set and converting its data to _TensorFlow_-friendly format.
 
 ## 🚩 Development Pipeline
 
