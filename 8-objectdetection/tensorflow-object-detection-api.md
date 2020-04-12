@@ -1,5 +1,5 @@
 ---
-description: "Building Custom Object Detection Step by Step (under development \U0001F469‍\U0001F52C)"
+description: "Training Custom Object Detector Step by Step (under development \U0001F469‍\U0001F52C)"
 ---
 
 # 🤖 TensorFlow Object Detection API
@@ -148,7 +148,7 @@ E:
 | 📂 Folder | 📃 Description |
 | :--- | :--- |
 | 🤖 `models` | the repo [**here**](https://github.com/tensorflow/models)\*\*\*\* |
-| 📄 `annotations` | will contain generated `.csv` and `.tfrecord` files |
+| 📄 `annotations` | will contain generated `.csv` and `.record` files |
 | 👮‍♀️ `eval` | will contain results of evaluation |
 | 🖼️ `images` | will contain image data set |
 | ▶️ `inference` | will contain exported models after training |
@@ -229,7 +229,7 @@ python script.py -i E:\pre_trainded_model\OIDv4_ToolKit\OID\Dataset -o E:\pre_tr
 ```javascript
 item {
     id: 1
-    name: 'Hmster'
+    name: 'Hamster'
 }
 
 item {
@@ -269,9 +269,21 @@ python xml_to_csv.py -i E:\demo\images\test -o E:\demo\annotations\test_labels.c
 * 🙇‍♀️ Now, we will generate tfrecords that will be used in training precess
 * 🔻 Download [**generate\_tfrecords.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/generate_tfrecords.py) script and save it under `scripts` folder
 
+#### 👩‍🔬 Generating train tfrecord
+
 ```bash
 # under (tf1) E:\demo\scripts>
+# python generate_tfrecords.py --label_map=<PATH_TO_LABEL_MAP> 
+# --csv_input=<PATH_TO_CSV_FILE> --img_path=<PATH_TO_IMAGE_FOLDER>
+# --output_path=<PATH_TO_OUTPUT_FILE>
+python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --csv_input=E:\demo\annotations\train_labels.csv --img_path= E:\demo\images\train --output_path=E:\demo\annotations\train.record
+```
 
+#### 👩‍🔬 Generating test tfrecord
+
+```bash
+# under (tf1) E:\demo\scripts>
+python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --csv_input=E:\demo\annotations\test_labels.csv --img_path= E:\demo\images\test --output_path=E:\demo\annotations\test.record
 ```
 
 ## 🤖 Model Selecting
