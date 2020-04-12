@@ -1,8 +1,10 @@
 ---
-description: "Training Custom Object Detector Step by Step (under development \U0001F469‍\U0001F52C)"
+description: Training Custom Object Detector Step by Step
 ---
 
 # 🤖 TensorFlow Object Detection API
+
+## 🌱 Introduction
 
 * ✨ _Tensorflow_ object detection API is a powerful tool that allows us to create custom object detectors depending on pre-trained, fine tuned models even if we don't have strong AI background or strong _TensorFlow_ knowledge.
 * 💁‍♀️ Building models depending on pre-trained models saves us a lot of time and labor since we are using models that maybe trained for weeks using very strong machines, this principle is called [**Transfer Learning**](https://dl.asmaamir.com/5-dlstrategies/b-transferlearning)**.**
@@ -11,17 +13,17 @@ description: "Training Custom Object Detector Step by Step (under development \U
 ## 🚩 Development Pipeline
 
 1. [👩‍💻 Environment Preparation](tensorflow-object-detection-api.md#environment-preparation)
-2. [🖼️ Image acquiring](#image-acquiring)
-3. [🤹‍♀️ Image Organization](#image-organization)
-4. [🤖 Model Selecting](#model-selecting)
-5. [👩‍🔧 Model Configuration](#model-configuration)
-6. [👶 Training](#training)
-7. [👮‍♀️ Evaluation](#evaluation)
-8. [👒 Model Exporting](#model-exporting)
-9. [📱 Converting to tflite](#converting-to-tflite)
+2. [🖼️ Image acquiring](tensorflow-object-detection-api.md#image-acquiring)
+3. [🤹‍♀️ Image Organization](tensorflow-object-detection-api.md#image-organization)
+4. [🤖 Model Selecting](tensorflow-object-detection-api.md#model-selecting)
+5. [👩‍🔧 Model Configuration](tensorflow-object-detection-api.md#model-configuration)
+6. [👶 Training](tensorflow-object-detection-api.md#training)
+7. [👮‍♀️ Evaluation](tensorflow-object-detection-api.md#evaluation)
+8. [👒 Model Exporting](tensorflow-object-detection-api.md#model-exporting)
+9. [📱 Converting to tflite](tensorflow-object-detection-api.md#converting-to-tflite)
 
 {% hint style="info" %}
-🤕 While you are applying the instructions if you get errors you can check out [🐞 Common Issues](#common-issues) section at the end of the article
+🤕 While you are applying the instructions if you get errors you can check out [🐞 Common Issues](tensorflow-object-detection-api.md#common-issues) section at the end of the article
 {% endhint %}
 
 ## 👩‍💻 Environment Preparation
@@ -270,7 +272,7 @@ item {
 ### 🏭 Generating CSV Files
 
 * 🔄 Now we have to convert `.xml` files to csv file
-* 🔻 Download the script [**xml\_to\_csv.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/xml_to_csv.py)  _\*\*_script and save it under `scripts` folder
+* 🔻 Download the script [**xml\_to\_csv.py**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/8-objectdetection/xml_to_csv.py)  \_\*\*\_script and save it under `scripts` folder
 * 💻 Open CMD and run:
 
 #### 👩‍🔬 Generating train csv file
