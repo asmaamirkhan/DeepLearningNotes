@@ -10,7 +10,7 @@ description: "Training Custom Object Detector Step by Step (under development \U
 
 ## 🚩 Development Pipeline
 
-1. [👩‍💻 Environment Preparation](#👩‍💻 Environment Preparation)
+1. [👩‍💻 Environment Preparation](#Environment%20Preparation)
 2. 🖼️ Image acquiring
 3. 🤹‍♀️ Image Organization
 4. 🤖 Model Selecting
