@@ -4,9 +4,8 @@ description: "Training Custom Object Detector Step by Step (under development \U
 
 # 🤖 TensorFlow Object Detection API
 
-* ✨ Tensorflow object detection API is a powerful tool that allows us to create custom object detectors depending on pre-trained fine tuned models even if we don't have strong AI background or strong TensorFlow knowledge.
-* 💁‍♀️ Building models depending on pre-trained models saves us lot of time and labor since we are using models that maybe trained for weeks using very strong machines, this principle is called **Transfer Learning.**
-* **👀**  Check out my notes on Transfer Learning [**here**](https://dl.asmaamir.com/5-dlstrategies/b-transferlearning)\*\*\*\*
+* ✨ Tensorflow object detection API is a powerful tool that allows us to create custom object detectors depending on pre-trained, fine tuned models even if we don't have strong AI background or strong TensorFlow knowledge.
+* 💁‍♀️ Building models depending on pre-trained models saves us a lot of time and labor since we are using models that maybe trained for weeks using very strong machines, this principle is called [**Transfer Learning**](https://dl.asmaamir.com/5-dlstrategies/b-transferlearning)**.**
 
 ## 🚩 Development Pipeline
 
@@ -47,6 +46,15 @@ conda activate tf1
 ```
 
 ### 🔽 Install Packages
+
+#### 💥 GPU vs CPU Computing
+
+| 🚙 CPU | 🚀 GPU |
+| :--- | :--- |
+| **Brain** of computer | **Brawn** of computer |
+| Very few complex cores | hundreds of simpler cores with parallel architecture |
+| single-thread performance optimization | thousands of concurrent hardware threads |
+| Can do a bit of everything, but not great at much | Good for math heavy processes |
 
 #### 🚀  Installing TensorFlow
 
@@ -106,11 +114,15 @@ conda install -c anaconda protobuf
 (tf1) E:\models\research>python setup.py install
 ```
 
-#### 🚩 Setting Python Path
+#### 🚩 Setting Python Path Temporarily
 
 ```bash
 (tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
 ```
+
+{% hint style="info" %}
+👮‍♀️ Every time you open CMD you have to set `PYTHONPATH` again
+{% endhint %}
 
 ### 👩‍🔬 Installation Test
 
