@@ -4,20 +4,21 @@ description: "Training Custom Object Detector Step by Step (under development \U
 
 # 🤖 TensorFlow Object Detection API
 
-* ✨ Tensorflow object detection API is a powerful tool that allows us to create custom object detectors depending on pre-trained, fine tuned models even if we don't have strong AI background or strong TensorFlow knowledge.
+* ✨ _Tensorflow_ object detection API is a powerful tool that allows us to create custom object detectors depending on pre-trained, fine tuned models even if we don't have strong AI background or strong _TensorFlow_ knowledge.
 * 💁‍♀️ Building models depending on pre-trained models saves us a lot of time and labor since we are using models that maybe trained for weeks using very strong machines, this principle is called [**Transfer Learning**](https://dl.asmaamir.com/5-dlstrategies/b-transferlearning)**.**
+* 🗃️ As a data set I will show you how to use _OpenImages_ data set and converting its data to _TensorFlow_-friendly format
 
 ## 🚩 Development Pipeline
 
-* 👩‍💻 Environment Preparation
-* 🖼️ Image acquiring
-* 🤹‍♀️ Image Organization
-* 🤖 Model Selecting
-* 👩‍🔧 Model Configuration
-* 👶 Training
-* 👮‍♀️ Evaluation
-* 👒 Model Exporting
-* 📱 Converting to tflite
+1. 👩‍💻 Environment Preparation
+2. 🖼️ Image acquiring
+3. 🤹‍♀️ Image Organization
+4. 🤖 Model Selecting
+5. 👩‍🔧 Model Configuration
+6. 👶 Training
+7. 👮‍♀️ Evaluation
+8. 👒 Model Exporting
+9. 📱 Converting to tflite
 
 {% hint style="info" %}
 🤕 While you are applying the instructions if you get errors you can check out 🐞 Common Issues section at the end of the article
@@ -313,6 +314,7 @@ python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --c
 * 🎉 [**TensorFLow Object Detection Zoo**](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models) provides a lot of pre-trained models
 * 🕵️‍♀️ Models differentiate in terms of accuracy and speed, you can select the suitable model due to your priorities
 * 💾 Select a model, extract it and save it under `pre_trained_model` folder
+* 👀 Check out my notes [**here**](https://dl.asmaamir.com/8-objectdetection) to get insight about differences between popular models 
 
 ## 👩‍🔧 Model Configuration
 
