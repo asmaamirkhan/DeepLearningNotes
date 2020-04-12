@@ -529,7 +529,7 @@ self.iouThrs = np.linspace(.5, 0.95, int(np.round((0.95 - .5) / .05)) + 1, endpo
 self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpoint=True)
 ```
 
-### 🔗 References
+## 🔗 References
 
 * [Training Custom Object Detector](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#)
 * [TensorFlow Object Detection API \(YEmreAk.com\)](https://ai.yemreak.com/tensorflow-object-detection-api)
