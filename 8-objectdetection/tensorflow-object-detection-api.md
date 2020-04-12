@@ -426,6 +426,33 @@ python export_inference_graph.py --input_type image_tensor --pipline_config_path
 python export_tflite_ssd_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant  
 ```
 
+## 📱 Converting to tflite
+
+* 💁‍♀️ If you want to use the model in mobile apps or tflite supported embedded devices you have to convert `.pb` file to `.tflite` file
+
+### 📙 About TFLite
+
+* 📱 TensorFlow Lite is TensorFlow’s lightweight solution for mobile and embedded devices. 
+* 🧐 It enables on-device machine learning inference with low latency and a small binary size.
+* 😎 TensorFlow Lite uses many techniques for this such as quantized kernels that allow smaller and faster \(fixed-point math\) models.
+* 📍 [**Official site**](https://www.tensorflow.org/lite)\*\*\*\*
+
+**🍫 Converting Command**
+
+* 💻 To apply converting open CMD and run:
+
+```bash
+# under (tf1) E:\>
+# toco --graph_def_file=<PATH_TO_PB_FILE>
+# --output_file=<PATH_TO_SAVE> --input_shapes=<INPUT_SHAPES>
+# --input_arrays=<INPUT_ARRAYS> --output_arrays=<OUTPUT_ARRAYS>
+# --inference_type=<QUATIZED_UINT8|FLOAT> --change_concat_input_ranges=<true|false>
+# --alow_custom_ops 
+# args for QUATIZED_UINT8 inference
+# --mean_values=<MEAN_VALUES> std_dev_values=<STD_DEV_VALUES> 
+toco --graph_def_file=E:\demo\inference\ssd_v1_quant\tflite_graph.pb --output_file=E:\demo\tflite\ssd_mobilenet.tflite --input_shapes=1,300,300,3 --input_arrays=normalized_input_image_tensor --output_arrays=TFLite_Detection_PostProcess,TFLite_Detection_PostProcess:1,TFLite_Detection_PostProcess:2,TFLite_Detection_PostProcess:3 --inference_type=QUATIZED_UINT8 --mean_values=128 --std_dev_values=128 --change_concat_input_ranges=false --allow_custom_ops
+```
+
 ## 🐞 Common Issues
 
 #### 🥅 nets module issue
