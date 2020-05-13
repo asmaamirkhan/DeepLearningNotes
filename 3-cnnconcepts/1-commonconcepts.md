@@ -74,7 +74,7 @@ _Prewitt_ filter is like:
 
 > So the point here is to pay attention to the middle row
 
-And Roberts filter is like:
+And _Roberts_ filter is like:
 
 ```text
 1    0
