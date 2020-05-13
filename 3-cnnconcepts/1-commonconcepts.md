@@ -44,7 +44,7 @@ An application of convolution operation
 
 > Result: vertical lines pop out
 
-### 🙄 What About other Numbers
+### 🙄 What About The Other Numbers
 
 There are a lot of ways we can put number inside elements of the filter.
 
@@ -56,7 +56,7 @@ For example _Sobel_ filter is like:
 1   0   -1
 ```
 
-And _Scharr_ filter is like:
+_Scharr_ filter is like:
 
 ```text
 3    0   -3
@@ -64,7 +64,22 @@ And _Scharr_ filter is like:
 3    0   -3
 ```
 
+_Prewitt_ filter is like:
+
+```text
+-1   0   1
+-1   0   1
+-1   0   1
+```
+
 > So the point here is to pay attention to the middle row
+
+And Roberts filter is like:
+
+```text
+1    0
+0   -1
+```
 
 ### ✨ Another Approach
 
