@@ -52,6 +52,8 @@
   * [🌌 Vanishing Gradients with RNNs](9-sequencemodels/3-vanishinggradients.md)
   * [🌚 Word Representation](9-sequencemodels/4-wordrepres.md)
   * [💬 Mixed Info On NLP](9-sequencemodels/5-aboutnlp.md)
+* [💬 Applied NLP](applied-nlp.md)
+* [🙌🏻 Handling texts](handling-texts.md)
 * [👀 Quick Visual Info](z-quickvisualinfo.md)
 * [📚 PDFs that I found and recommend](z-usefulpdfs.md)
 
