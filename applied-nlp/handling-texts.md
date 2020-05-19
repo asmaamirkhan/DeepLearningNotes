@@ -4,6 +4,8 @@ description: Handling texts using Python's built-in functions
 
 # 🙌🏻 Handling texts
 
+👀 Check out the notebook [here](./handling-texts.ipynb)
+
 ## 💠 Python built-in functions
 
 ### 📏 Length of a string 
