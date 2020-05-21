@@ -15,8 +15,8 @@ description: Regular Expressions guide
 | **`$`** | End of a string |
 | **`[]`** | One of the set of characters within `[]` |
 | **`[a-z]`** | One of the range of characters |
-| **`[^abc]`** | Not a,b or c |
-| **`a|b`** | a or b \(a and b are strings\) |
+| **`[^abc]`** | Not `a`, `b` or `c` |
+| **`a|b`** | `a` or `b` \(`a` and `b` are strings\) |
 | **`()`** | Scoping for operators |
 | **`\`** | Escape character |
 
