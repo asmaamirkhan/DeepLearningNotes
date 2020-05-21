@@ -54,6 +54,7 @@
   * [💬 Mixed Info On NLP](9-sequencemodels/5-aboutnlp.md)
 * [💬 Applied NLP](applied-nlp/README.md)
   * [🙌🏻 Handling texts](applied-nlp/handling-texts.md)
+  * [🧩 Regex](applied-nlp/regex.md)
 * [👀 Quick Visual Info](z-quickvisualinfo.md)
 * [📚 PDFs that I found and recommend](z-usefulpdfs.md)
 

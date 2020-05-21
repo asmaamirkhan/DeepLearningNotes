@@ -4,11 +4,11 @@ description: Handling texts using Python's built-in functions
 
 # 🙌🏻 Handling texts
 
-👀 Check out the notebook [here](./handling-texts.ipynb)
+👀 Check out the notebook [here](https://github.com/asmaamirkhan/DeepLearningNotes/tree/f9ec79d9121be190af62e6c8b6044c830ccc1009/applied-nlp/handling-texts.ipynb)
 
 ## 💠 Python built-in functions
 
-### 📏 Length of a string 
+### 📏 Length of a string
 
 #### 🔢 Number of characters
 
