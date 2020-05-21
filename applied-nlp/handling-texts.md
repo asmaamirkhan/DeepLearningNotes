@@ -4,7 +4,10 @@ description: Handling texts using Python's built-in functions
 
 # 🙌🏻 Handling texts
 
-👀 Check out the notebook [**here**](https://github.com/asmaamirkhan/DeepLearningNotes/tree/f9ec79d9121be190af62e6c8b6044c830ccc1009/applied-nlp/handling-texts.ipynb)\*\*\*\*
+## 📕 Notebooks
+
+* \*\*\*\*[**💠 Python built-in functions**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/1-handling-texts.ipynb)\*\*\*\*
+* \*\*\*\*[**🐼 String Processing with Pandas**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/3-strings-in-pandas.ipynb)\*\*\*\*
 
 ## 💠 Python built-in functions
 

@@ -4,6 +4,11 @@ description: Regular Expressions guide
 
 # 🧩 Regex
 
+## 📕 Notebooks
+
+* \*\*\*\*[**⭐ Regex Examples**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/2-regex-examples.ipynb)\*\*\*\*
+* \*\*\*\*[**🐼 String Processing with Pandas**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/3-strings-in-pandas.ipynb)\*\*\*\*
+
 ## 🚩 Meta Characters
 
 ### 🎎 Character Matches
