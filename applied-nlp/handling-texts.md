@@ -6,8 +6,8 @@ description: Handling texts using Python's built-in functions
 
 ## 📕 Notebooks
 
-* \*\*\*\*[**💠 Python built-in functions**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/1-handling-texts.ipynb)\*\*\*\*
-* \*\*\*\*[**🐼 String Processing with Pandas**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/3-strings-in-pandas.ipynb)\*\*\*\*
+* [**💠 Python built-in functions**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/1-handling-texts.ipynb)
+* [**🐼 String Processing with Pandas**](https://github.com/asmaamirkhan/DeepLearningNotes/blob/master/applied-nlp/3-strings-in-pandas.ipynb)
 
 ## 💠 Python built-in functions
 
