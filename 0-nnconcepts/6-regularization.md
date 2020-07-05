@@ -32,7 +32,7 @@ Another regularization method by eliminating some neurons in a specific ratio **
 
 Better visualiztion:
 
- ![](../.gitbook/assets/nnwithoutdropout.JPG) ![](../.gitbook/assets/nnwithdropout.JPG)
+![](../.gitbook/assets/nnwithoutdropout.JPG) ![](../.gitbook/assets/nnwithdropout.JPG)
 
 > An NN before and after dropout
 

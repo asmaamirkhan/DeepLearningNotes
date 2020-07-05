@@ -37,7 +37,7 @@ We have to choose a dev set and test set - _from same distribution_ - to reflect
 * If we have a small dataset \(m &lt; 10,000\)
   * 60% training, 20% dev, 20% test will be good 
 * If we have a huge dataset \(1M for example\)
-  * 99% trainig, %1 dev, 1% test will be acceptable 
+  * 99% trainig, %1 dev, 1% test will be acceptable
 
     > And so on, considering these two statuses we can choose the correct ratio 👮‍
 

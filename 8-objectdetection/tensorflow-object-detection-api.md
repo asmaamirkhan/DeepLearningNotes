@@ -136,7 +136,7 @@ conda install -c anaconda protobuf
 
 ### 👩‍🔬 Installation Test
 
-🧐 Check out that every thing is done 
+🧐 Check out that every thing is done
 
 #### 💻 Command
 
