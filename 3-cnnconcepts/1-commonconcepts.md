@@ -104,7 +104,7 @@ If we have an `n*n` image and we convolve it by `f*f` filter the the output imag
 
 ### 💡 Solution
 
-We can [_pad_](https://github.com/asmaamirkhan/DeepLearningNotes/tree/d20deec6ead832c6650a0d761212dfafef64b302/3-CNNConcepts/1-CommonConcepts-P2.md#padding) the image 💪
+We can [_pad_](2-commonconcepts-p2.md#padding) the image 💪
 
 ## 🧐 References
 
