@@ -44,7 +44,7 @@ description: Asmaa Mirkhan's notes (and codes) on deep learning
 * ✨ Help me to improve and to increase the content by opening a _pull request_
 * 👓 Tell me your suggestions by sending me an [email](mailto:asmaamirkhan.am@gmail.com) or opening an issue
 
-## 👜 Contact
+## 👜 Contact & Support
 
 Find me on [LinkedIn](https://www.linkedin.com/in/asmaamirkhan/) and feel free to mail me, [**Asmaa** 🦋](mailto:asmaamirkhan.am@gmail.com)
 
