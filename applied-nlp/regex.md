@@ -13,18 +13,18 @@ description: Regular Expressions guide
 
 ### 🎎 Character Matches
 
-| 🎀 Symbol | 📃 Description |  |
-| :--- | :--- | :--- |
-| **`.`** | Single character |  |
-| **`^`** | Start of a string |  |
-| **`$`** | End of a string |  |
-| **`[]`** | One of the set of characters within `[]` |  |
-| **`[a-z]`** | One of the range of characters |  |
-| **`[^abc]`** | Not `a`, `b` or `c` |  |
-| \*\*\`a | b\`\*\* | `a` or `b` \(`a` and `b` are strings\) |
-| **`()`** | Scoping for operators |  |
-| **`(?:<pattern>)`** | Passive grouping \([**details**](https://stackoverflow.com/a/3705852/12784629)\) |  |
-| **`\`** | Escape character |  |
+| 🎀 Symbol | 📃 Description |
+| :--- | :--- |
+| **`.`** | Single character |
+| **`^`** | Start of a string |
+| **`$`** | End of a string |
+| **`[]`** | One of the set of characters within `[]` |
+| **`[a-z]`** | One of the range of characters |
+| **`[^abc]`** | Not `a`, `b` or `c` |
+| **`[ab]`** | `a` or `b` \(`a` and `b` are strings\) |
+| **`()`** | Scoping for operators |
+| **`(?:<pattern>)`** | Passive grouping \([**details**](https://stackoverflow.com/a/3705852/12784629)\) |
+| **`\`** | Escape character |
 
 ### 🎇 Character Symbols
 
