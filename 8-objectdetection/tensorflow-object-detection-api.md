@@ -114,7 +114,7 @@ conda install -c anaconda protobuf
 #### 🔃 Compiling Protobufs
 
 ```bash
-(tf1) E:\models\research>for /f %i in ('dir /b object_detection\protos\*.proto') ^do protoc object_detection\protos\%i --python_out=.
+(tf1) E:\models\research>for /f %i in ('dir /b object_detection\protos\*.proto') do protoc object_detection\protos\%i --python_out=.
 ```
 
 #### 📦 Compiling Packages
@@ -141,7 +141,7 @@ conda install -c anaconda protobuf
 #### 💻 Command
 
 ```bash
-(tf1) E:\models\research>python object_detection/builders/model_builder_test.py
+(tf1) E:\models\research>python object_detection/builders/model_builder_tf1_test.py
 ```
 
 #### 🎉 Expected Output
@@ -477,6 +477,16 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 
 ```bash
 (tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
+```
+
+#### 🗃️ tf_slim module issue
+
+`ModuleNotFoundError: No module named 'tf_slim'`
+
+This means that tf_slim module is not installed, try to run:
+
+```bash
+(tf1) E:\models\research>pip install tf_slim
 ```
 
 #### 🤯 LossTensor is inf issue
