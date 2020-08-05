@@ -330,7 +330,7 @@ python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --c
 
 ## 🤖 Model Selecting
 
-* 🎉 [**TensorFLow Object Detection Zoo**](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models) provides a lot of pre-trained models
+* 🎉 [**TensorFLow Object Detection Zoo**](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md#coco-trained-models) provides a lot of pre-trained models
 * 🕵️‍♀️ Models differentiate in terms of accuracy and speed, you can select the suitable model due to your priorities
 * 💾 Select a model, extract it and save it under `pre_trained_model` folder
 * 👀 Check out my notes [**here**](https://dl.asmaamir.com/8-objectdetection) to get insight about differences between popular models 
