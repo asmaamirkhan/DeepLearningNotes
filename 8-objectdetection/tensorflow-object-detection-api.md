@@ -127,10 +127,6 @@ conda install -c anaconda protobuf
 {% endtab %}
 {% endtabs %}
 
-```bash
-
-```
-
 #### 📦 Compiling Packages
 
 ```bash
