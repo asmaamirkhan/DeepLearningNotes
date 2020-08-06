@@ -136,9 +136,21 @@ conda install -c anaconda protobuf
 
 #### 🚩 Setting Python Path Temporarily
 
+{% tabs %}
+{% tab title="💻 Windows" %}
 ```bash
 (tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
 ```
+{% endtab %}
+
+{% tab title="🐧 Linux" %}
+```bash
+# under /models/research
+$ export PYTHONPATH=`pwd`:`pwd`/slim
+```
+{% endtab %}
+{% endtabs %}
+
 
 {% hint style="info" %}
 👮‍♀️ Every time you open CMD you have to set `PYTHONPATH` again
@@ -314,14 +326,14 @@ python xml_to_csv.py -i E:\demo\images\test -o E:\demo\annotations\test_labels.c
 # python generate_tfrecords.py --label_map=<PATH_TO_LABEL_MAP> 
 # --csv_input=<PATH_TO_CSV_FILE> --img_path=<PATH_TO_IMAGE_FOLDER>
 # --output_path=<PATH_TO_OUTPUT_FILE>
-python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --csv_input=E:\demo\annotations\train_labels.csv --img_path= E:\demo\images\train --output_path=E:\demo\annotations\train.record
+python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --csv_input=E:\demo\annotations\train_labels.csv --img_path=E:\demo\images\train --output_path=E:\demo\annotations\train.record
 ```
 
 #### 👩‍🔬 Generating test tfrecord
 
 ```bash
 # under (tf1) E:\demo\scripts>
-python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --csv_input=E:\demo\annotations\test_labels.csv --img_path= E:\demo\images\test --output_path=E:\demo\annotations\test.record
+python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --csv_input=E:\demo\annotations\test_labels.csv --img_path=E:\demo\images\test --output_path=E:\demo\annotations\test.record
 ```
 
 ## 🤖 Model Selecting
@@ -389,8 +401,8 @@ eval_input_reader: {
 ```bash
 # under (tf1) E:\models\research\object_detection\legacy> 
 # python train.py --train_dir=<DIRECTORY_TO_SAVE_CHECKPOINTS> 
-# --pipline_config_path=<PATH_TO_CONFIG_FILE>
-python train.py --train_dir=E:/demo/training --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config
+# --pipeline_config_path=<PATH_TO_CONFIG_FILE>
+python train.py --train_dir=E:/demo/training --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config
 ```
 
 * 🕐 This process will take long \(You can take a nap 🤭, but a long nap 🙄\)
@@ -407,9 +419,9 @@ python train.py --train_dir=E:/demo/training --pipline_config_path=E:/demo/train
 
 ```bash
 # under (tf1) E:\models\research\object_detection\legacy> 
-# python eval.py --logtostderr --pipline_config_path=<PATH_TO_CONFIG_FILE>
+# python eval.py --logtostderr --pipeline_config_path=<PATH_TO_CONFIG_FILE>
 # --checkpoint_dir=<DIRECTORY_OF_CHECKPOINTS> --eval_dir=<DIRECTORY_TO_SAVE_EVAL_RESULTS>
-python eval.py --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --checkpoint_dir=--pipline_config_path=E:/demo/training --eval_dir=--pipline_config_path=E:/demo/eval
+python eval.py --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --checkpoint_dir=E:/demo/training --eval_dir=--pipeline_config_path=E:/demo/eval
 ```
 
 ### 👀 Visualizing Results
@@ -433,10 +445,10 @@ tensorboard --logdir=E:/demo/eval
 ```bash
 # under (tf1) E:\models\research\object_detection>
 # python export_inference_graph.py --input_type image_tensor 
-# --pipline_config_path <PATH_TO_CONFIG_FILE> 
+# --pipeline_config_path <PATH_TO_CONFIG_FILE> 
 # --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
 # --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
-python export_inference_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
 ```
 
 * If you are using SSD and planning to convert it to tflite later you have to run
@@ -444,10 +456,10 @@ python export_inference_graph.py --input_type image_tensor --pipline_config_path
 ```bash
 # under (tf1) E:\models\research\object_detection>
 # python export_tflite_ssd_graph.py --input_type image_tensor 
-# --pipline_config_path <PATH_TO_CONFIG_FILE> 
+# --pipeline_config_path <PATH_TO_CONFIG_FILE> 
 # --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
 # --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
-python export_tflite_ssd_graph.py --input_type image_tensor --pipline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
+python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
 ```
 
 ## 📱 Converting to tflite
@@ -498,6 +510,28 @@ This means that tf_slim module is not installed, try to run:
 ```bash
 (tf1) E:\models\research>pip install tf_slim
 ```
+
+#### 🗃️ Memory exceeds error
+
+```bash
+pciBusID 0000:06:00.0
+Total memory: 11.25GiB
+Free memory: 11.16GiB
+```
+
+For me it is fixed by minimizing batch_size in `.config` file
+```json
+train_config: {
+  batch_size: 128
+}
+```
+
+#### ❗ no such file or directory error
+`train.py tensorflow.python.framework.errors_impl.notfounderror no such file or directory`
+
+- 🙄 For me it was a typo in train.py command
+- [📍 Related discussion 1](https://github.com/tensorflow/models/issues/3762)
+- [📍 Related discussion 2](https://github.com/tensorflow/models/issues/3954)
 
 #### 🤯 LossTensor is inf issue
 
