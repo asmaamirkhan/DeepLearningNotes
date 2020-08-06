@@ -122,7 +122,8 @@ conda install -c anaconda protobuf
 
 {% tab title="🐧 Linux" %}
 ```bash
-> protoc object_detection/protos/*.proto --python_out=.
+# under /models/research
+$ protoc object_detection/protos/*.proto --python_out=.
 ```
 {% endtab %}
 {% endtabs %}
@@ -421,7 +422,7 @@ python train.py --train_dir=E:/demo/training --pipeline_config_path=E:/demo/trai
 # under (tf1) E:\models\research\object_detection\legacy> 
 # python eval.py --logtostderr --pipeline_config_path=<PATH_TO_CONFIG_FILE>
 # --checkpoint_dir=<DIRECTORY_OF_CHECKPOINTS> --eval_dir=<DIRECTORY_TO_SAVE_EVAL_RESULTS>
-python eval.py --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --checkpoint_dir=E:/demo/training --eval_dir=--pipeline_config_path=E:/demo/eval
+python eval.py --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --checkpoint_dir=E:/demo/training --eval_dir=E:/demo/eval
 ```
 
 ### 👀 Visualizing Results
@@ -575,8 +576,22 @@ train_config: {
 
 `ModuleNotFoundError: No module named 'pycocotools'`
 
+{% tabs %}
+{% tab title="💻 Windows" %}
+```bash
 * 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/3367)
 * 👩‍🔧 Applying the downloading instructions provided [**here**](https://github.com/philferriere/cocoapi) solved the problem for me \(on Windows 10\) 
+```
+{% endtab %}
+
+{% tab title="🐧 Linux" %}
+```bash
+$ conda install -c conda-forge pycocotools
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 #### 🥴 pycocotools type error issue
 
