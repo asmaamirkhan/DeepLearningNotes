@@ -434,6 +434,20 @@ python eval.py --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantize
 * ✨ To see results on charts and images we can use TensorBoard for better analyzing
 * 💻 Open CMD and run:
 
+#### 👩‍🏫 Training Values Visualization
+- 🧐 Here you can see graphs of loss mAP and other metircs
+- 🤓 And much more (You can investigate tabs at the top)
+
+```bash
+# under (tf1) E:\>
+tensorboard --logdir=E:/demo/tarining
+```
+
+
+#### 👩‍🏫 Evaluation Values Visualization
+- 🧐 Here you can see images from your test set with corresponded predicitions
+- 🤓 And much more (You can investigate tabs at the top)
+
 ```bash
 # under (tf1) E:\>
 tensorboard --logdir=E:/demo/eval
