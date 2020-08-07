@@ -523,7 +523,9 @@ Free memory: 11.16GiB
 For me it is fixed by minimizing batch_size in `.config` file
 ```json
 train_config: {
+  ....
   batch_size: 128
+  ....
 }
 ```
 
@@ -604,6 +606,46 @@ $ conda install -c conda-forge pycocotools
 self.iouThrs = np.linspace(.5, 0.95, int(np.round((0.95 - .5) / .05)) + 1, endpoint=True)
 self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpoint=True)
 ```
+
+#### 🧨 Loss Exploding
+```
+INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
+INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
+INFO:tensorflow:global step 441: loss = 7774169971762292326400.0000 (0.401 sec/step)
+INFO:tensorflow:global step 441: loss = 7774169971762292326400.0000 (0.401 sec/step)
+INFO:tensorflow:global step 442: loss = 25262924095336287830016.0000 (0.404 sec/step)
+INFO:tensorflow:global step 442: loss = 25262924095336287830016.0000 (0.404 sec/step)
+```
+
+🙄 For me there were 2 problems:
+
+**First:**
+
+- Some of annotations were wrong and overflow the image (e.g. xmax > width)
+- I could check that by inspecting `.csv` file
+- Example:
+
+| filename | width | height | class   | xmin | ymin | xmax | ymax |
+| -------- | ----- | ------ | ------- | ---- | ---- | ---- | ---- |
+| 104.jpg  | 640   | **480** | class_1 | 284  | 406  | 320  |  **492** |
+
+**Second:**
+
+- Learning rate in `.config` file is too big (the default value was big 🙄)
+- The following values are valid and tested on mobilenet_ssd_v1_quantized
+
+```json
+learning_rate: {
+  cosine_decay_learning_rate {
+    learning_rate_base: .2
+    total_steps: 50000
+    warmup_learning_rate: 0.06
+    warmup_steps: 2000
+  }
+}
+```
+- [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/3868)
+- [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/8423)
 
 ## 🧐 References
 
