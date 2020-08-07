@@ -618,7 +618,7 @@ $ conda install -c conda-forge pycocotools
 
 `pycocotools typeerror: object of type cannot be safely interpreted as an integer.`
 
-* 👩‍🔧 I solved the problem by editing the following lines in cocoeval.py script under pycocotools package \(by adding casting\)
+* 👩‍🔧 I solved the problem by editing the following lines in `cocoeval.py` script under _pycocotools_ package \(by adding casting\)
 * 👮‍♀️ Make sure that you are editting the package in you env not in other env.
 
 ```python
