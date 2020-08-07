@@ -437,16 +437,17 @@ python eval.py --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantize
 #### 👩‍🏫 Training Values Visualization
 - 🧐 Here you can see graphs of loss, learning rate and other values
 - 🤓 And much more (You can investigate tabs at the top)
+- 😋 It is feasable to use it while training (and exciting 🤩)
 
 ```bash
 # under (tf1) E:\>
 tensorboard --logdir=E:/demo/tarining
 ```
 
-
-#### 👩‍🏫 Evaluation Values Visualization
+#### 👮‍♀️ Evaluation Values Visualization
 - 🧐 Here you can see images from your test set with corresponded predicitions
 - 🤓 And much more (You can investigate tabs at the top)
+- ❗ You must use this after running evaluation script
 
 ```bash
 # under (tf1) E:\>
