@@ -435,7 +435,7 @@ python eval.py --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantize
 * 💻 Open CMD and run:
 
 #### 👩‍🏫 Training Values Visualization
-- 🧐 Here you can see graphs of loss mAP and other metircs
+- 🧐 Here you can see graphs of loss, learning rate and other values
 - 🤓 And much more (You can investigate tabs at the top)
 
 ```bash
