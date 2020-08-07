@@ -357,7 +357,7 @@ python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --c
 You have to update the following lines:
 
 {% hint style="info" %}
-🙄 Take a look at [Loss exploding issue](tensorflow-object-detection-api.md#common-issues#loss-exploding)
+🙄 Take a look at [Loss exploding issue](tensorflow-object-detection-api.md#loss-exploding)
 {% endhint %}
 
 ```javascript
