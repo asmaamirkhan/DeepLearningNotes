@@ -356,6 +356,10 @@ python generate_tfrecords.py --label_map=E:/demo/annotations/label_map.pbtxt --c
 
 You have to update the following lines:
 
+{% hint style="info" %}
+🙄 Take a look at [Loss exploding issue](tensorflow-object-detection-api.md#common-issues#loss-exploding)
+{% endhint %}
+
 ```javascript
 // number of classes
 num_classes: 1 // set it to total number of classes you have
@@ -492,7 +496,7 @@ toco --graph_def_file=E:\demo\inference\ssd_v1_quant\tflite_graph.pb --output_fi
 
 ## 🐞 Common Issues
 
-#### 🥅 nets module issue
+### 🥅 nets module issue
 
 `ModuleNotFoundError: No module named 'nets'`
 
@@ -502,7 +506,7 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 (tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
 ```
 
-#### 🗃️ tf_slim module issue
+### 🗃️ tf_slim module issue
 
 `ModuleNotFoundError: No module named 'tf_slim'`
 
@@ -512,7 +516,7 @@ This means that tf_slim module is not installed, try to run:
 (tf1) E:\models\research>pip install tf_slim
 ```
 
-#### 🗃️ Memory exceeds error
+### 🗃️ Memory exceeds error
 
 ```bash
 pciBusID 0000:06:00.0
@@ -529,14 +533,14 @@ train_config: {
 }
 ```
 
-#### ❗ no such file or directory error
+### ❗ no such file or directory error
 `train.py tensorflow.python.framework.errors_impl.notfounderror no such file or directory`
 
 - 🙄 For me it was a typo in train.py command
 - [📍 Related discussion 1](https://github.com/tensorflow/models/issues/3762)
 - [📍 Related discussion 2](https://github.com/tensorflow/models/issues/3954)
 
-#### 🤯 LossTensor is inf issue
+### 🤯 LossTensor is inf issue
 
 `LossTensor is inf or nan. : Tensor had NaN values`
 
@@ -544,7 +548,7 @@ train_config: {
 * 🙄 Maybe there is some bounding boxes outside the image boundaries
 * 🤯 The solution for me was minimizing batch size in `.config` file
 
-#### 🙄 Ground truth issue
+### 🙄 Ground truth issue
 
 `The following classes have no ground truth examples`
 
@@ -552,14 +556,14 @@ train_config: {
 * 👩‍🔧 For me it was a misspelling issue in `label_map` file, 
 * 🙄 Pay attention to small and capital letters
 
-#### 🏷️ labelmap issue
+### 🏷️ labelmap issue
 
 `ValueError: Label map id 0 is reserved for the background label`
 
 * 👮‍♀️ id:0 is reserved for background, We can not use it for objects
 * 🆔 start IDs from 1
 
-#### 🔦 No Variable to Save issue
+### 🔦 No Variable to Save issue
 
 `Value Error: No Variable to Save`
 
@@ -574,7 +578,7 @@ train_config: {
 }
 ```
 
-#### 🧪 pycocotools module issue
+### 🧪 pycocotools module issue
 
 `ModuleNotFoundError: No module named 'pycocotools'`
 
@@ -595,7 +599,7 @@ $ conda install -c conda-forge pycocotools
 
 
 
-#### 🥴 pycocotools type error issue
+### 🥴 pycocotools type error issue
 
 `pycocotools typeerror: object of type cannot be safely interpreted as an integer.`
 
@@ -607,7 +611,7 @@ self.iouThrs = np.linspace(.5, 0.95, int(np.round((0.95 - .5) / .05)) + 1, endpo
 self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpoint=True)
 ```
 
-#### 🧨 Loss Exploding
+### 🧨 Loss Exploding
 ```
 INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
 INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
@@ -634,7 +638,7 @@ INFO:tensorflow:global step 442: loss = 25262924095336287830016.0000 (0.404 sec/
 - Learning rate in `.config` file is too big (the default value was big 🙄)
 - The following values are valid and tested on mobilenet_ssd_v1_quantized
 
-```json
+```js
 learning_rate: {
   cosine_decay_learning_rate {
     learning_rate_base: .2
@@ -644,6 +648,9 @@ learning_rate: {
   }
 }
 ```
+
+
+
 - [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/3868)
 - [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/8423)
 
