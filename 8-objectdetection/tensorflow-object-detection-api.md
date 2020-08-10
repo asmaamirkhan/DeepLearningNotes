@@ -466,9 +466,9 @@ tensorboard --logdir=E:/demo/eval
 # under (tf1) E:\models\research\object_detection>
 # python export_inference_graph.py --input_type image_tensor 
 # --pipeline_config_path <PATH_TO_CONFIG_FILE> 
-# --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
+# --trained_checkpoint_prefix <PATH_TO_LAST_CHECKPOINT>
 # --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
-python export_inference_graph.py --input_type image_tensor --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoint_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
 ```
 
 * If you are using SSD and planning to convert it to tflite later you have to run
@@ -477,9 +477,9 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 # under (tf1) E:\models\research\object_detection>
 # python export_tflite_ssd_graph.py --input_type image_tensor 
 # --pipeline_config_path <PATH_TO_CONFIG_FILE> 
-# --trained_checkpoing_prefix <PATH_TO_LAST_CHECKPOINT>
+# --trained_checkpoint_prefix <PATH_TO_LAST_CHECKPOINT>
 # --output_directory <PATH_TO_SAVE_EXPORTED_MODEL>
-python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoing_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
+python export_tflite_ssd_graph.py --input_type image_tensor --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantized_300x300_coco14_sync.config --trained_checkpoint_prefix E:/demo/training/model.ckpt-16438 --output_directory E:/demo/inference/ssd_v1_quant
 ```
 
 ## 📱 Converting to tflite
@@ -651,14 +651,14 @@ INFO:tensorflow:global step 442: loss = 25262924095336287830016.0000 (0.404 sec/
 **Second:**
 
 - Learning rate in `.config` file is too big (the default value was big 🙄)
-- The following values are valid and tested on mobilenet_ssd_v1_quantized
+- The following values are valid and tested on mobilenet_ssd_v1_quantized (Not very good 🙄)
 
 ```js
 learning_rate: {
   cosine_decay_learning_rate {
-    learning_rate_base: .2
+    learning_rate_base: .01
     total_steps: 50000
-    warmup_learning_rate: 0.06
+    warmup_learning_rate: 0.005
     warmup_steps: 2000
   }
 }
