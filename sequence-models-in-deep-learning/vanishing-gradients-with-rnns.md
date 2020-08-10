@@ -1,2 +1,0 @@
-# 🌌 Vanishing Gradients with RNNs
-

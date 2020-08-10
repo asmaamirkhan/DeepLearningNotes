@@ -1,2 +1,0 @@
-# 🌐 CNNs In Browser
-

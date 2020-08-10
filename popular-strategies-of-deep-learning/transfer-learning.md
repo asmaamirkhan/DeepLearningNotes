@@ -1,2 +1,0 @@
-# 🚙 Transfer Learning
-
