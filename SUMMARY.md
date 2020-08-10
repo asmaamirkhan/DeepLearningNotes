@@ -37,7 +37,7 @@
 * [🤡 Image Augmentation](6-ImageAugmentation/README.md)
   * [🌱 Introduction](6-ImageAugmentation/a-introduction.md)
 * [🤸‍♀️ Notes on Applied Machine Learning](7-appliedml/README.md)
-  * [🌱 Introduction](7-appliedml/a-introduction.md)
+  * [🌱 Introduction](7-appliedml/0-introduction.md)
   * [👩‍🔧 Notes on Structuring Machine Learning Projects](7-appliedml/1-evaluation.md)
   * [👩‍🏫 Implementation Guidelines](7-appliedml/2-guidelines.md)
 * [🕵️‍♀️ Basics of Object Detection](8-objectdetection/README.md)
