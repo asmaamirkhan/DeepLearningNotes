@@ -531,15 +531,19 @@ This means that tf_slim module is not installed, try to run:
 (tf1) E:\models\research>pip install tf_slim
 ```
 
-### 🗃️ Memory exceeds error
+### 🗃️ Allocation error
 
 ```bash
-pciBusID 0000:06:00.0
-Total memory: 11.25GiB
-Free memory: 11.16GiB
+2020-08-11 17:44:00.357710: I tensorflow/core/common_runtime/bfc_allocator.cc:929] Stats: 
+Limit:                 10661327
+InUse:                 10656704
+MaxInUse:              10657688
+NumAllocs:                 2959
+MaxAllocSize:           3045064
 ```
 
-For me it is fixed by minimizing batch_size in `.config` file
+For me it is fixed by minimizing batch_size in `.config` file, it is related to your computations resources 
+
 ```json
 train_config: {
   ....
