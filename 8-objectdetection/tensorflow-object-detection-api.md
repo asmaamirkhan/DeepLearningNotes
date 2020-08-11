@@ -626,7 +626,7 @@ self.iouThrs = np.linspace(.5, 0.95, int(np.round((0.95 - .5) / .05)) + 1, endpo
 self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpoint=True)
 ```
 
-### 🧨 Loss Exploding
+### 💣 Loss Exploding
 ```
 INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
 INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
