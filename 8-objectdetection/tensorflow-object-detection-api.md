@@ -650,12 +650,12 @@ INFO:tensorflow:global step 442: loss = 25262924095336287830016.0000 (0.404 sec/
 
 | filename | width | height | class   | xmin | ymin | xmax | ymax |
 | -------- | ----- | ------ | ------- | ---- | ---- | ---- | ---- |
-| 104.jpg  | 640   | **480** | class_1 | 284  | 406  | 320  |  **492** |
+| 104.jpg  | 640   | **480** | `class_1` | 284  | 406  | 320  |  **492** |
 
 **Second:**
 
 - Learning rate in `.config` file is too big (the default value was big 🙄)
-- The following values are valid and tested on mobilenet_ssd_v1_quantized (Not very good 🙄)
+- The following values are valid and tested on `mobilenet_ssd_v1_quantized` (Not very good 🙄)
 
 ```js
 learning_rate: {
@@ -668,10 +668,22 @@ learning_rate: {
 }
 ```
 
-
-
 - [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/3868)
 - [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/8423)
+
+### 🥴 Getting convolution Failure
+```bash
+Error : Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+```
+
+- It may be a *Cuda* version incompatibility issue
+- For me it was a memory issue and I solved it by adding the following line to `train.py` script
+
+```py
+os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true' 
+```
+- [👀 Related discussion](https://github.com/tensorflow/tensorflow/issues/24828)
+- [📖 About memory growth](https://www.tensorflow.org/guide/gpu#limiting_gpu_memory_growth)
 
 ## 🧐 References
 
