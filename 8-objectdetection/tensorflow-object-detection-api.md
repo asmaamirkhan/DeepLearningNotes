@@ -603,10 +603,10 @@ train_config: {
 
 {% tabs %}
 {% tab title="💻 Windows" %}
-```bash
+
 * 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/3367)
 * 👩‍🔧 Applying the downloading instructions provided [**here**](https://github.com/philferriere/cocoapi) solved the problem for me \(on Windows 10\) 
-```
+
 {% endtab %}
 
 {% tab title="🐧 Linux" %}
