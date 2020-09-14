@@ -116,7 +116,8 @@ conda install -c anaconda protobuf
 {% tabs %}
 {% tab title="💻 Windows" %}
 ```bash
-(tf1) E:\models\research>for /f %i in ('dir /b object_detection\protos\*.proto') do protoc object_detection\protos\%i --python_out=.
+# under (tf1) E:\models\research>
+for /f %i in ('dir /b object_detection\protos\*.proto') do protoc object_detection\protos\%i --python_out=.
 ```
 {% endtab %}
 
@@ -131,8 +132,9 @@ $ protoc object_detection/protos/*.proto --python_out=.
 #### 📦 Compiling Packages
 
 ```bash
-(tf1) E:\models\research>python setup.py build
-(tf1) E:\models\research>python setup.py install
+# under (tf1) E:\models\research>
+python setup.py build
+python setup.py install
 ```
 
 #### 🚩 Setting Python Path Temporarily
@@ -140,7 +142,8 @@ $ protoc object_detection/protos/*.proto --python_out=.
 {% tabs %}
 {% tab title="💻 Windows" %}
 ```bash
-(tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
+# under (tf1) E:\models\research> or anywhere 😅
+set PYTHONPATH=E:\models\research;E:\models\research\slim
 ```
 {% endtab %}
 
@@ -164,7 +167,8 @@ $ export PYTHONPATH=`pwd`:`pwd`/slim
 #### 💻 Command
 
 ```bash
-(tf1) E:\models\research>python object_detection/builders/model_builder_tf1_test.py
+# under (tf1) E:\models\research>
+python object_detection/builders/model_builder_tf1_test.py
 ```
 
 #### 🎉 Expected Output
@@ -225,9 +229,12 @@ E:
 💻 To clone and build the project, open CMD and run:
 
 ```bash
-(tf1) E:\demo>git clone https://github.com/EscVM/OIDv4_ToolKit.git
-(tf1) E:\demo>cd OIDv4_ToolKit
-(tf1) E:\demo\OIDv4_ToolKit>pip install -r requirements.txt
+# under (tf1) E:\demo>
+git clone https://github.com/EscVM/OIDv4_ToolKit.git
+cd OIDv4_ToolKit
+
+# under (tf1) E:\demo\OIDv4_ToolKit>
+pip install -r requirements.txt
 ```
 
 ⏬ To start downloading by category:
@@ -235,7 +242,8 @@ E:
 ```bash
 # python main.py downloader --classes <OBJECT_LIST> --type_csv <TYPE>
 # TYPE: all | test | train | validation 
-(tf1) E:\demo\OIDv4_ToolKit>python main.py downloader --classes Apple Orange --type_csv validation
+# under (tf1) E:\demo\OIDv4_ToolKit>
+python main.py downloader --classes Apple Orange --type_csv validation
 ```
 
 {% hint style="warning" %}
@@ -253,8 +261,9 @@ E:
 💻 To clone and build the project, open _CMD_ and run:
 
 ```bash
-(tf1) E:\demo>git clone https://github.com/asmaamirkhan/OpenImagesTool.git
-(tf1) E:\demo>cd OpenImagesTool/src
+# under (tf1) E:\demo>
+git clone https://github.com/asmaamirkhan/OpenImagesTool.git
+cd OpenImagesTool/src
 ```
 
 ### 💻 Applying Organizing
