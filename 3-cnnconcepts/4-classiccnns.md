@@ -1,4 +1,8 @@
-# 👵 Classic Convolutional Neural Networks
+---
+description: Classic Convolutional Neural Networks
+---
+
+# 👵 Classic Networks
 
 | Network | First Usage |
 | :--- | :--- |

@@ -1,4 +1,8 @@
-# 📚 Concepts of Artificial Neural Networks
+---
+description: Common concepts of Artificial Neural Networks
+---
+
+# 📚 Common Concepts
 
 Basic Concepts of ANN
 

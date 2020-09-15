@@ -1,4 +1,8 @@
-# 👷‍♀️ Notes on Implementation of Neural Networks
+---
+description: Notes on Implementation of Neural Networks
+---
+
+# 👷‍♀️ Implementation Notes
 
 ## 📚 Common Terms
 

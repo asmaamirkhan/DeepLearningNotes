@@ -1,4 +1,8 @@
-# 🌟 Advanced Concepts About Convolutional Neural Networks
+---
+description: Advanced Concepts About Convolutional Neural Networks
+---
+
+# 🌟 Advanced Concepts
 
 ## Important Terms
 

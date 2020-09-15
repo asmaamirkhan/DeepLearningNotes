@@ -1,4 +1,8 @@
-# 💥 Activation Functions in Neural Networks
+---
+description: Activation Functions in Neural Networks
+---
+
+# 💥 Activation Functions
 
 The main purpose of Activation Functions is to convert an input signal of a node in an ANN to an output signal by applying a transformation. That output signal now is used as a input in the next layer in the stack.
 

@@ -1,4 +1,8 @@
-# ✨ Other Approaches for Building CNNs
+---
+description: Other Approaches for Building CNNs
+---
+
+# ✨ Other Approaches
 
 | Approach | Description |
 | :--- | :--- |

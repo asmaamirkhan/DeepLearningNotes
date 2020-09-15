@@ -1,4 +1,8 @@
-# 👀 Visualization of Convolutional Neural Networks
+---
+description: Visualization of Convolutional Neural Networks
+---
+
+# 👀 Visualization
 
 Visualization of concepts explained in [P1](https://github.com/asmaamirkhan/DeepLearningNotes/tree/d20deec6ead832c6650a0d761212dfafef64b302/3-CNNConcepts/0-CommonConcepts.md) and [P2](https://github.com/asmaamirkhan/DeepLearningNotes/tree/d20deec6ead832c6650a0d761212dfafef64b302/3-CNNConcepts/1-CommonConcepts-P2.md) to wrap them up 👩‍🎓
 
