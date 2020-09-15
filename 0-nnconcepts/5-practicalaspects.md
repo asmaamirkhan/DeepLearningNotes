@@ -1,4 +1,8 @@
-# 🎈 Practical Aspects of NN Impelemenation
+---
+description: Practical aspects of NN Impelemenation
+---
+
+# 🎈 Practical Aspects
 
 ## 📈 Data Normalization
 
@@ -55,13 +59,13 @@ The sample of data used to provide an unbiased evaluation of a final model fit o
 
 ## 😕 Bias / Variance
 
-### 🕹 Bias
+### 👶 Bias
 
 **Bias** is how far are the predicted values from the actual values. If the average predicted values are far off from the actual values then the bias is high.
 
 > Having high-bias implies that the model is too simple and does not capture the complexity of data thus **underfitting** the data 🤕
 
-### 🕹 Variance
+### 🔬 Variance
 
 * Variance is the variability of model prediction for a given data point or a value which tells us spread of our data.
 * Model with high variance fails to generalize on the data which it hasn’t seen before.
@@ -72,28 +76,34 @@ The sample of data used to provide an unbiased evaluation of a final model fit o
 
 ![](../.gitbook/assets/fittings.png)
 
-## ↘ While implementing the model..
+## 🏗 While implementing the model..
 
 If we aren't able to get wanted performance we should ask these questions to improve our model:
 
 > We check the performance of the following solutions on dev set
 
-1. Do we have high bias? If yes, it is a trainig problem, we may:
-   * Try bigger network
-   * Train longer
-   * Try better optimization algorithm
-   * Try another NN architecture
+### 👶 Do we have high bias? 
+
+If yes, it is a trainig problem, we may:
+
+* Try bigger network
+* Train longer
+* Try better optimization algorithm
+* Try another NN architecture
 
 > We can say that it is a structural problem 🤔
 
-1. Do we have high variance? If yes, it is a dev set performance problem, we may:
-   * Get more data
-   * Do regularization
-     * L2, dropout, data augmentation
+### 🤓 Do we have high variance? 
+
+If yes, it is a dev set performance problem, we may:
+
+* Get more data
+* Do regularization
+  * L2, dropout, data augmentation
 
 > We can say that maybe it is data or algorithmic problem 🤔
 
-1. No high variance and no high bias?
+### 🧐 No high variance and no high bias?
 
 > TADAAA it is done 🤗🎉🎊
 

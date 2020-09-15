@@ -9,7 +9,7 @@
   * [👷‍♀️ Notes on Implementation of Neural Networks](0-nnconcepts/2-implementationnotes.md)
   * [📚 Concepts of Artificial Neural Networks](0-nnconcepts/3-nnconcepts.md)
   * [💥 Activation Functions in Neural Networks](0-nnconcepts/4-activationfunctions.md)
-  * [🎈 Practical Aspects of NN Impelemenation](0-nnconcepts/5-practicalaspects.md)
+  * [🎈 Practical Aspects](0-nnconcepts/5-practicalaspects.md)
   * [👩‍🔧 NN Regularization](0-nnconcepts/6-regularization.md)
   * [✨ Optimization Algorithms](0-nnconcepts/7-optimization.md)
   * [🎨 Softmax Regression](0-nnconcepts/8-multiclassclassification.md)
