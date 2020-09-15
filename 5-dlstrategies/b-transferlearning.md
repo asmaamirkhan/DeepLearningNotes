@@ -22,11 +22,11 @@ We can drop out some neurons that has similar weights with neighbors, so that ov
 
 ### 🔃 Comparison
 
- ![](../.gitbook/assets/nnwithoutdropout.JPG) ![](../.gitbook/assets/nnwithdropout.JPG)
+![](../.gitbook/assets/nnwithoutdropout.JPG) ![](../.gitbook/assets/nnwithdropout.JPG)
 
 > 🤸‍♀️ An NN before and after dropout
 
- ![](../.gitbook/assets/accuracywithoutdropout.JPG) ![](../.gitbook/assets/accuracywithdropout.JPG)
+![](../.gitbook/assets/accuracywithoutdropout.JPG) ![](../.gitbook/assets/accuracywithdropout.JPG)
 
 > ✨ Accuracy before and after dropout
 

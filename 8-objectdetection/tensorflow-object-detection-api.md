@@ -155,7 +155,6 @@ $ export PYTHONPATH=`pwd`:`pwd`/slim
 {% endtab %}
 {% endtabs %}
 
-
 {% hint style="info" %}
 👮‍♀️ Every time you open CMD you have to set `PYTHONPATH` again
 {% endhint %}
@@ -444,9 +443,10 @@ python eval.py --pipeline_config_path=E:/demo/training/ssd_mobilenet_v1_quantize
 * 💻 Open CMD and run:
 
 #### 👩‍🏫 Training Values Visualization
-- 🧐 Here you can see graphs of loss, learning rate and other values
-- 🤓 And much more (You can investigate tabs at the top)
-- 😋 It is feasable to use it while training (and exciting 🤩)
+
+* 🧐 Here you can see graphs of loss, learning rate and other values
+* 🤓 And much more \(You can investigate tabs at the top\)
+* 😋 It is feasable to use it while training \(and exciting 🤩\)
 
 ```bash
 # under (tf1) E:\>
@@ -454,9 +454,10 @@ tensorboard --logdir=E:/demo/tarining
 ```
 
 #### 👮‍♀️ Evaluation Values Visualization
-- 🧐 Here you can see images from your test set with corresponded predicitions
-- 🤓 And much more (You can investigate tabs at the top)
-- ❗ You must use this after running evaluation script
+
+* 🧐 Here you can see images from your test set with corresponded predicitions
+* 🤓 And much more \(You can investigate tabs at the top\)
+* ❗ You must use this after running evaluation script
 
 ```bash
 # under (tf1) E:\>
@@ -530,11 +531,11 @@ This means that there is a problem in setting `PYTHONPATH`, try to run:
 (tf1) E:\models\research>set PYTHONPATH=E:\models\research;E:\models\research\slim
 ```
 
-### 🗃️ tf_slim module issue
+### 🗃️ tf\_slim module issue
 
 `ModuleNotFoundError: No module named 'tf_slim'`
 
-This means that tf_slim module is not installed, try to run:
+This means that tf\_slim module is not installed, try to run:
 
 ```bash
 (tf1) E:\models\research>pip install tf_slim
@@ -551,9 +552,9 @@ NumAllocs:                 2959
 MaxAllocSize:           3045064
 ```
 
-For me it is fixed by minimizing batch_size in `.config` file, it is related to your computations resources 
+For me it is fixed by minimizing batch\_size in `.config` file, it is related to your computations resources
 
-```json
+```javascript
 train_config: {
   ....
   batch_size: 128
@@ -562,11 +563,12 @@ train_config: {
 ```
 
 ### ❗ no such file or directory error
+
 `train.py tensorflow.python.framework.errors_impl.notfounderror no such file or directory`
 
-- 🙄 For me it was a typo in train.py command
-- [📍 Related discussion 1](https://github.com/tensorflow/models/issues/3762)
-- [📍 Related discussion 2](https://github.com/tensorflow/models/issues/3954)
+* 🙄 For me it was a typo in train.py command
+* [📍 Related discussion 1](https://github.com/tensorflow/models/issues/3762)
+* [📍 Related discussion 2](https://github.com/tensorflow/models/issues/3954)
 
 ### 🤯 LossTensor is inf issue
 
@@ -612,10 +614,8 @@ train_config: {
 
 {% tabs %}
 {% tab title="💻 Windows" %}
-
 * 👀 Related discussion is [**here**](https://github.com/tensorflow/models/issues/3367)
 * 👩‍🔧 Applying the downloading instructions provided [**here**](https://github.com/philferriere/cocoapi) solved the problem for me \(on Windows 10\) 
-
 {% endtab %}
 
 {% tab title="🐧 Linux" %}
@@ -624,8 +624,6 @@ $ conda install -c conda-forge pycocotools
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ### 🥴 pycocotools type error issue
 
@@ -640,7 +638,8 @@ self.recThrs = np.linspace(.0, 1.00, int(np.round((1.00 - .0) / .01)) + 1, endpo
 ```
 
 ### 💣 Loss Exploding
-```
+
+```text
 INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
 INFO:tensorflow:global step 440: loss = 2106942657570782838784.0000 (0.405 sec/step)
 INFO:tensorflow:global step 441: loss = 7774169971762292326400.0000 (0.401 sec/step)
@@ -653,20 +652,20 @@ INFO:tensorflow:global step 442: loss = 25262924095336287830016.0000 (0.404 sec/
 
 **First:**
 
-- Some of annotations were wrong and overflow the image (e.g. xmax > width)
-- I could check that by inspecting `.csv` file
-- Example:
+* Some of annotations were wrong and overflow the image \(e.g. xmax &gt; width\)
+* I could check that by inspecting `.csv` file
+* Example:
 
-| filename | width | height | class   | xmin | ymin | xmax | ymax |
-| -------- | ----- | ------ | ------- | ---- | ---- | ---- | ---- |
-| 104.jpg  | 640   | **480** | `class_1` | 284  | 406  | 320  |  **492** |
+| filename | width | height | class | xmin | ymin | xmax | ymax |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 104.jpg | 640 | **480** | `class_1` | 284 | 406 | 320 | **492** |
 
 **Second:**
 
-- Learning rate in `.config` file is too big (the default value was big 🙄)
-- The following values are valid and tested on `mobilenet_ssd_v1_quantized` (Not very good 🙄)
+* Learning rate in `.config` file is too big \(the default value was big 🙄\)
+* The following values are valid and tested on `mobilenet_ssd_v1_quantized` \(Not very good 🙄\)
 
-```js
+```javascript
 learning_rate: {
   cosine_decay_learning_rate {
     learning_rate_base: .01
@@ -677,22 +676,24 @@ learning_rate: {
 }
 ```
 
-- [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/3868)
-- [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/8423)
+* [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/3868)
+* [👀 Related Discussion 1](https://github.com/tensorflow/models/issues/8423)
 
 ### 🥴 Getting convolution Failure
+
 ```bash
 Error : Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
 ```
 
-- It may be a *Cuda* version incompatibility issue
-- For me it was a memory issue and I solved it by adding the following line to `train.py` script
+* It may be a _Cuda_ version incompatibility issue
+* For me it was a memory issue and I solved it by adding the following line to `train.py` script
 
-```py
-os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true' 
+```python
+os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 ```
-- [👀 Related discussion](https://github.com/tensorflow/tensorflow/issues/24828)
-- [📖 About memory growth](https://www.tensorflow.org/guide/gpu#limiting_gpu_memory_growth)
+
+* [👀 Related discussion](https://github.com/tensorflow/tensorflow/issues/24828)
+* [📖 About memory growth](https://www.tensorflow.org/guide/gpu#limiting_gpu_memory_growth)
 
 ## 🧐 References
 
