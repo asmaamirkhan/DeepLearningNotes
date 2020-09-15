@@ -1,3 +1,7 @@
+---
+description: Implementation guidelines and error anlysis
+---
+
 # 👩‍🏫 Implementation Guidelines
 
 ## 📚 Common Terms

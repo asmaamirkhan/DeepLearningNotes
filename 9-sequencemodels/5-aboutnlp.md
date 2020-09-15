@@ -1,6 +1,8 @@
-# 💬 Mixed Info On NLP
+---
+description: Mixed Info On Natural Language Processing
+---
 
-Mixed Info On Natural Language Processing
+# 💬 Mixed Info On NLP
 
 ## 🤸‍♀️ Applications
 

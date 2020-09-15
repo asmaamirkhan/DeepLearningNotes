@@ -1,4 +1,8 @@
-# 📚 General Concepts of Sequence Models
+---
+description: General Concepts of Sequence Models
+---
+
+# 📚 General Concepts
 
 ## 👩‍🏫 Notation
 

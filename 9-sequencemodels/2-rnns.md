@@ -1,3 +1,7 @@
+---
+description: Details of recurrent neural networks
+---
+
 # 🔄 Recurrent Neural Networks
 
 ## 🔄 Recurrent Neural Networks

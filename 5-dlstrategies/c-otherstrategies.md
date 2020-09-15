@@ -1,4 +1,8 @@
-# 📚 Other Strategies of Deep Learning
+---
+description: Other Strategies of Deep Learning
+---
+
+# 📚 Other Strategies
 
 ## ➰ Multi-Task Learning
 

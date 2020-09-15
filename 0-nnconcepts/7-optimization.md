@@ -1,3 +1,7 @@
+---
+description: Usage of effective optimization algorithms
+---
+
 # ✨ Optimization Algorithms
 
 Having fast and good optimization algorithms can speed up the efficiency of the whole work ✨
