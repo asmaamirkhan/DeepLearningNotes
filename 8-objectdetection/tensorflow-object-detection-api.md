@@ -455,8 +455,8 @@ tensorboard --logdir=E:/demo/tarining
 
 #### 👮‍♀️ Evaluation Values Visualization
 
-* 🧐 Here you can see images from your test set with corresponded predicitions
-* 🤓 And much more \(You can investigate tabs at the top\)
+* 👀 Here you can see images from your test set with corresponded predictions
+* 🤓 And much more \(You can inspect tabs at the top\)
 * ❗ You must use this after running evaluation script
 
 ```bash
@@ -464,7 +464,33 @@ tensorboard --logdir=E:/demo/tarining
 tensorboard --logdir=E:/demo/eval
 ```
 
-🔍 See the results on [localhost:6006](http://localhost:6006/)
+* 🔍 See the visualized results on [localhost:6006](http://localhost:6006/) and 
+* 🧐 You can inspect numerical values from report on terminal, result example:
+
+```bash
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.708
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.984
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.868
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.289
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.623
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.767
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.779
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.781
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.781
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.300
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.703
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.824
+```
+
+* 🎨 If you want to get metric report for each class you have to change evaluating protocol to _pascal metrics_ by configuring  `metrics_set` in `.config` file:
+
+```javascript
+eval_config: {
+  ...
+  metrics_set: "weighted_pascal_voc_detection_metrics"
+  ...
+}
+```
 
 ## 👒 Model Exporting
 
@@ -700,4 +726,5 @@ os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 * 📖 [Training Custom Object Detector](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#)
 * 📖 [TensorFlow Object Detection API](https://ai.yemreak.com/tensorflow-object-detection-api)
 * 📖 [Custom Object Detection using TensorFlow from Scratch](https://towardsdatascience.com/custom-object-detection-using-tensorflow-from-scratch-e61da2e10087)
+* 📖 [Supported object detection evaluation protocols](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/evaluation_protocols.md)
 
