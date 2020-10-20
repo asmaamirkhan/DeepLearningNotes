@@ -721,6 +721,17 @@ os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 * [👀 Related discussion](https://github.com/tensorflow/tensorflow/issues/24828)
 * [📖 About memory growth](https://www.tensorflow.org/guide/gpu#limiting_gpu_memory_growth)
 
+### 📦 Invalid box data error
+
+```python
+raise ValueError('Invalid box data. data must be a numpy array of '
+ValueError: Invalid box data. data must be a numpy array of N*[y_min, x_min, y_max, x_max]
+```
+
+* 🙄 For me it was a logical error, in `test_labels.csv` there were some invalid values like: **`file123.jpg,134,63,3,0,0,-1029,-615`**
+* 🏷 So, it was a labeling issue, fixing these lines solved the problem
+* 👀 [Related discussion](https://github.com/tensorflow/models/issues/3527) 
+
 ## 🧐 References
 
 * 📖 [Training Custom Object Detector](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#)
