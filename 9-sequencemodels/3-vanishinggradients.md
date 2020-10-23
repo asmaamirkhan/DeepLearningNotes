@@ -1,7 +1,3 @@
----
-description: Vanishing Gradients with recurrent neural networks
----
-
 # 🌌 Vanishing Gradients with RNNs
 
 * An RNN that process a sequence data with the size of 10,000 time steps, has 10,000 deep layers which is very hard to optimize 🙄

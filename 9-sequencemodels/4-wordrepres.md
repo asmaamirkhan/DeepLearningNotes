@@ -1,7 +1,3 @@
----
-description: Approaches of word representation
----
-
 # 🌚 Word Representation
 
 ## 🌚 Word Representation

@@ -50,6 +50,12 @@ description: Regular Expressions guide
 | **`{,n}`** | At most `n` repetitions |
 | **`{m,n}`** | At least `m` and at most `n` repetitions |
 
+## 🧐 Useful Examples
+
+| 🧩 Regex | 📜 Description |
+| :--- | :--- |
+| _`^.SOME_STRING.\n`_ | Finds all lines start with specific string |
+
 ## 🔗 References
 
 * [📃 Regex Cheat sheet](https://i.pinimg.com/originals/16/33/8d/16338ddd8e8fdea52a50e6c6981451f3.png)

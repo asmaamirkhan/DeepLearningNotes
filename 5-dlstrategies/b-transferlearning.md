@@ -1,7 +1,3 @@
----
-description: Applying a knowledge to separate tasks
----
-
 # 🚙 Transfer Learning
 
 In short: Learning from one task and applying knowledge to separate tasks 🛰🚙
