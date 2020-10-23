@@ -54,7 +54,7 @@ description: Regular Expressions guide
 
 | 🧩 Regex | 📜 Description |
 | :--- | :--- |
-| _`^.SOME_STRING.\n`_ | Finds all lines start with specific string |
+| _`^.*SOME_STRING.*\n`_  | Finds all lines start with specific string |
 
 ## 🔗 References
 
