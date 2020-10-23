@@ -1,8 +1,4 @@
----
-description: Brief Introduction to Tensorflow
----
-
-# 🏃‍♀️ Introduction to Tensorflow
+# 🏃‍♀️ Brief Introduction to Tensorflow
 
 ## 🚩 Main flow of programs in Tensorflow
 
@@ -53,7 +49,7 @@ print(c)
 
 🤸‍♀️ The output is
 
-```bash
+```text
 Tensor("Mul:0", shape=(), dtype=int32)
 ```
 

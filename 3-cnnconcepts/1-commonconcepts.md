@@ -1,8 +1,4 @@
----
-description: Common Concepts About Convolutional Neural Networks
----
-
-# 📌 Common Concepts
+# 📌 Common Concepts About Convolutional Neural Networks
 
 ## 📚 Important Terms
 

@@ -1,7 +1,3 @@
----
-description: Implementation guidelines and error anlysis
----
-
 # 👩‍🏫 Implementation Guidelines
 
 ## 📚 Common Terms
@@ -63,7 +59,7 @@ Even though training and dev errors are same we will apply different tactics for
 
 ## ✨ My Detailed Notes on Bias / Variance and Related Procedures
 
-* [Here 🐾](../0-nnconcepts/5-practicalaspects.md)
+* [Here 🐾](https://github.com/asmaamirkhan/DeepLearningNotes/tree/d20deec6ead832c6650a0d761212dfafef64b302/0-NNConcepts/4-PracticalAspects.md)
 
 ## 🤸‍♀️ It is recommended to
 

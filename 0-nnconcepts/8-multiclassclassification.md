@@ -1,7 +1,3 @@
----
-description: Multi class problems
----
-
 # 🎨 Softmax Regression
 
 **We can learn it by likening it to logistic regression:** 😋

@@ -1,8 +1,4 @@
----
-description: Common Applications of convolution neural networks
----
-
-# 🕸 Common Applications
+# 🕸 Common Applications of CNNs
 
 | Application | Description |
 | :--- | :--- |

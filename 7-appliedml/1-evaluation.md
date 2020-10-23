@@ -1,7 +1,3 @@
----
-description: Make your training procedure more effective
----
-
 # 👩‍🔧 Notes on Structuring Machine Learning Projects
 
 ## ✨ How to effectively set up evaluation metrics?

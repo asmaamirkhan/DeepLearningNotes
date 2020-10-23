@@ -1,8 +1,4 @@
----
-description: Python Code Snippets on The Basics of Neural Networks
----
-
-# 👩‍💻 Python Code Snippets
+# 👩‍💻 Python Code Snippets on The Basics of Neural Networks
 
 ## 📚 General Code Snippets in ML
 
