@@ -4,8 +4,6 @@ description: "\U0001F477‍♀️ Guidelines for Structuring Machine Learning Pr
 
 # 🌱 Introduction
 
-
-
 ## 👩‍🎓 Orthogonalisation
 
 One of the challenges with building machine learning systems is that there are so many things we could try. Including, for example, so many hyperparameters we could tune. **The art of knowing what parameter to tune to get what effect, is called orthogonalisation**.

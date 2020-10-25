@@ -1,7 +1,5 @@
 # 👩‍🏫 Implementation Guidelines
 
-
-
 ## 📚 Common Terms
 
 | Term | Description |
