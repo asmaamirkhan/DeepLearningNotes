@@ -1,3 +1,7 @@
+---
+description: Multi class problems
+---
+
 # 🎨 Softmax Regression
 
 

@@ -4,8 +4,6 @@ description: General Concepts of Sequence Models
 
 # 📚 General Concepts
 
-
-
 ### 👩‍🏫 Notation
 
 In the context of text processing \(e.g: Natural Language Processing _NLP_\)

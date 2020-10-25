@@ -1,3 +1,7 @@
+---
+description: Preventing overfitting
+---
+
 # 👩‍🔧 NN Regularization
 
 Briefly: A technique to prevent overfitting -and reduce variance-

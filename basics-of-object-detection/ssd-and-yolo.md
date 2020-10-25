@@ -1,6 +1,8 @@
+---
+description: Single Shot Detectors and You Only Look Once
+---
+
 # 🤳 SSD and YOLO
-
-
 
 ## 😉 You Only Look Once
 
