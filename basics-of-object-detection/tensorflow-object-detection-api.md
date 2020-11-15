@@ -102,9 +102,10 @@ conda install -c anaconda protobuf
 ```bash
 # note that every time you open CMD you have 
 # to activate your env again by running: 
-# E:\>conda activate tf1
-(tf1) E:\>git clone https://github.com/tensorflow/models.git
-(tf1) E:\>cd models/research
+# under E:\>
+conda activate tf1
+git clone https://github.com/tensorflow/models.git
+cd models/research
 ```
 
 {% hint style="warning" %}
