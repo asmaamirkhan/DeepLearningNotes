@@ -7,24 +7,24 @@ description: Training Custom Object Detector Step by Step
 ## 🌱 Introduction
 
 * ✨ _Tensorflow_ object detection API is a powerful tool that allows us to create custom object detectors depending on pre-trained, fine tuned models even if we don't have strong AI background or strong _TensorFlow_ knowledge.
-* 💁‍♀️ Building models depending on pre-trained models saves us a lot of time and labor since we are using models that maybe trained for weeks using very strong machines, this principle is called [**Transfer Learning**](https://dl.asmaamir.com/5-dlstrategies/b-transferlearning)**.**
+* 💁‍♀️ Building models depending on pre-trained models saves us a lot of time and labor since we are using models that maybe trained for weeks using very strong machines, this principle is called [**Transfer Learning**](../popular-strategies-of-deep-learning/transfer-learning.md)**.**
 * 🗃️ As a data set I will show you how to use _OpenImages_ data set and converting its data to _TensorFlow_-friendly format.
 * 🎀 You can find this article on [**Medium**](https://medium.com/@asmaamirkhan.am/training-custom-object-detector-step-by-step-5f6f4d75b494) too.
 
 ## 🚩 Development Pipeline
 
-1. [👩‍💻 Environment Preparation]()
-2. [🖼️ Image acquiring]()
-3. [🤹‍♀️ Image Organization]()
-4. [🤖 Model Selecting]()
-5. [👩‍🔧 Model Configuration]()
-6. [👶 Training]()
-7. [👮‍♀️ Evaluation]()
-8. [👒 Model Exporting]()
-9. [📱 Converting to tflite]()
+1. [👩‍💻 Environment Preparation](tensorflow-object-detection-api.md#environment-preparation)
+2. [🖼️ Image acquiring](tensorflow-object-detection-api.md#image-acquiring)
+3. [🤹‍♀️ Image Organization](tensorflow-object-detection-api.md#image-organization)
+4. [🤖 Model Selecting](tensorflow-object-detection-api.md#model-selecting)
+5. [👩‍🔧 Model Configuration](tensorflow-object-detection-api.md#model-configuration)
+6. [👶 Training](tensorflow-object-detection-api.md#training)
+7. [👮‍♀️ Evaluation](tensorflow-object-detection-api.md#evaluation)
+8. [👒 Model Exporting](tensorflow-object-detection-api.md#model-exporting)
+9. [📱 Converting to tflite](tensorflow-object-detection-api.md#converting-to-tflite)
 
 {% hint style="info" %}
-🤕 While you are applying the instructions if you get errors you can check out [🐞 Common Issues]() section at the end of the article
+🤕 While you are applying the instructions if you get errors you can check out [🐞 Common Issues](tensorflow-object-detection-api.md#common-issues) section at the end of the article
 {% endhint %}
 
 ## 👩‍💻 Environment Preparation

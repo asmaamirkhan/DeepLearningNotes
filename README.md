@@ -13,23 +13,23 @@ description: Asmaa Mirkhan's notes (and codes) on deep learning
 
 | \# | Title |
 | :--- | :--- |
-| 0. | [👩‍🏫 Theoric Concepts of Neural Networks](concepts-of-neural-networks/) |
-| 1. | [🙋‍♀️ Hello World of Deep Learning With Neural Networks](hello-world-of-deep-learning-with-neural-networks/) |
-| 2. | [👓 Introduction to Computer Vision](introduction-to-computer-vision/) |
-| 3. | [👩‍🏫 Theoric Concepts of Convolutional Neural Networks](concepts-of-convolutional-neural-networks/) |
-| 4. | [👩‍🔧 Works on Convolutional Neural Networks](works-and-notes-on-cnns/) |
-| 5. | [🚙 Deep Learning Strategies](popular-strategies-of-deep-learning/) |
-| 6. | [🤡 Image Augmentation](image-augmentation/) |
-| 7. | [👷‍♀️ Applied Machine Learning](notes-on-applied-machine-learning/) |
-| 8. | [🕵️‍♀️ Object Detection](basics-of-object-detection/) |
-| 9. | [➰ Sequence Models](sequence-models-in-deep-learning/) |
+| 0. | [👩‍🏫 Theoric Concepts of Neural Networks]() |
+| 1. | [🙋‍♀️ Hello World of Deep Learning With Neural Networks](https://github.com/asmaamirkhan/DeepLearningNotes/tree/1fca9c1eb441cb33162351aa7e8bc4776433c225/1-helloworld/README.md) |
+| 2. | [👓 Introduction to Computer Vision](https://github.com/asmaamirkhan/DeepLearningNotes/tree/1fca9c1eb441cb33162351aa7e8bc4776433c225/2-intro2computervision/README.md) |
+| 3. | [👩‍🏫 Theoric Concepts of Convolutional Neural Networks]() |
+| 4. | [👩‍🔧 Works on Convolutional Neural Networks](https://github.com/asmaamirkhan/DeepLearningNotes/tree/1fca9c1eb441cb33162351aa7e8bc4776433c225/4-cnnworks/README.md) |
+| 5. | [🚙 Deep Learning Strategies](https://github.com/asmaamirkhan/DeepLearningNotes/tree/1fca9c1eb441cb33162351aa7e8bc4776433c225/5-dlstrategies/README.md) |
+| 6. | [🤡 Image Augmentation](https://github.com/asmaamirkhan/DeepLearningNotes/tree/1fca9c1eb441cb33162351aa7e8bc4776433c225/6-imageaugmentation/README.md) |
+| 7. | [👷‍♀️ Applied Machine Learning]() |
+| 8. | [🕵️‍♀️ Object Detection]() |
+| 9. | [➰ Sequence Models](https://github.com/asmaamirkhan/DeepLearningNotes/tree/1fca9c1eb441cb33162351aa7e8bc4776433c225/9-sequencemodels/README.md) |
 
 ## 💉 Extensions
 
 | \# | Title |
 | :--- | :--- |
-| 0. | [📚 PDFs that I found and recommend](pdfs-that-i-found-and-recommend.md) |
-| 1. | [👀 Visual materials for quick info](quick-visual-info.md) |
+| 0. | [📚 PDFs that I found and recommend]() |
+| 1. | [👀 Visual materials for quick info]() |
 
 ## 🚀 Other Version
 
