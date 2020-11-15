@@ -13,18 +13,18 @@ description: Training Custom Object Detector Step by Step
 
 ## 🚩 Development Pipeline
 
-1. [👩‍💻 Environment Preparation]()
-2. [🖼️ Image acquiring]()
-3. [🤹‍♀️ Image Organization]()
-4. [🤖 Model Selecting]()
-5. [👩‍🔧 Model Configuration]()
-6. [👶 Training]()
-7. [👮‍♀️ Evaluation]()
-8. [👒 Model Exporting]()
-9. [📱 Converting to tflite]()
+1. [👩‍💻 Environment Preparation](tensorflow-object-detection-api.md#environment-preparation)
+2. [🖼️ Image acquiring](tensorflow-object-detection-api.md#image-acquiring)
+3. [🤹‍♀️ Image Organization](tensorflow-object-detection-api.md#image-organization)
+4. [🤖 Model Selecting](tensorflow-object-detection-api.md#model-selecting)
+5. [👩‍🔧 Model Configuration](tensorflow-object-detection-api.md#model-configuration)
+6. [👶 Training](tensorflow-object-detection-api.md#training)
+7. [👮‍♀️ Evaluation](tensorflow-object-detection-api.md#evaluation)
+8. [👒 Model Exporting](tensorflow-object-detection-api.md#model-exporting)
+9. [📱 Converting to tflite](tensorflow-object-detection-api.md#converting-to-tflite)
 
 {% hint style="info" %}
-🤕 While you are applying the instructions if you get errors you can check out [🐞 Common Issues]() section at the end of the article
+🤕 While you are applying the instructions if you get errors you can check out [🐞 Common Issues](tensorflow-object-detection-api.md#common-issues) section at the end of the article
 {% endhint %}
 
 ## 👩‍💻 Environment Preparation
