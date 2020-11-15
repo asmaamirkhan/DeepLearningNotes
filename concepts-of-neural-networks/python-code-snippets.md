@@ -1,7 +1,5 @@
 # 👩‍💻 Python Code Snippets
 
-
-
 ## 📚 General Code Snippets in ML
 
 ### 💥 Sigmoid Function

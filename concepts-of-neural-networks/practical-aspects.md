@@ -1,7 +1,5 @@
 # 🎈 Practical Aspects
 
-
-
 ## 📈 Data Normalization
 
 It is a part of _data preparation_
